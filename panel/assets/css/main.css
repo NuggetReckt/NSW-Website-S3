@@ -1,0 +1,122 @@
+/*-----------------------------------------
+Main style
+-----------------------------------------*/
+
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    margin: 0 100px;
+    background-color: #1a1a1a;
+}
+
+span, p, a, h1, h2, h3 {
+    font-family: police_custom, sans-serif;
+    color: white;
+    margin: 0;
+}
+
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar-item {
+    float: left;
+}
+
+.navbar-item a {
+    display: block;
+    padding: 12px 14px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 500ms;
+}
+
+.navbar-item a:hover {
+    color: #1394C3;
+    transition: 500ms;
+}
+
+.active {
+    color: #1394C3;
+}
+
+.not-active {
+    color: white;
+}
+
+#nav-right {
+    float: right;
+}
+
+
+.footer-content {
+    text-align: center;
+    color: white;
+    padding: 0;
+}
+
+/*-----------------------------------------
+Actus and projects style
+-----------------------------------------*/
+
+.project-content, .actu-content {
+    margin: 0 auto;
+}
+
+.project-img {
+    height: 18%;
+    width: 18%;
+    float: right;
+}
+
+.project-desc, .actu-desc {
+
+}
+
+.project-title, .project-desc, .actu-title, .actu-desc {
+    margin-bottom: 5px;
+}
+
+/*-----------------------------------------
+page-specific style
+-----------------------------------------*/
+
+
+
+/*-----------------------------------------
+Pop-up style
+-----------------------------------------*/
+
+.pop-up-message {
+    text-align: center;
+    font-size: 16px;
+    width: 500px;
+    padding: 14px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#pop-up-success {
+    background-color: #00a600;
+}
+
+#pop-up-fail {
+    background-color: red;
+}
+
+/*-----------------------------------------
+Fonts
+-----------------------------------------*/
+
+@font-face {
+    font-family: police_custom;
+    src: url("../fonts/MusticaPro-SemiBold.otf") format("opentype");
+}

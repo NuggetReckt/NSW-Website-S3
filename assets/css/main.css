@@ -1,0 +1,191 @@
+/*-----------------------------------------
+Main style
+-----------------------------------------*/
+
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0 100px;
+    background-color: #1a1a1a;
+}
+
+span, p, a, h1, h2, h3 {
+    font-family: police_custom, sans-serif;
+    color: white;
+    margin: 0;
+}
+
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar-item {
+    float: left;
+}
+
+.navbar-item a {
+    display: block;
+    padding: 12px 14px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 500ms;
+}
+
+.navbar-item a:hover {
+    color: #1394C3;
+    transition: 500ms;
+}
+
+.active {
+    color: #1394C3;
+    transition: 500ms;
+}
+
+.not-active {
+    color: white;
+}
+
+#nav-right {
+    float: right;
+}
+
+.footer-content {
+    text-align: center;
+    color: white;
+    padding: 50px 0 10px 0;
+}
+
+#scrollUp {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    opacity: 0;
+    transition: 1s;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1394C3;
+    border-radius: 2px;
+}
+
+/*-----------------------------------------
+Actus, projects and musics style
+-----------------------------------------*/
+
+.project-content, .actu-content {
+    margin: 0 auto;
+}
+
+.project-img {
+    height: 18%;
+    width: 18%;
+    float: right;
+}
+
+.project-desc, .actu-desc {
+
+}
+
+.project-title, .project-desc, .actu-title, .actu-desc {
+    margin-bottom: 5px;
+}
+
+/*-----------------------------------------
+Pages specific style
+-----------------------------------------*/
+
+.top-content, .centered-content, .sub-content {
+    text-align: center;
+}
+
+.main-slider {
+    min-height: 100vh;
+    height: auto;
+}
+
+#top-content-index {
+    padding: 32vh 0;
+}
+
+#title-logo {
+    height: 42%;
+    width: 42%;
+}
+
+#headline {
+    letter-spacing: 0.3rem;
+    font-size: 20px;
+    padding-bottom: 100px;
+}
+
+#discover, #discover-button {
+    padding: 15px 40px;
+}
+
+#discover-button {
+    text-decoration: none;
+    font-size: 18px;
+    border: 3px solid #1394C3;
+    border-radius: 10px;
+    transition: 1s;
+    color: #1394C3;
+}
+
+#discover-button:hover {
+    transition: 1s;
+    background-color: #1394C3;
+    border-color: white;
+    color: #1a1a1a;
+}
+
+/*-----------------------------------------
+Pop-up style
+-----------------------------------------*/
+
+.pop-up-message {
+    text-align: center;
+    font-size: 16px;
+    width: 500px;
+    padding: 14px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#pop-up-success {
+    background-color: #00a600;
+}
+
+#pop-up-fail {
+    background-color: red;
+}
+
+/*-----------------------------------------
+Animations
+-----------------------------------------*/
+
+
+/*-----------------------------------------
+Fonts
+-----------------------------------------*/
+
+@font-face {
+    font-family: police_custom;
+    src: url("../fonts/MusticaPro-SemiBold.otf") format("opentype");
+}

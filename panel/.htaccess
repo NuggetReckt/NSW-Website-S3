@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteRule ^menu$ index.php [NC]
+RewriteRule ^ajouter-projet$ add_project.php [NC]
+RewriteRule ^ajouter-actu$ add_actu.php [NC]
+RewriteRule ^ajouter-compte$ add_account.php [NC]
+RewriteRule ^login$ login.php [NC]

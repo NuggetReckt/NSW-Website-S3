@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteRule ^accueil$ index.php [NC]
+RewriteRule ^a-propos$ about.php [NC]
+RewriteRule ^projets$ projects.php [NC]
+RewriteRule ^nous-contacter$ contact_us.php [NC]
+RewriteRule ^login$ login.php [NC]
+RewriteRule ^espace-personnel$ personal_space.php [NC]
+RewriteRule ^actus$ actus.php [NC]
