@@ -13,7 +13,7 @@ class Pager
 
     function setTitle(): void
     {
-        echo "<title>", $this->title, " - No&Co</title>";
+        echo "<title>", $this->title, " - NoSkillWorld</title>";
     }
 
     function setHeader(): void

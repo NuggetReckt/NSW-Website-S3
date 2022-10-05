@@ -1,6 +1,5 @@
 <?php
 $page = basename($_SERVER["PHP_SELF"]);
-session_start();
 ?>
     </head>
     <body>
@@ -17,58 +16,50 @@ session_start();
                         ?>">Accueil</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="<?php echo "films.php" ?>" class="<?php
-                        if ($page == "films.php") {
+                        <a href="<?php echo "wiki.php" ?>" class="<?php
+                        if ($page == "wiki.php") {
                             echo "active";
                         } else {
                             echo "not-active";
                         }
-                        ?>">Les films</a>
+                        ?>">Wiki</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="<?php echo "actus.php" ?>" class="<?php
-                        if ($page == "actus.php") {
+                        <a href="<?php echo "votes.php" ?>" class="<?php
+                        if ($page == "votes.php") {
                             echo "active";
                         } else {
                             echo "not-active";
                         }
-                        ?>">Actualités</a>
+                        ?>">Votes</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="<?php echo "music.php" ?>" class="<?php
-                        if ($page == "music.php") {
+                        <a href="<?php echo "staff.php" ?>" class="<?php
+                        if ($page == "staff.php") {
                             echo "active";
                         } else {
                             echo "not-active";
                         }
-                        ?>">Musiques</a>
+                        ?>">Equipe</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="<?php echo "contact.php" ?>" class="<?php
-                        if ($page == "contact.php") {
+                        <a href="<?php echo "cgu-cgv.php" ?>" class="<?php
+                        if ($page == "cgu-cgv.php") {
                             echo "active";
                         } else {
                             echo "not-active";
                         }
-                        ?>">Nous contacter</a>
+                        ?>">Regles</a>
                     </li>
-                    <?php
-                    echo "<li class='navbar-item' id='nav-right'>\n";
-                    if (isset($_SESSION['user'])) {
-                        if ($_SESSION['user'] != null) {
-                            echo "<a href='login.php?disconnected'>Me déconnecter</a>\n";
-                        }
-                    } else {
-                        echo "                        <a href='login.php' class='";
-                        if ($page == "login.php") {
-                            echo "active";
-                        } else {
-                            echo "not-active";
-                        }
-                        echo "'>Mon espace personnel</a>\n";
-                    }
-                    echo "                    </li>\n";
-                    ?>
+                    <li class="navbar-item" id="nav-right">
+                        <a href="https://play.noskillworld.fr/dynmap" target="_blank" class="not-active">Dynmap</a>
+                    </li>
+                    <li class="navbar-item" id="nav-right">
+                        <a href="https://discord.gg/cE4eHEZWrD" target="_blank" class="not-active">Discord</a>
+                    </li>
+                    <li class="navbar-item" id="nav-right">
+                        <a href="https://shop.noskillworld.fr" target="_blank" class="not-active">Boutique</a>
+                    </li>
                 </ul>
             </nav>
         </div>
