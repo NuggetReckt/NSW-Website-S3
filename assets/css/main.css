@@ -25,13 +25,24 @@ main {
 
 span, p, a, h1, h2, h3 {
     font-family: police_custom, sans-serif;
-    margin: 0;
-    padding: 0;
+}
+
+h1, h2, h3 {
+    margin: 0 0 10px;
+}
+
+p {
+    margin: 5px 0;
 }
 
 .bold, a {
     color: #2C70BA;
     text-decoration: none;
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 .navbar-list {
@@ -124,11 +135,18 @@ hr {
     align-items: center;
 }
 
-#scrollUp {
-    position: fixed;
-    bottom: 20px;
-    right: 40px;
-    opacity: 0;
+#to-top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 30px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 20px; /* Some padding */
+    border-radius: 10px;
+    background: url(../images/to_top.png) no-repeat 0 #454545;
     transition: 1s;
 }
 
@@ -300,6 +318,8 @@ figcaption {
     border-radius: 7px;
     width: 100%;
     max-width: 800px;
+    border: none;
+    margin: 0;
 }
 
 #h2-discord, #h2-twitter {
@@ -332,6 +352,112 @@ figcaption {
     color: white;
 }
 
+.staff-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.user-box .name {
+    font-size: 20px;
+    line-height: 24px;
+    display: block;
+    font-variant-ligatures: none;
+    color: #000;
+}
+
+.user-box {
+    text-align: center;
+}
+
+.block {
+    box-shadow: 0 1px 5px rgb(0 0 0);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.li-staff {
+    margin: 0;
+    padding: 0;
+    width: 33%;
+}
+
+.s-title {
+    border-radius: 10px 10px 0 0;
+}
+
+#staff-title, #wiki-title, #votes-title, #rules-title, #soon-title {
+    margin: 20px 0;
+    color: white;
+}
+
+#body-other {
+    background: url(../images/background.png) no-repeat fixed 0 0;
+    background-size: 100%;
+}
+
+.main-top-col-wiki {
+    float: left;
+    border-color: black;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 20%);
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: justify;
+    padding: 13px;
+    color: white;
+    background-color: #2C70BA;
+    font-family: police_custom_bold, sans-serif;
+    width: 16%;
+}
+
+#row {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.docu, #votes-links {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffff;
+}
+
+#votes-content {
+    height: 62vh;
+}
+
+#soon-content {
+    margin: 30vh 0;
+}
+
+#votes-links {
+    margin-right: 250px;
+    margin-left: 250px;
+    width: auto;
+    text-align: center;
+}
+
+#h3-vote {
+    padding-top: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 /*-----------------------------------------
 Pop-up style
 -----------------------------------------*/
@@ -354,12 +480,77 @@ Pop-up style
 }
 
 /*-----------------------------------------
-Animations
+Form style
 -----------------------------------------*/
 
+:focus-visible {
+    outline: #2C70BA solid 3px;
+    outline-offset: -1px;
+    border: none;
+}
+
+.form {
+    padding: 20px;
+    width: 400px;
+    margin: 150px auto;
+}
+
+fieldset {
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0;
+    padding: 10px;
+}
+
+label {
+    font-size: 19px;
+    text-align: left;
+}
+
+.form-content h1 {
+    margin: 10px;
+    text-align: center;
+    color: #2C70BA;
+}
+
+label, input[type="submit"] {
+    font-family: police_custom, sans-serif;
+    color: white;
+}
+
+input[type="text"], input[type="password"], input[type="submit"] {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 94%;
+    background-color: white;
+    font-family: police_custom, sans-serif;
+    font-size: 13px;
+}
+
+.form-content {
+    margin: auto 10px;
+}
+
+input[type="submit"] {
+    transition: 1s;
+    color: #2C70BA;
+    background-color: white;
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    transition: 1s;
+    background-color: #2C70BA;
+    color: #1a1a1a;
+}
 
 /*-----------------------------------------
-Fonts
+Fonts imports
 -----------------------------------------*/
 
 @font-face {

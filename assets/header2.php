@@ -2,7 +2,13 @@
 $page = basename($_SERVER["PHP_SELF"]);
 ?>
     </head>
-    <body>
+        <?php
+        if ($page == "index.php") {
+            echo "<body>";
+        } else {
+            echo "<body id='body-other'>";
+        }
+        ?>
         <div class="navbar-content">
             <nav id="navbar">
                 <ul class="navbar-list">

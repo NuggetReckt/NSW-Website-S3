@@ -38,24 +38,6 @@
                 </div>
             </footer>
         </div>
-        <div id="scrollUp">
-            <a href="#top"><img src="/assets/images/to_top.png" width="130%" alt="to-top"/></a>
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-        <script>
-            jQuery(function () {
-                $(function () {
-                    $(window).scroll(function () { //Fonction appelée quand on descend la page
-                        if ($(this).scrollTop() > 200) {  // Quand on est à 200pixels du haut de page,
-                            $('#scrollUp').css('right', '4' +
-                                '0px'); // Replace à 10pixels de la droite l'image
-                        } else {
-                            $('#scrollUp').removeAttr('style'); // Enlève les attributs CSS affectés par javascript
-                        }
-                    });
-                });
-            });
-        </script>
         <script type="text/javascript"
                 src="https://www.serveurs-minecraft.org/api/players_count.php?id=60934&format=jsonp"></script>
         <script type="text/javascript"
@@ -117,6 +99,27 @@
                 } else if (typeof selection.removeAllRanges === 'function') {
                     selection.removeAllRanges();
                 }
+            }
+        </script>
+        <button onclick="topFunction()" id="to-top" title="Haut de page"></button>
+        <script>
+            let toTopButton = document.getElementById("to-top");
+
+            window.onscroll = function () {
+                onScroll();
+            };
+
+            function onScroll() {
+                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                    toTopButton.style.display = "block";
+                } else {
+                    toTopButton.style.display = "none";
+                }
+            }
+
+            function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
             }
         </script>
     </body>
