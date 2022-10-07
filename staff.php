@@ -4,7 +4,6 @@ $pager = new Pager("Equipe");
 
 $pager->setHeader();
 ?>
-            <center>
             <div class="top-content" id="top-content-staff">
                 <div id="top-title">
                     <h1 id="staff-title">L'équipe</h1>
@@ -95,7 +94,6 @@ $pager->setHeader();
                     </li>
                 </ul>
             </div>
-            </center>
 <?php
 $pager->setFooter();
 ?>
