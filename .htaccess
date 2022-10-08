@@ -1,8 +1,7 @@
 RewriteEngine on
 RewriteRule ^accueil$ index.php [NC]
-RewriteRule ^a-propos$ about.php [NC]
-RewriteRule ^projets$ projects.php [NC]
-RewriteRule ^nous-contacter$ contact_us.php [NC]
-RewriteRule ^login$ login.php [NC]
-RewriteRule ^espace-personnel$ personal_space.php [NC]
-RewriteRule ^actus$ actus.php [NC]
+RewriteRule ^wiki$ wiki.php [NC]
+RewriteRule ^cgu-cgv$ cgu-cgv.php [NC]
+RewriteRule ^equipe$ staff.php [NC]
+RewriteRule ^votes$ votes.php [NC]
+RewriteRule ^maintenance$ maintenance.php [NC]

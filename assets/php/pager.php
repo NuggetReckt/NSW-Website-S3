@@ -3,17 +3,22 @@
 class Pager
 {
     public string $title;
+    private bool $isUnderMaintenance = false;
 
     function __construct($title)
     {
         ini_set("default_charset", "UTF-8");
 
         $this->title = $title;
+
+        if ($this->isUnderMaintenance) {
+            header("Location: maintenance.php");
+        }
     }
 
-    function setTitle(): void
+    private function setTitle(): void
     {
-        echo "<title>", $this->title, " - No&Co</title>";
+        echo "<title>", $this->title, " - NoSkillWorld</title>";
     }
 
     function setHeader(): void
