@@ -393,6 +393,7 @@ figcaption {
 
 .s-title {
     border-radius: 10px 10px 0 0;
+    text-align: center;
 }
 
 #staff-title, #wiki-title, #votes-title, #rules-title, #soon-title {
