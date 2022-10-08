@@ -13,7 +13,7 @@ $page = basename($_SERVER["PHP_SELF"]);
             <nav id="navbar">
                 <ul class="navbar-list">
                     <li class="navbar-item">
-                        <a href="<?php echo "index.php" ?>" class="<?php
+                        <a href="<?="index.php"?>" class="<?php
                         if ($page == "index.php") {
                             echo "active";
                         } else {
@@ -22,7 +22,7 @@ $page = basename($_SERVER["PHP_SELF"]);
                         ?>">Accueil</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="<?php echo "wiki.php" ?>" class="<?php
+                        <a href="<?="wiki.php"?>" class="<?php
                         if ($page == "wiki.php") {
                             echo "active";
                         } else {
@@ -31,7 +31,7 @@ $page = basename($_SERVER["PHP_SELF"]);
                         ?>">Wiki</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="<?php echo "votes.php" ?>" class="<?php
+                        <a href="<?="votes.php"?>" class="<?php
                         if ($page == "votes.php") {
                             echo "active";
                         } else {
@@ -40,7 +40,7 @@ $page = basename($_SERVER["PHP_SELF"]);
                         ?>">Votes</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="<?php echo "staff.php" ?>" class="<?php
+                        <a href="<?="staff.php"?>" class="<?php
                         if ($page == "staff.php") {
                             echo "active";
                         } else {
@@ -49,7 +49,7 @@ $page = basename($_SERVER["PHP_SELF"]);
                         ?>">Equipe</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="<?php echo "cgu-cgv.php" ?>" class="<?php
+                        <a href="<?="cgu-cgv.php"?>" class="<?php
                         if ($page == "cgu-cgv.php") {
                             echo "active";
                         } else {

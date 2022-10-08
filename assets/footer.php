@@ -17,12 +17,12 @@
                 <ul class="footer-items" id="footer-r">
                     <li id="twitter-footer" class="footer-item">
                         <a href="https://twitter.com/NoSkillWorld" target="_blank">
-                            <img src="<?php echo"/assets/images/twitter.svg"?>" alt="twitter" id="logo-f">
+                            <img src="<?="/assets/images/twitter.svg"?>" alt="twitter" id="logo-f">
                         </a>
                     </li>
                     <li id="discord-footer" class="footer-item">
                         <a href="https://discord.gg/cE4eHEZWrD" target="_blank">
-                            <img src="<?php echo"/assets/images/discord.svg"?>" alt="discord" id="logo-f">
+                            <img src="<?="/assets/images/discord.svg"?>" alt="discord" id="logo-f">
                         </a
                     </li>
                 </ul>
