@@ -77,45 +77,6 @@ class PanelRequest
         unset($user_password);
     }
 
-    function create_account($username, $password, $password_confirm): void
-    {
-        $this->username = $username;
-        $this->password = $password;
-        $this->password_confirm = $password_confirm;
-
-        $conn = new Connector();
-
-        if ($username != null && $password != null) {
-            if ($password == $password_confirm) {
-                $req = "INSERT INTO users VALUES (id, '$username', '$password');";
-                $conn->mysqli->query($req, MYSQLI_USE_RESULT);
-
-                header("Location: add_account.php?account_created");
-            } else {
-                //Les deux mdp ne peuvent pas être identiques
-                header("Location: add_account.php?error=4");
-            }
-        } else {
-            //Les champs ne peuvent pas être vides
-            header("Location: add_account.php?error=2");
-        }
-    }
-
-    function create_project($project_name, $project_link, $project_desc, $project_date): void
-    {
-        $this->name = $project_name;
-        $this->link = $project_link;
-        $this->desc = $project_desc;
-        $this->date = $project_date;
-
-        $conn = new Connector();
-        $req = "INSERT INTO projects (name, link, description, date) VALUES ('$project_name', '$project_link', '$project_desc', '$project_date');";
-
-        $conn->mysqli->query($req, MYSQLI_USE_RESULT);
-
-        header("Location: add_project.php?project_created");
-    }
-
     function create_actu($actu_name, $actu_desc, $actu_date): void
     {
         $this->actu_name = $actu_name;

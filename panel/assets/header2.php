@@ -3,7 +3,6 @@ $page = basename($_SERVER["PHP_SELF"]);
 session_start();
 ?>
     </head>
-    <body>
     <div class="navbar-content">
         <nav id="navbar">
             <ul class="navbar-list">
