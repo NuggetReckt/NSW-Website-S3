@@ -1,10 +1,63 @@
-            </main>
+</div>
+</main>
+<div class="footer-content">
+    <footer class="footer">
+        <ul class="footer-items" id="footer-l">
+            <li id="affilié" class="footer-item">
+                <span>Non affilié avec Mojang AB.</span>
+                <br>
+                <span>Site dev avec ❤ par NuggetReckt</span>
+            </li>
+            <br>
+            <li id="contact" class="footer-item">
+                <span>Nous contacter : </span>
+                <a href="mailto:contact@noskillworld.fr">contact@noskillworld.fr</a>
+            </li>
+        </ul>
+        <ul class="footer-items" id="footer-r">
+            <li id="twitter-footer" class="footer-item">
+                <a href="https://twitter.com/NoSkillWorld" target="_blank">
+                    <img src="<?="/assets/images/twitter.svg"?>" alt="twitter" id="logo-f">
+                </a>
+            </li>
+            <li id="discord-footer" class="footer-item">
+                <a href="https://discord.gg/cE4eHEZWrD" target="_blank">
+                    <img src="<?="/assets/images/discord.svg"?>" alt="discord" id="logo-f">
+                </a
+            </li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <div class="sub-footer">
+            <span>Copyright © NoSKillWorld 2020 - 2022</span>
         </div>
-        <div class="footer-content">
-            <footer>
-                <span>Copyright © No&Co 2022 - v0.2 bêta</span><br>
-                <span>Développé avec ❤ par Corto Morrow</span>
-            </footer>
-        </div>
-    </body>
+    </footer>
+</div>
+<button onclick="topFunction()" id="to-top" title="Haut de page"></button>
+<script>
+    let toTopButton = document.getElementById("to-top");
+
+    window.onscroll = function () {
+        onScroll();
+    };
+
+    function onScroll() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            toTopButton.style.display = "block";
+        } else {
+            toTopButton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
+</body>
 </html>

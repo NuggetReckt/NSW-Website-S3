@@ -6,12 +6,12 @@
                     <li id="affilié" class="footer-item">
                         <span>Non affilié avec Mojang AB.</span>
                         <br>
-                        <span>Site créé avec ❤ par NuggetReckt</span>
+                        <span>Site dev avec ❤ par NuggetReckt</span>
                     </li>
                     <br>
                     <li id="contact" class="footer-item">
                         <span>Nous contacter : </span>
-                        <span class="bold">contact@noskillworld.fr</span>
+                        <a href="mailto:contact@noskillworld.fr">contact@noskillworld.fr</a>
                     </li>
                 </ul>
                 <ul class="footer-items" id="footer-r">

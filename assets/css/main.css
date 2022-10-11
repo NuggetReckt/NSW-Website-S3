@@ -468,7 +468,7 @@ Pop-up style
     font-size: 16px;
     width: 500px;
     padding: 14px;
-    margin: 0 auto;
+    margin: 10px auto;
     border-radius: 5px;
 }
 
@@ -497,7 +497,7 @@ Form style
 }
 
 fieldset {
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 10px;
     margin: 0;
     padding: 10px;
@@ -516,11 +516,11 @@ label {
 
 label, input[type="submit"] {
     font-family: police_custom, sans-serif;
-    color: white;
+    color: black;
 }
 
 input[type="text"], input[type="password"], input[type="submit"] {
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;

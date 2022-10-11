@@ -13,7 +13,7 @@ class PanelPager
 
     function setTitle(): void
     {
-        echo "<title>", $this->title, " - No&Co (Admin)</title>";
+        echo "<title>", $this->title, " - NoSkillWorld (Admin)</title>";
     }
 
     function setHeader(): void
