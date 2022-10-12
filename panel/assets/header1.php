@@ -18,7 +18,7 @@
     <meta property="og:image:height" content="150">
     <meta property="og:image:alt" content="logo NoSkillWorld">
     <meta property="og:site_name" content="play.noskillworld.fr">
-    <meta property="og:title" content="Site - NoSkillWorld">
+    <meta property="og:title" content="Panel - NoSkillWorld">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://play.noskillworld.fr">
     <meta property="og:description"
