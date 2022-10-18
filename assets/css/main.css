@@ -64,7 +64,7 @@ p {
     float: left;
 }
 
-.navbar-item a {
+.navbar-item-a {
     display: block;
     padding: 22px 10px;
     text-decoration: none;
@@ -72,9 +72,10 @@ p {
     transition: 500ms;
     text-transform: uppercase;
     font-family: police_custom_2_heavy, sans-serif, sans-serif;
+    color: white;
 }
 
-.navbar-item a:hover {
+.navbar-item-a:hover {
     color: #2C70BA;
     transition: 500ms;
 }

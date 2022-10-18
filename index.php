@@ -34,7 +34,7 @@ $pager->setHeader();
                         <div class="flex-container" id="flex-container-l">
                             <div id="pres">
                                 <h2 style="margin-top: 0">Presentation</h2>
-                                <p>Bienvenue sur NoSkillWorld Saison 2.5 ! </p>
+                                <p>Bienvenue sur NoSkillWorld Saison 3 ! </p>
                                 <p>Rejoins-nous avec tes amis ou solo pour vivre d'inoubliables aventures RP.
                                     Pourquoi RP ? Les joueurs peuvent communiquer entre eux directement dans le jeu via Mumble.
                                     De
@@ -43,7 +43,7 @@ $pager->setHeader();
                                     rend le minage plus fun ! Des events
                                     fréquents ainsi qu'un serveur Hardcore pimenteront ton aventure mélangeant adrénaline et
                                     satisfaction !
-                                    Rejoins <span style="color: #2C70BA; font-weight: bold;">play.noskillworld.fr</span> pour
+                                    Rejoins <span class="bold">play.noskillworld.fr</span> pour
                                     vivre de formidables aventures !</p>
                                 <p style="margin-bottom: 0">Bon jeu sur NoSkillWorld !</p>
                             </div>
