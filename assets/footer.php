@@ -88,7 +88,7 @@
                         alert('IP copiée avec succès ! Bon jeu sur NoSkillWorld !');
                     }
                 } catch (err) {
-                    // Une erreur est surevnue lors de la copie
+                    // Une erreur est survenue lors de la copie
                     alert(err);
                 }
 
@@ -104,16 +104,10 @@
         <button onclick="topFunction()" id="to-top" title="Haut de page"></button>
         <script>
             let toTopButton = document.getElementById("to-top");
-            let navBarItem = document.getElementsByClassName("navbar-item");
-            let navBarItemA = document.getElementsByClassName("navbar-item-a");
 
             window.onscroll = function () {
                 onScroll();
             };
-
-            window.onload = function () {
-                onMobile();
-            }
 
             function onScroll() {
                 if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
@@ -126,12 +120,6 @@
             function topFunction() {
                 document.body.scrollTop = 0; // For Safari
                 document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-            }
-
-            function onMobile() {
-                if (document.body.clientWidth <= 700) {
-
-                }
             }
         </script>
     </body>
