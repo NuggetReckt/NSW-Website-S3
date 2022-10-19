@@ -7,7 +7,8 @@ session_start();
         <nav id="navbar">
             <ul class="navbar-list">
                 <li class="navbar-item">
-                    <a href="<?="index.php"?>" class="<?php
+                    <a href="<?="index.php"?>" class="navbar-item-a
+                    <?php
                     if ($page == "index.php") {
                         echo "active";
                     } else {
@@ -16,7 +17,8 @@ session_start();
                     ?>">Menu</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="<?="add_actu.php"?>" class="<?php
+                    <a href="<?="add_actu.php"?>" class="navbar-item-a
+                    <?php
                     if ($page == "add_actu.php") {
                         echo "active";
                     } else {
@@ -28,10 +30,10 @@ session_start();
                 echo "                <li class='navbar-item' id='nav-right'>\n";
                 if (isset($_SESSION['admin'])) {
                     if ($_SESSION['admin'] != null) {
-                        echo "                    <a href='login.php?disconnected' class='not-active'>Se deconnecter</a>\n";
+                        echo "                    <a href='login.php?disconnected' class='navbar-item-a not-active'>Se deconnecter</a>\n";
                     }
                 } else {
-                    echo "                    <a href='login.php' class='";
+                    echo "                    <a href='login.php' class='navbar-item-a ";
                     if ($page == "login.php") {
                         echo "active";
                     } else {
