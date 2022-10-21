@@ -108,18 +108,19 @@ p {
 
 .footer-items {
     padding: 0;
+    margin: 0;
 }
 
 #footer-l {
-    margin-left: 88px;
     float: left;
+    margin-left: 100px;
 }
 
 #footer-r {
-    margin-right: 88px;
     float: right;
     display: flex;
     flex-wrap: wrap;
+    margin-right: 100px;
 }
 
 #twitter-footer {
@@ -128,7 +129,7 @@ p {
 
 hr {
     color: white;
-    margin: 20px 88px;
+    margin: 20px 100px;
 }
 
 .sub-footer {
@@ -262,14 +263,20 @@ figcaption {
     background: url(../images/copy.svg) no-repeat 5px 2px;
 }
 
+.top-title-content {
+    text-align: center;
+    text-transform: uppercase;
+    height: 100%;
+    padding-top: 100px;
+}
+
 #top-title-index {
     height: 450px;
     background-size: cover;
-    text-align: center;
-    text-transform: uppercase;
     border-radius: 0 0 7px 7px;
     background: #492337 url(../images/background.png) center fixed no-repeat;
     background-position-y: -250px;
+    margin: 0;
 }
 
 #top-title-index h2 {
@@ -291,13 +298,8 @@ figcaption {
     margin: 0;
 }
 
-#logo {
-    margin-top: 5px;
-}
-
 #title-logo {
-    margin: 90px auto 0;
-    width: 13%;
+    width: 150px;
 }
 
 .flex-container {

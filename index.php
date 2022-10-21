@@ -8,9 +8,11 @@ $pager->setHeader();
 ?>
             <div class="top-content" id="top-content-index">
                 <div class="top-title" id="top-title-index">
-                    <img alt="logo" src="assets/images/logo_nsw.png" id="title-logo">
-                    <h2 id="logo">NoSKillWorld</h2>
-                    <h3>Serveur Minecraft Semi-RP</h3>
+                    <div class="top-title-content">
+                        <img alt="logo" src="assets/images/logo_nsw.png" id="title-logo">
+                        <h2 id="logo">NoSKillWorld</h2>
+                        <h3>Serveur Minecraft Semi-RP</h3>
+                    </div>
                 </div>
             </div>
             <div class="wrapper">

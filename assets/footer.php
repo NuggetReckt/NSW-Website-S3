@@ -30,14 +30,14 @@
                 <br>
                 <br>
                 <br>
-                <br>
-                <br>
                 <hr>
                 <div class="sub-footer">
                     <span>Copyright © NoSKillWorld 2020 - 2022</span>
                 </div>
             </footer>
         </div>
+        <button onclick="topFunction()" id="to-top" title="Haut de page"></button>
+
         <script type="text/javascript"
                 src="https://www.serveurs-minecraft.org/api/players_count.php?id=60934&format=jsonp"></script>
         <script type="text/javascript"
@@ -46,8 +46,9 @@
                 src="https://www.serveurs-minecraft.org/api/is_online.php?id=60934&format=jsonp"></script>
         <script type="text/javascript">
             window.onload = function () {
-                var players = document.getElementById("players_count");
-                var slots = document.getElementById("slots_count");
+                let players = document.getElementById("players_count");
+                let slots = document.getElementById("slots_count");
+                let elt = document.getElementById("is_online");
                 if (serveurs_minecraft_org_players_count >= 0 && serveurs_minecraft_org_slots_count >= 0) {
                     players.innerHTML = serveurs_minecraft_org_players_count;
                     slots.innerHTML = serveurs_minecraft_org_slots_count;
@@ -55,7 +56,6 @@
                     players.innerHTML = '?';
                     slots.innerHTML = '?';
                 }
-                var elt = document.getElementById("is_online");
                 if (serveurs_minecraft_org_is_online === true)
                     elt.innerHTML = "Serveur en ligne :)";
                 else if (serveurs_minecraft_org_is_online === false)
@@ -64,63 +64,8 @@
                     elt.innerHTML = "Erreur 💩";
             }
         </script>
-        <script>
-            var btncopy = document.querySelector('.js-copy');
-
-            if (btncopy) {
-                btncopy.addEventListener('click', docopy);
-            }
-
-            function docopy() {
-                var range = document.createRange();
-                var target = this.dataset.target;
-                var fromElement = document.querySelector(target);
-                var selection = window.getSelection();
-
-                range.selectNode(fromElement);
-                selection.removeAllRanges();
-                selection.addRange(range);
-
-                try {
-                    var result = document.execCommand('copy');
-                    if (result) {
-                        // La copie a réussi
-                        alert('IP copiée avec succès ! Bon jeu sur NoSkillWorld !');
-                    }
-                } catch (err) {
-                    // Une erreur est survenue lors de la copie
-                    alert(err);
-                }
-
-                selection = window.getSelection();
-
-                if (typeof selection.removeRange === 'function') {
-                    selection.removeRange(range);
-                } else if (typeof selection.removeAllRanges === 'function') {
-                    selection.removeAllRanges();
-                }
-            }
-        </script>
-        <button onclick="topFunction()" id="to-top" title="Haut de page"></button>
-        <script>
-            let toTopButton = document.getElementById("to-top");
-
-            window.onscroll = function () {
-                onScroll();
-            };
-
-            function onScroll() {
-                if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
-                    toTopButton.style.display = "block";
-                } else {
-                    toTopButton.style.display = "none";
-                }
-            }
-
-            function topFunction() {
-                document.body.scrollTop = 0; // For Safari
-                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-            }
-        </script>
+        <script src="<?="assets/js/copy.js"?>"></script>
+        <script src="<?="assets/js/top.js"?>"></script>
+        <script src="<?="assets/js/responsive.js"?>"></script>
     </body>
 </html>

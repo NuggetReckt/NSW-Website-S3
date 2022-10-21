@@ -32,4 +32,4 @@
               content="Site internet du serveur Minecraft NoSkillWorld. Rejoins le serveur avec tes amis ou solo pour vivre de formidables aventures !">
 
         <link rel="stylesheet" href="<?="assets/css/main.css"?>">
-        <link rel="stylesheet" href="<?="assets/css/mobile.css"?>">
+        <link rel="stylesheet" href="<?="assets/css/responsive.css"?>">

@@ -1,0 +1,42 @@
+@media (max-width: 1100px) {
+    main, .navbar-list {
+        margin: 0 10px;
+    }
+
+    .navbar-item-a {
+        padding: 10px 5px;
+    }
+
+    .main-top-col {
+        color: white;
+        font-family: police_custom_bold sans-serif;
+        width: 26%;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #flex-container-r {
+        float: none;
+        width: 97%;
+    }
+
+    #flex-container-l {
+        float: none;
+        max-width: 97%;
+    }
+
+    #footer-l {
+        margin-left: 10px;
+    }
+
+    #footer-r {
+        margin-right: 10px;
+    }
+
+    hr {
+        margin: 20px 10px;
+    }
+}
