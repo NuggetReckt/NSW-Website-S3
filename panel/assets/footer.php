@@ -8,7 +8,6 @@
                 <br>
                 <span>Site dev avec ❤ par NuggetReckt</span>
             </li>
-            <br>
             <li id="contact" class="footer-item">
                 <span>Nous contacter : </span>
                 <a href="mailto:contact@noskillworld.fr">contact@noskillworld.fr</a>
@@ -17,17 +16,15 @@
         <ul class="footer-items" id="footer-r">
             <li id="twitter-footer" class="footer-item">
                 <a href="https://twitter.com/NoSkillWorld" target="_blank">
-                    <img src="<?="/assets/images/twitter.svg"?>" alt="twitter" id="logo-f">
+                    <img src="<?="../assets/images/twitter.svg"?>" alt="twitter" id="logo-f">
                 </a>
             </li>
             <li id="discord-footer" class="footer-item">
                 <a href="https://discord.gg/cE4eHEZWrD" target="_blank">
-                    <img src="<?="/assets/images/discord.svg"?>" alt="discord" id="logo-f">
+                    <img src="<?="../assets/images/discord.svg"?>" alt="discord" id="logo-f">
                 </a
             </li>
         </ul>
-        <br>
-        <br>
         <br>
         <br>
         <br>
@@ -39,25 +36,9 @@
     </footer>
 </div>
 <button onclick="topFunction()" id="to-top" title="Haut de page"></button>
-<script>
-    let toTopButton = document.getElementById("to-top");
 
-    window.onscroll = function () {
-        onScroll();
-    };
-
-    function onScroll() {
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-            toTopButton.style.display = "block";
-        } else {
-            toTopButton.style.display = "none";
-        }
-    }
-
-    function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
-</script>
+<script src="<?="../assets/js/copy.js"?>"></script>
+<script src="<?="../assets/js/top.js"?>"></script>
+<script src="<?="../assets/js/responsive.js"?>"></script>
 </body>
 </html>

@@ -6,6 +6,7 @@
         <meta name="author" content="NuggetReckt">
         <meta name="keywords"
               content="serv, mc, minecraft, Minecraft, aventure, java, 1.18, 1.18.2, fr, FR, français, french, génération custom, serveur, premium, survie, créatif, crea, NoSkillWorld, NuggetReckt, Herbyvor, nsw, Semi-RP, events, hardcore">
+        <meta name="description" content="Site internet du serveur Minecraft NoSkillWorld. Rejoins le serveur avec tes amis ou solo pour vivre de formidables aventures !">
         <link rel="apple-touch-icon" sizes="180x180" href="<?="assets/images/apple-touch-icon.png"?>">
         <link rel="icon" type="image/png" sizes="32x32" href="<?="assets/images/favicon-32x32.png"?>">
         <link rel="icon" type="image/png" sizes="16x16" href="<?="assets/images/favicon-16x16.png"?>">

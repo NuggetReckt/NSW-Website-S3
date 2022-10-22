@@ -137,6 +137,10 @@ hr {
     align-items: center;
 }
 
+#contact {
+    margin-top: 8px;
+}
+
 #to-top {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -171,19 +175,57 @@ Actus style
 
 .actus-content {
     margin: 0 auto;
+    overflow-y: scroll;
+    height: 250px;
     width: 100%;
+    box-shadow: 0 0 10px 1px rgb(0 0 0 / 20%);
+    background-color: #ebebeb;
+}
+
+.actu-title-content {
+    margin: 0;
+    border-radius: 7px 7px 0 0;
+    background: #492337 url(../images/background.png) center no-repeat;
+    background-position-x: -400px;
+    background-position-y: -200px;
+    width: 100%;
+    padding: 18px 0;
+    color: white;
+    text-align: center;
+    line-height: 0.8;
 }
 
 .actu-item {
-    background: #2C70BA;
+    margin: 10px;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 20%);
+    background-color: #ebebeb;
+}
+
+.actu-title {
+    font-size: 35px;
+}
+
+.actu-date {
+    font-size: 11px;
 }
 
 .actu-desc {
-
+    margin: 0;
+    padding: 5px;
 }
 
-.actu-title, .actu-desc {
-    margin-bottom: 5px;
+.actu-date, .actu-title {
+    margin: 0;
+    padding: 0;
+}
+
+.actus-content::-webkit-scrollbar-track, .actus-content::-webkit-scrollbar-thumb, .actu-item, .actus-content {
+    border-radius: 7px !important;
+}
+
+
+.actus-content::-webkit-scrollbar-track {
+    background-color: #ebebeb;
 }
 
 /*-----------------------------------------
@@ -234,7 +276,7 @@ Pages specific style
     align-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 figcaption {
@@ -317,7 +359,7 @@ figcaption {
     max-width: 65%;
 }
 
-#yt-player, #twitter, #nsw-discord {
+#youtube-iframe, #twitter-iframe, #discord-iframe {
     border-radius: 7px;
     width: 100%;
     max-width: 800px;
@@ -330,11 +372,11 @@ figcaption {
     margin-top: 0;
 }
 
-#discord-iframe {
+#discord-iframe-content {
     margin-bottom: 10px;
 }
 
-.discord-widget-footer {
+.discord-iframe-footer-content {
     margin: 0;
     padding-top: 3px;
     background-color: #5865F2;
@@ -344,10 +386,11 @@ figcaption {
     text-align: center;
     box-shadow: 0 0 1px 1px rgb(255 255 255 / 32%) inset;
     height: 25px;
-    min-width: max-content;
+    width: 100%;
+    max-width: 800px;
 }
 
-#discord-footer {
+.discord-iframe-footer-content a {
     font-family: police_custom_bold sans-serif;
     font-size: 16px;
     text-decoration: none;
@@ -442,21 +485,20 @@ figcaption {
 }
 
 #votes-content {
-    height: 62vh;
+    height: 67vh;
 }
 
 #soon-content {
-    margin: 30vh 0;
+    margin: 32vh 0;
 }
 
 #votes-links {
-    margin-right: 250px;
-    margin-left: 250px;
-    width: auto;
+    margin: 0 auto;
+    width: fit-content;
     text-align: center;
 }
 
-#h3-vote {
+#h2-vote {
     padding-top: 5px;
     margin-top: 0;
     margin-bottom: 0;
@@ -493,9 +535,15 @@ Form style
     border: none;
 }
 
+textarea:focus-visible {
+    outline: #2C70BA solid 3px;
+    outline-offset: -1px;
+    border: 1px solid black;
+}
+
 .form {
     width: 400px;
-    margin: 9vh auto;
+    margin: 12vh auto;
 }
 
 fieldset {
@@ -521,7 +569,7 @@ label, input[type="submit"] {
     color: black;
 }
 
-input[type="text"], input[type="password"], input[type="submit"], input[type="date"] {
+input[type="text"], input[type="password"], input[type="submit"], textarea {
     border: 1px solid black;
     border-radius: 5px;
     padding: 10px;
@@ -530,6 +578,10 @@ input[type="text"], input[type="password"], input[type="submit"], input[type="da
     background-color: white;
     font-family: police_custom, sans-serif;
     font-size: 13px;
+}
+
+textarea {
+    resize: none;
 }
 
 .form-content {

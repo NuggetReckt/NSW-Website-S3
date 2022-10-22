@@ -8,7 +8,6 @@
                         <br>
                         <span>Site dev avec ❤ par NuggetReckt</span>
                     </li>
-                    <br>
                     <li id="contact" class="footer-item">
                         <span>Nous contacter : </span>
                         <a href="mailto:contact@noskillworld.fr">contact@noskillworld.fr</a>

@@ -14,7 +14,7 @@ class Request
 
     function get_actus(): void
     {
-        $req = "SELECT * FROM actus ORDER BY date DESC;";
+        $req = "SELECT * FROM actus_nsw ORDER BY date DESC;";
 
         $conn = new Connector();
         $mysqli = $conn->mysqli;
@@ -28,11 +28,18 @@ class Request
 
             echo "\n";
             echo "                <div class='actu-item'>\n";
-            echo "                    <h2 class='actu-title'>$name</h2>\n";
+            echo "                    <div class='actu-title-content'>\n";
+            echo "                        <h2 class='actu-title'>$name</h2>\n";
+            echo "                        <span class='actu-date'>Le $date</span>\n";
+            echo "                    </div>\n";
             echo "                    <p class='actu-desc'>$desc</p>\n";
-            echo "                    <span class='actu-date'>$date</span>\n";
             echo "                </div>";
             echo "\n";
+        }
+        if ($result->num_rows == 0) {
+            echo "                <div class='actu-item'>\n";
+            echo "                    <h2 class='actu-title'>Aucun Résultat...</h2>\n";
+            echo "                </div>";
         }
     }
 }

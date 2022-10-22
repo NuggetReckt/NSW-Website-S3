@@ -7,13 +7,12 @@ $pager->setHeader();
 
 $request = new PanelRequest();
 
-if (isset($_POST["actu-name"]) && isset($_POST["actu-desc"]) && isset($_POST["actu-date"])) {
+if (isset($_POST["actu-name"]) && isset($_POST["actu-desc"])) {
 
     $actu_name = $_POST["actu-name"];
     $actu_desc = $_POST["actu-desc"];
-    $actu_date = $_POST["actu-date"];
 
-    $request->create_actu($actu_name, $actu_desc, $actu_date);
+    $request->create_actu($actu_name, $actu_desc);
 }
 
 if ($_SESSION['admin'] == null) {
@@ -47,16 +46,12 @@ if (isset($_GET['error'])) {
                         <div class="form-content">
                             <h1>Créer une actu</h1>
                             <label>Titre de l'actu<br>
-                                <input type="text" name="actu-name" class="input" placeholder="Titre de l'actualité" required="">
+                                <input type="text" name="actu-name" class="input" placeholder="Titre de l'actualité"
+                                       required="">
                             </label>
                             <br>
                             <label>Actu<br>
-                                <input type="text" name="actu-desc" class="input"
-                                       placeholder="Votre actu" required="">
-                            </label>
-                            <br>
-                            <label>Date<br>
-                                <input type="date" name="actu-date" class="input" required="">
+                                <textarea name="actu-desc" rows="6" required="" placeholder="Votre actu"></textarea>
                             </label>
                             <br>
                             <input type="submit" value="Créer l'actu">

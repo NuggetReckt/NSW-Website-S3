@@ -11,6 +11,7 @@
  * @property string $actu_name
  * @property string $actu_desc
  * @property string $actu_date
+ * @property string $actu_img_url
  */
 
 class PanelRequest
@@ -77,15 +78,16 @@ class PanelRequest
         unset($user_password);
     }
 
-    function create_actu($actu_name, $actu_desc, $actu_date): void
+    function create_actu($actu_name, $actu_desc): void
     {
         $this->actu_name = $actu_name;
         $this->actu_desc = $actu_desc;
-        $this->actu_date = $actu_date;
+
+        date_default_timezone_set('UTC+2');
+        $actu_date = date('d/m/Y');
 
         $conn = new Connector();
-        $req = "INSERT INTO actus (name, description, date) VALUES ('$actu_name', '$actu_desc', '$actu_date');";
-
+        $req = "INSERT INTO actus_nsw (name, description, date) VALUES ('$actu_name', '$actu_desc', '$actu_date');";
         $conn->mysqli->query($req, MYSQLI_USE_RESULT);
 
         header("Location: add_actu.php?actu_created");

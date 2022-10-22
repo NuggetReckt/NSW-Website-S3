@@ -35,7 +35,7 @@ $pager->setHeader();
                     <div class="row" id="row-mid">
                         <div class="flex-container" id="flex-container-l">
                             <div id="pres">
-                                <h2 style="margin-top: 0">Presentation</h2>
+                                <h2 style="margin-top: 0">Présentation</h2>
                                 <p>Bienvenue sur NoSkillWorld Saison 3 ! </p>
                                 <p>Rejoins-nous avec tes amis ou solo pour vivre d'inoubliables aventures RP.
                                     Pourquoi RP ? Les joueurs peuvent communiquer entre eux directement dans le jeu via Mumble.
@@ -49,26 +49,25 @@ $pager->setHeader();
                                     vivre de formidables aventures !</p>
                                 <p style="margin-bottom: 0">Bon jeu sur NoSkillWorld !</p>
                             </div>
-                            <h2>Actualites</h2>
+                            <h2>Actualités</h2>
                             <div class="actus-content">
                                 <?php $req->get_actus();?>
                             </div>
-                            <h2>Trailer Du serveur</h2>
-                            <div id="yt-iframe">
-                                <iframe id="yt-player" width="800" height="500" src="https://www.youtube.com/embed/jla-JXKSH_Y"
-                                        title="YouTube video player"
+                            <h2>Trailer du serveur</h2>
+                            <div id="youtube-iframe">
+                                <iframe title="youtube-iframe" id="youtube-iframe" width="800" height="500" src="https://www.youtube.com/embed/jla-JXKSH_Y"
                                         allowfullscreen></iframe>
                             </div>
                         </div>
                         <div class="flex-container" id="flex-container-r">
-                            <div id="discord-iframe">
+                            <div id="discord-iframe-content">
                                 <h2 id="h2-discord">Notre Discord</h2>
-                                <iframe id="nsw-discord" src="https://discord.com/widget?id=700249004721700955&theme=light"
-                                        width="800" height="500" allowtransparency="true" frameborder="none"
+                                <iframe title="discord-iframe" id="discord-iframe" src="https://discord.com/widget?id=700249004721700955&theme=light"
+                                        width="800" height="500" allowtransparency="true"
                                         sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
                                 </iframe>
-                                <div class="discord-widget-footer">
-                                    <a id="discord-footer" href="https://discord.gg/cE4eHEZWrD"
+                                <div class="discord-iframe-footer-content">
+                                    <a href="https://discord.gg/cE4eHEZWrD"
                                        target="_blank"><span>Rejoins nous !</span></a>
                                 </div>
                             </div>
