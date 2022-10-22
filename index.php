@@ -20,7 +20,7 @@ $pager->setHeader();
                     <div class="row" id="row-up">
                         <div class="main-top-col-l main-top-col">
                             <span id="tocopy">play.noskillworld.fr</span>
-                            <input type="button" value="        " class="js-copy" data-target="#tocopy">
+                            <input type="button" value="         " class="js-copy" data-target="#tocopy">
                             <figcaption>
                                 <span>Clique pour copier l'ip !</span>
                             </figcaption>
@@ -35,7 +35,7 @@ $pager->setHeader();
                     <div class="row" id="row-mid">
                         <div class="flex-container" id="flex-container-l">
                             <div id="pres">
-                                <h2 style="margin-top: 0">Présentation</h2>
+                                <h2>Présentation</h2>
                                 <p>Bienvenue sur NoSkillWorld Saison 3 ! </p>
                                 <p>Rejoins-nous avec tes amis ou solo pour vivre d'inoubliables aventures RP.
                                     Pourquoi RP ? Les joueurs peuvent communiquer entre eux directement dans le jeu via Mumble.

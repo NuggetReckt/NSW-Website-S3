@@ -28,7 +28,7 @@ span, p, a, h1, h2, h3 {
 }
 
 h1, h2, h3 {
-    margin: 0 0 10px;
+    margin: 10px 0;
 }
 
 p {
@@ -182,7 +182,7 @@ Actus style
     background-color: #ebebeb;
 }
 
-.actu-title-content {
+.actu-title-content, .actu-noresult {
     margin: 0;
     border-radius: 7px 7px 0 0;
     background: #492337 url(../images/background.png) center no-repeat;
@@ -276,7 +276,6 @@ Pages specific style
     align-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 10px;
 }
 
 figcaption {
@@ -369,11 +368,6 @@ figcaption {
 
 #h2-discord, #h2-twitter {
     text-align: center;
-    margin-top: 0;
-}
-
-#discord-iframe-content {
-    margin-bottom: 10px;
 }
 
 .discord-iframe-footer-content {

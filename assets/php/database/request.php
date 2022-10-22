@@ -38,7 +38,9 @@ class Request
         }
         if ($result->num_rows == 0) {
             echo "                <div class='actu-item'>\n";
-            echo "                    <h2 class='actu-title'>Aucun Résultat...</h2>\n";
+            echo "                    <div class='actu-noresult'>\n";
+            echo "                        <h2>Aucun Résultat...</h2>\n";
+            echo "                    </div>\n";
             echo "                </div>";
         }
     }

@@ -15,7 +15,6 @@
 
     .flex-container {
         flex-direction: column;
-        margin: auto;
     }
 
     #flex-container-r {
@@ -25,7 +24,7 @@
 
     #flex-container-l {
         float: none;
-        max-width: 97%;
+        max-width: 99%;
     }
 
     #footer-l {
@@ -39,4 +38,12 @@
     hr {
         margin: 20px 10px;
     }
+
+    #h2-discord, #h2-twitter {
+        text-align: left;
+    }
+}
+
+@media (max-width: 745px) {
+
 }
