@@ -14,7 +14,7 @@ class Request
 
     function get_actus(): void
     {
-        $req = "SELECT * FROM actus_nsw ORDER BY date DESC;";
+        $req = "SELECT * FROM actus_nsw ORDER BY id DESC;";
 
         $conn = new Connector();
         $mysqli = $conn->mysqli;
