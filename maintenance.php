@@ -37,7 +37,9 @@
 </head>
 <body>
 <div class="maintenance-content">
-    <img id="logo" src="assets/images/logo_nsw.png" alt="logo">
+    <a href="index.php">
+        <img id="logo" src="assets/images/logo_nsw.png" alt="logo">
+    </a>
     <h1>Site en maintenance</h1>
     <h2>Nous sommes bientôt de retour !</h2>
     <h3>Rendez-vous sur le discord pour plus d'informations</h3>

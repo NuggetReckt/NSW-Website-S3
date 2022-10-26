@@ -10,7 +10,7 @@ $page = basename($_SERVER["PHP_SELF"]);
         }
         ?>
         <div class="navbar-content">
-            <nav id="navbar">
+            <nav>
                 <ul class="navbar-list">
                     <li class="navbar-item">
                         <a href="<?="index.php"?>" class="navbar-item-a

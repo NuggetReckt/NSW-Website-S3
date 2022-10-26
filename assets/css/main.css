@@ -52,11 +52,11 @@ p {
     overflow: hidden;
 }
 
-#navbar, .footer-content {
+nav, .footer-content {
     background-color: #1a1a1a;
 }
 
-#navbar {
+#nav {
     box-shadow: -3px 1px 9px rgb(134, 134, 134), 3px 1px 9px rgb(134, 134, 134)
 }
 
@@ -157,16 +157,25 @@ hr {
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-    background: white;
+    display: none;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #2C70BA;
-    border-radius: 2px;
+    border-radius: 7px;
+}
+
+::-moz-selection {
+
+}
+
+::selection {
+    background-color: #2C70BA;
+    color: white;
 }
 
 /*-----------------------------------------
@@ -219,13 +228,8 @@ Actus style
     padding: 0;
 }
 
-.actus-content::-webkit-scrollbar-track, .actus-content::-webkit-scrollbar-thumb, .actu-item, .actus-content {
+.actu-item, .actus-content {
     border-radius: 7px !important;
-}
-
-
-.actus-content::-webkit-scrollbar-track {
-    background-color: #ebebeb;
 }
 
 /*-----------------------------------------
@@ -504,11 +508,15 @@ Pop-up style
 
 .pop-up-message {
     text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
     font-size: 16px;
     width: 500px;
     padding: 14px;
-    margin: 10px auto;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
 #pop-up-success {

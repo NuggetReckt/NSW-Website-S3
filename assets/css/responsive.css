@@ -1,8 +1,4 @@
 @media (max-width: 1100px) {
-    main, .navbar-list {
-        margin: 0 10px;
-    }
-
     .navbar-item-a {
         padding: 22px 5px;
     }
@@ -44,6 +40,33 @@
     }
 }
 
-@media (max-width: 745px) {
+@media (max-width: 925px) {
+    main, .navbar-list {
+        margin: 0 10px;
+    }
+}
 
+@media (max-width: 745px) {
+    .navbar-list {
+        position: fixed;
+        inset: 0 0 0 45%;
+        display: flex;
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2em;
+        margin: 0;
+        box-shadow: none;
+        background: hsl(0 0% 0% / 0.1);
+        backdrop-filter: blur(1rem);
+        z-index: 1;
+    }
+
+    .navbar-item-a {
+        float: none;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    #nav-right {
+        float: none;
+    }
 }

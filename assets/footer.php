@@ -6,7 +6,7 @@
                     <li id="affilié" class="footer-item">
                         <span>Non affilié avec Mojang AB.</span>
                         <br>
-                        <span>Site dev avec ❤ par NuggetReckt</span>
+                        <span>Site dev avec</span><span style="color: #ce0000"> ❤ </span><span>par NuggetReckt</span>
                     </li>
                     <li id="contact" class="footer-item">
                         <span>Nous contacter : </span>
