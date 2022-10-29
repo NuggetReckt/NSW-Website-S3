@@ -409,6 +409,8 @@ figcaption {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     list-style: none;
+    margin: 0 0 20px 0;
+    padding: 10px 0;
 }
 
 .user-box .name {
@@ -437,6 +439,7 @@ figcaption {
 
 .s-title {
     border-radius: 10px 10px 0 0;
+    margin: 10px 0 0 0;
     text-align: center;
 }
 
@@ -447,7 +450,7 @@ figcaption {
 
 #body-other {
     background: url(../images/background.png) no-repeat fixed 0 0;
-    background-size: 100%;
+    background-size: 150%;
 }
 
 .main-top-col-wiki {
@@ -476,10 +479,10 @@ figcaption {
     justify-content: space-between;
 }
 
-.docu, #votes-links {
+.docu-content, #votes-links {
     padding: 10px;
     border-radius: 5px;
-    background-color: #ffff;
+    background-color: #ebebeb;
 }
 
 #votes-content {
@@ -493,7 +496,7 @@ figcaption {
 #votes-links {
     margin: 0 auto;
     width: fit-content;
-    text-align: center;
+    text-align: left;
 }
 
 #h2-vote {
