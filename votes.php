@@ -28,7 +28,7 @@ $pager->setHeader();
                 <a target="_blank" href="https://serveur-prive.net/minecraft/noskillworld-9550/vote">Serveur-prive.net</a>
             </h2>
             <h2 id="h2-vote">Lien 6 :
-                <a target="_blank" href="https://www.serveursminecraft.org/serveur/5870/">serveursminecraft.org</a>
+                <a target="_blank" href="https://www.serveursminecraft.org/serveur/5870/">ServeursMinecraft.org</a>
             </h2>
             <h2 id="h2-vote">Lien 7 :
                 <a target="_blank" href="https://www.liste-serveurs-minecraft.org/?post_type=listing_type&p=203283">liste-serveurs-minecraft.org</a>

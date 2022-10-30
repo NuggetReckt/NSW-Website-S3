@@ -35,22 +35,17 @@ $pager->setHeader();
                         <h2 class="underline" id="Semi-RP">Semi-RP</h2>
                         <h2>Presentation :</h2>
                         <p class="bold">1 - Le but du serveur</p>
-                        <p>Le but du serveur survie est très simple, survivre dans un monde hostile rempli de mobs et de
-                            joueurs.
-                            Fais toi un stuff, Construis ta base, crée ta ville, vend et échange avec les joueurs du serveur
-                            pour avancer.</p>
+                        <p>Le but du serveur Semi-RP est très simple, survivre dans un monde hostile rempli de mobs et de joueurs.
+                            Fais-toi un stuff, Construis ta base, crée ta ville, vend et échange avec les joueurs du serveur pour avancer et rencontrer les pour faire d'immenses projets !</p>
                         <p class="bold">2 - Comment bien commencer</p>
-                        <p>Avant de bien commencer ton aventure en serveur Semi-RP, assures-toi d'avoir un bon stuff !</p>
-                        <p>Pour ce fait, rends-toi en FarmZone afin d'acquérir des ressources. La FarmZone est uniquement là
-                            pour le farm de ressources.
-                            Ne crée pas ta base en minage car il est reset tous les mois ! Un stuff en fer (ou mieux) est
-                            recommandé avant d'aller en serveur survie.
-                            Une fois que tu as ton stuff tout neuf, tu peux te rendre en serveur survie et commencer ton
-                            aventure !</p>
+                        <p>Avant de bien commencer ton aventure en serveur Semi-RP, assure-toi d'avoir un bon stuff ! N'oublie pas que le monde est hostile !</p>
+                        <p>Pour ce fait, rends-toi en FarmZone afin d'acquérir des ressources. La FarmZone est uniquement là pour le farm de ressources.
+                            N'y crée donc pas ta base, car ce serveur est reset tous les mois !
+                            Un stuff en fer (ou mieux) est recommandé avant d'aller en serveur survie. Une fois que tu as ton stuff tout neuf,
+                            tu peux te rendre en serveur survie et commencer ton aventure !</p>
                         <p class="bold">3 - Aller plus loin</p>
-                        <p>Avant de créer ta base en semi-rp, tu peux travailler ton design en serveur Créatif.
-                            Cela te permettra de tester des designs et ainsi voir de quels items tu auras besoin pour construire
-                            ta base !</p>
+                        <p>Si tu le souhaites, avant de créer ta base en Semi-RP, tu peux travailler ton design sur le serveur Créatif.
+                            Cela te permettra de tester des designs et ainsi voir de quels items tu auras besoin pour construire la base qui te convient le mieux !</p>
                         <h2 class="st">Commandes utiles :</h2>
                         <span class="bold">/spawn</span><span> : Pour retourner au spawn</span><br>
                         <span class="bold">/tpa</span><span> : Envoie une demande de tp à un joueur pour vous téléporter à lui</span><br>
@@ -71,11 +66,11 @@ $pager->setHeader();
                         <h2 class="underline" id="HardCore">HardCore</h2>
                         <h2>Presentation :</h2>
                         <p class="bold">1 - Le but du serveur</p>
-                        <p>Survivez dans un monde hardcore en multijoueur le plus longtemps possible, et tentez d'être le
+                        <p>Survivez dans un monde hardcore en multijoueur le plus longtemps possible et tentez d'être le
                             dernier survivant !
                             Un défi au sommet de la difficulté, pour les joueurs a la recherche de sensations fortes !
                         <p class="bold">2 - Comment bien commencer</p>
-                        <p>Afin de bien commencer ton aventure en serveur HardCore, assures-toi de te faire un minimum de stuff
+                        <p>Afin de bien commencer ton aventure en serveur HardCore, assure-toi de te faire un minimum de stuff
                             pour être mieux préparé
                             pour la nuit avec ses nombreux monstres qui voudront ta peau !
                             En HardCore, la difficulté est maximale, donc être bien équipé t'aidera dans ton aventure !</p>
@@ -116,11 +111,11 @@ $pager->setHeader();
                         <span>Non, il ne l'est pas. Seulement les joueurs ayant Minecraft premium peuvent rejoindre le serveur.</span><br>
                         <span class="bold">- Le serveur est-il accessible aux versions bedrock ? (Win10, PE,...)</span><br>
                         <span>Non, il ne l'est pas. Seulement les joueurs avec un compte Minecraft Java édition peuvent rejoindre le serveur.</span><br>
-                        <span class="bold">- Le grief de bases, vol des ressources est-il autorise ?</span><br>
-                        <span>Non, le grief n'est pas autorisé et est même sanctionnable. Veuillez vous referer aux règles pour plus d'informations.</span><br>
+                        <span class="bold">- Le grief de bases, vol des ressources est-il autorisé ?</span><br>
+                        <span>Non, le grief n'est pas autorisé et est même sanctionnable. Veuillez vous référer aux règles pour plus d'informations.</span><br>
                         <span class="bold">- Je ne peux pas me connecter au serveur, comment faire ?</span><br>
-                        <span>Si vous ne pouvez pas vous connecter au serveur c'est que, soit vous avez rentré la mauvaise ip, soit le serveur est tout simplement down.
-                                        Rendez vous sur le </span><span
+                        <span>Si vous ne pouvez pas vous connecter au serveur, c'est que soit vous avez rentré la mauvaise ip, soit le serveur est tout simplement hors-ligne.
+                                        Rendez-vous sur le </span><span
                                 style="color: #2C70BA; font-weight: bold;">Discord</span> <span> plus d'informations.</span><br>
                         <span class="bold">- Comment me connecter au serveur ?</span><br>
                         <span>Dans le menu de base de Minecraft, sélectionnez "Multijoueur", puis cliquez sur "Nouveau Serveur". Ensuite, rentrez le nom que vous voulez,
