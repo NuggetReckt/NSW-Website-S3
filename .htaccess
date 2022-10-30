@@ -2,6 +2,7 @@ RewriteEngine on
 RewriteRule ^accueil$ index.php [NC]
 RewriteRule ^wiki$ wiki.php [NC]
 RewriteRule ^cgu-cgv$ cgu-cgv.php [NC]
+RewriteRule ^regles$ cgu-cgv.php [NC]
 RewriteRule ^equipe$ staff.php [NC]
 RewriteRule ^votes$ votes.php [NC]
 RewriteRule ^soon$ soon.php [NC]

@@ -6,6 +6,7 @@
  * @property string $server
  * @property int $port
  */
+
 class Connector
 {
     public mysqli $mysqli;
