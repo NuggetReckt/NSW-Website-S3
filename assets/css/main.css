@@ -212,9 +212,10 @@ Actus style
 
 .actu-title {
     font-size: 35px;
+    padding-bottom: .3rem !important;
 }
 
-.actu-date {
+.actu-subtitle {
     font-size: 11px;
 }
 
@@ -223,7 +224,7 @@ Actus style
     padding: 5px;
 }
 
-.actu-date, .actu-title {
+.actu-subtitle, .actu-title {
     margin: 0;
     padding: 0;
 }
