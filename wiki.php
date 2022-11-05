@@ -18,13 +18,13 @@ $pager->setHeader();
                         <span><a href="#HardCore" class="bold" style="color: black;">HardCore</a></span>
                     </div>
                     <div class="main-top-col-wiki" id="top-creatif">
-                        <span><a href="#Creatif" class="bold" style="color: black;">Creatif</a></span>
+                        <span><a href="#Creatif" class="bold" style="color: black;">Créatif</a></span>
                     </div>
                     <div class="main-top-col-wiki" id="top-ctoutpt">
                         <span><a href="#ctoutpt" class="bold" style="color: black;">CTOUTPT.FR</a></span>
                     </div>
                     <div class="main-top-col-wiki" id="top-qr">
-                        <span><a href="#QR" class="bold" style="color: black;">Questions-Reponses</a></span>
+                        <span><a href="#QR" class="bold" style="color: black;">Questions-Réponses</a></span>
                     </div>
                 </div>
             </div>
@@ -33,18 +33,18 @@ $pager->setHeader();
                 <div class="docu-content">
                     <div class="docu">
                         <h2 class="underline" id="Semi-RP">Semi-RP</h2>
-                        <h2>Presentation :</h2>
-                        <p class="bold">1 - Le but du serveur</p>
+                        <h2>Présentation :</h2>
+                        <h3 class="bold">1 - Le but du serveur</h3>
                         <p>Le but du serveur Semi-RP est très simple, survivre dans un monde hostile rempli de mobs et de joueurs.
-                            Fais-toi un stuff, Construis ta base, crée ta ville, vend et échange avec les joueurs du serveur pour avancer et rencontrer les pour faire d'immenses projets !</p>
-                        <p class="bold">2 - Comment bien commencer</p>
-                        <p>Avant de bien commencer ton aventure en serveur Semi-RP, assure-toi d'avoir un bon stuff ! N'oublie pas que le monde est hostile !</p>
+                            Fais-toi un stuff, construis ta base, crée ta ville, vend et échange avec les joueurs du serveur pour avancer et les rencontrer pour faire d'immenses projets !</p>
+                        <h3 class="bold">2 - Comment bien commencer</h3>
+                        <p>Avant de bien commencer ton aventure en Semi-RP, assure-toi d'avoir un bon stuff ! N'oublie pas que le monde est hostile !</p>
                         <p>Pour ce fait, rends-toi en FarmZone afin d'acquérir des ressources. La FarmZone est uniquement là pour le farm de ressources.
                             N'y crée donc pas ta base, car ce serveur est reset tous les mois !
                             Un stuff en fer (ou mieux) est recommandé avant d'aller en serveur survie. Une fois que tu as ton stuff tout neuf,
                             tu peux te rendre en serveur survie et commencer ton aventure !</p>
-                        <p class="bold">3 - Aller plus loin</p>
-                        <p>Si tu le souhaites, avant de créer ta base en Semi-RP, tu peux travailler ton design sur le serveur Créatif.
+                        <h3 class="bold">3 - Aller plus loin</h3>
+                        <p>Si tu le souhaites, avant de créer ta base en Semi-RP, tu peux imaginer et travailler ton design sur le serveur Créatif.
                             Cela te permettra de tester des designs et ainsi voir de quels items tu auras besoin pour construire la base qui te convient le mieux !</p>
                         <h2 class="st">Commandes utiles :</h2>
                         <span class="bold">/spawn</span><span> : Pour retourner au spawn</span><br>
@@ -64,29 +64,30 @@ $pager->setHeader();
                 <div class="docu-content">
                     <div class="docu">
                         <h2 class="underline" id="HardCore">HardCore</h2>
-                        <h2>Presentation :</h2>
-                        <p class="bold">1 - Le but du serveur</p>
-                        <p>Survivez dans un monde hardcore en multijoueur le plus longtemps possible et tentez d'être le
+                        <h2>Présentation :</h2>
+                        <h3 class="bold">1 - Le but du serveur</h3>
+                        <p>Survis dans un monde hardcore en multijoueur le plus longtemps possible et tente d'être le
                             dernier survivant !
-                            Un défi au sommet de la difficulté, pour les joueurs a la recherche de sensations fortes !
-                        <p class="bold">2 - Comment bien commencer</p>
+                            Un défi au sommet de la difficulté, pour les joueurs à la recherche de sensations fortes !
+                        <h3 class="bold">2 - Comment bien commencer</h3>
                         <p>Afin de bien commencer ton aventure en serveur HardCore, assure-toi de te faire un minimum de stuff
-                            pour être mieux préparé
+                            pour être le mieux préparé possible
                             pour la nuit avec ses nombreux monstres qui voudront ta peau !
                             En HardCore, la difficulté est maximale, donc être bien équipé t'aidera dans ton aventure !</p>
                         <h2 class="st">Commandes utiles :</h2>
-                        <span class="bold">/info</span><span> : Pour voir les infos de l'épisode actuel</span><br>
+                        <span class="bold">/info</span><span> : Pour voir tout type d'informations (épisode en cours, events en cours, ...)</span><br>
+                        <span class="bold">/episode</span><span> : Pour connaître l'épisode actuel</span><br>
                     </div>
                 </div>
                 <br>
                 <div class="docu-content">
                     <div class="docu">
-                        <h2 class="underline" id="Creatif">Creatif</h2>
-                        <h2>Presentation :</h2>
-                        <p class="bold">Le but du serveur</p>
-                        <p>Le serveur créatif est un monde bac à sable où vous avez la possibilité de construire des projets
-                            que vous pouvez reproduire en serveur Semi-RP
-                            ou même build dans le seul but de la contruction. C'est vous l'architecte !</p>
+                        <h2 class="underline" id="Creatif">Créatif</h2>
+                        <h2>Présentation :</h2>
+                        <h3 class="bold">Le but du serveur</h3>
+                        <p>Le serveur créatif est un monde bac à sable où tu as la possibilité de faire des constructions
+                            que tu peux reproduire en serveur Semi-RP
+                            ou même build dans le seul but de la construction. C'est <span class="bold">toi</span> l'architecte !</p>
                         <h2 class="st">Commandes utiles :</h2>
                         <span class="bold">/spawn</span><span> : Pour retourner au spawn</span><br>
                     </div>
@@ -95,12 +96,12 @@ $pager->setHeader();
                 <div class="docu-content">
                     <div class="docu">
                         <h2 class="underline" id="ctoutpt">CTOUTPT.FR</h2>
-                        <h2>Presentation :</h2>
-                        <p class="bold">1 - Le but du serveur</p>
+                        <h2>Présentation :</h2>
+                        <h3 class="bold">1 - Le but du serveur</h3>
                         <p>Sur ce serveur, tout est permis ! Il n'y a aucune règle, vous êtes donc dans l'anarchie la plus
                             totale. Bienvenue en Anarchie !</p>
-                        <p class="bold">2 - Rejoindre le serveur</p>
-                        <span>Rejoignez le serveur depuis le lobby ou à l'aide de l'ip</span><span class="bold"> play.ctoutpt.fr</span>.<br>
+                        <h3 class="bold">2 - Rejoindre le serveur</h3>
+                        <span>Rejoins le serveur depuis le lobby ou à l'aide de l'ip</span><span class="bold"> play.ctoutpt.fr</span>.<br>
                     </div>
                 </div>
                 <br>
@@ -109,20 +110,20 @@ $pager->setHeader();
                         <h2 class="underline" id="QR">Questions réponses</h2>
                         <span class="bold">- Le serveur est-il accessible aux cracks ?</span><br>
                         <span>Non, il ne l'est pas. Seulement les joueurs ayant Minecraft premium peuvent rejoindre le serveur.</span><br>
-                        <span class="bold">- Le serveur est-il accessible aux versions bedrock ? (Win10, PE,...)</span><br>
+                        <span class="bold">- Le serveur est-il accessible aux versions bedrock ? (Win10, PE, ...)</span><br>
                         <span>Non, il ne l'est pas. Seulement les joueurs avec un compte Minecraft Java édition peuvent rejoindre le serveur.</span><br>
                         <span class="bold">- Le grief de bases, vol des ressources est-il autorisé ?</span><br>
                         <span>Non, le grief n'est pas autorisé et est même sanctionnable. Veuillez vous référer aux règles pour plus d'informations.</span><br>
                         <span class="bold">- Je ne peux pas me connecter au serveur, comment faire ?</span><br>
-                        <span>Si vous ne pouvez pas vous connecter au serveur, c'est que soit vous avez rentré la mauvaise ip, soit le serveur est tout simplement hors-ligne.
+                        <span>Si tu ne peux pas te connecter au serveur, c'est que soit tu as rentré la mauvaise ip, soit le serveur est tout simplement hors-ligne.
                                         Rendez-vous sur le </span><span
                                 style="color: #2C70BA; font-weight: bold;">Discord</span> <span> plus d'informations.</span><br>
                         <span class="bold">- Comment me connecter au serveur ?</span><br>
-                        <span>Dans le menu de base de Minecraft, sélectionnez "Multijoueur", puis cliquez sur "Nouveau Serveur". Ensuite, rentrez le nom que vous voulez,
-                                         et dans la section "Adresse du serveur", rentrez l'adresse suivante :</span><span
+                        <span>Dans le menu de base de Minecraft, sélectionne "Multijoueur", puis clique sur "Nouveau Serveur". Ensuite, rentre le nom que tu veux,
+                                         puis dans la section "Adresse du serveur", rentre l'adresse suivante :</span><span
                                 class="bold"> play.noskillworld.fr</span><span>.
-                        Enfin, appuyez sur "terminé". Connectez-vous au serveur faisant un double-click dessus dans la liste des serveurs.
-                        <br>C'est bon ! Passez un bon moment sur NoSkillWorld !</span><br>
+                        Enfin, appuis sur "terminé". Connecte-toi au serveur faisant un double-click dessus dans la liste des serveurs.
+                        <br>C'est bon ! Passe un bon moment sur NoSkillWorld !</span><br>
                     </div>
                 </div>
             </div>

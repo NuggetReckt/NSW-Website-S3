@@ -17,7 +17,7 @@ class Connector
 
         $this->username = "root";
         $this->password = "root";
-        $this->database = "data";
+        $this->database = "Website";
         $this->server = "localhost";
         $this->port = 3306;
 

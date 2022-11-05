@@ -27,12 +27,16 @@ span, p, a, h1, h2, h3 {
     font-family: police_custom, sans-serif;
 }
 
-h1, h2, h3 {
+h1, h2 {
     margin: 10px 0;
 }
 
-p {
+h3 {
     margin: 5px 0;
+}
+
+p {
+    margin: 4px 0;
 }
 
 .bold, a {
@@ -212,9 +216,10 @@ Actus style
 
 .actu-title {
     font-size: 35px;
+    padding-bottom: .3rem !important;
 }
 
-.actu-date {
+.actu-subtitle {
     font-size: 11px;
 }
 
@@ -223,7 +228,7 @@ Actus style
     padding: 5px;
 }
 
-.actu-date, .actu-title {
+.actu-subtitle, .actu-title {
     margin: 0;
     padding: 0;
 }

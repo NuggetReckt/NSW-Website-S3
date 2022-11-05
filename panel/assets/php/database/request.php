@@ -83,11 +83,13 @@ class PanelRequest
         $this->actu_name = $actu_name;
         $this->actu_desc = $actu_desc;
 
+        $actu_publisher = $_SESSION['admin'];
+
         date_default_timezone_set('UTC+2');
         $actu_date = date('d/m/Y');
 
         $conn = new Connector();
-        $req = "INSERT INTO actus_nsw (name, description, date) VALUES ('$actu_name', '$actu_desc', '$actu_date');";
+        $req = "INSERT INTO actus (name, description, date, publisher) VALUES ('$actu_name', '$actu_desc', '$actu_date', '$actu_publisher');";
         $conn->mysqli->query($req, MYSQLI_USE_RESULT);
 
         header("Location: add_actu.php?actu_created");
