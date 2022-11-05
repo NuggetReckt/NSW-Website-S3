@@ -35,16 +35,16 @@ $pager->setHeader();
                     <div class="row" id="row-mid">
                         <div class="flex-container" id="flex-container-l">
                             <div id="pres">
-                                <h2>Présentation</h2>
-                                <p>Bienvenue sur NoSkillWorld Saison 3 ! </p>
+                                <h2>A Propos</h2>
+                                <p>Bienvenue sur NoSkillWorld Saison 3 !</p>
                                 <p>Rejoins-nous avec tes amis ou solo pour vivre d'inoubliables aventures RP.
                                     Pourquoi RP ? Les joueurs peuvent communiquer entre eux directement dans le jeu via Mumble.
-                                    De
-                                    plus, l'absence de home rend l'éxpérience de jeu plus réaliste.</p>
-                                <p>Le monde généré de manière customisée en minage comporte des paysages à couper le souffle et
+                                    De plus, l'absence de home rend l'éxpérience de jeu plus réaliste.</p>
+                                <p>Le monde généré de manière customisée en minage comporte des paysages à couper le
+                                    souffle et
                                     rend le minage plus fun ! Des events
-                                    fréquents ainsi qu'un serveur Hardcore pimenteront ton aventure mélangeant adrénaline et
-                                    satisfaction !
+                                    fréquents ainsi qu'un serveur Hardcore pimenteront ton aventure, mélangeant
+                                    adrénaline et satisfaction !
                                     Rejoins <span class="bold">play.noskillworld.fr</span> pour
                                     vivre de formidables aventures !</p>
                                 <p style="margin-bottom: 0">Bon jeu sur NoSkillWorld !</p>
