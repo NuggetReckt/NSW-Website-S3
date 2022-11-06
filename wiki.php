@@ -35,8 +35,10 @@ $pager->setHeader();
                         <h2 class="underline" id="Semi-RP">Semi-RP</h2>
                         <h2>Présentation :</h2>
                         <h3 class="bold">1 - Le but du serveur</h3>
-                        <p>Le but du serveur Semi-RP est très simple, survivre dans un monde hostile rempli de mobs et de joueurs.
-                            Fais-toi un stuff, construis ta base, crée ta ville, vend et échange avec les joueurs du serveur pour avancer et les rencontrer pour faire d'immenses projets !</p>
+                        <p>Le but du serveur survie est très simple, survivre dans un monde hostile rempli de mobs et de joueurs.
+                            Fais-toi un stuff, Construis ta base, crée ta ville,
+                            vend et échange avec les joueurs du serveur pour avancer.
+                            Sélectionne le Job qui te correspond le mieux et remplis les quêtes pour récupérer plein de récompenses !</p>
                         <h3 class="bold">2 - Comment bien commencer</h3>
                         <p>Avant de bien commencer ton aventure en Semi-RP, assure-toi d'avoir un bon stuff ! N'oublie pas que le monde est hostile !</p>
                         <p>Pour ce fait, rends-toi en FarmZone afin d'acquérir des ressources. La FarmZone est uniquement là pour le farm de ressources.
@@ -46,7 +48,7 @@ $pager->setHeader();
                         <h3 class="bold">3 - Aller plus loin</h3>
                         <p>Si tu le souhaites, avant de créer ta base en Semi-RP, tu peux imaginer et travailler ton design sur le serveur Créatif.
                             Cela te permettra de tester des designs et ainsi voir de quels items tu auras besoin pour construire la base qui te convient le mieux !</p>
-                        <h2 class="st">Commandes utiles :</h2>
+                        <h2 class="st">Commandes :</h2>
                         <span class="bold">/spawn</span><span> : Pour retourner au spawn</span><br>
                         <span class="bold">/tpa</span><span> : Envoie une demande de tp à un joueur pour vous téléporter à lui</span><br>
                         <span class="bold">/tpahere</span><span> : Envoie une demande de tp à un joueur pour qu'il se téléporte à vous</span><br>
@@ -74,7 +76,7 @@ $pager->setHeader();
                             pour être le mieux préparé possible
                             pour la nuit avec ses nombreux monstres qui voudront ta peau !
                             En HardCore, la difficulté est maximale, donc être bien équipé t'aidera dans ton aventure !</p>
-                        <h2 class="st">Commandes utiles :</h2>
+                        <h2 class="st">Commandes :</h2>
                         <span class="bold">/info</span><span> : Pour voir tout type d'informations (épisode en cours, events en cours, ...)</span><br>
                         <span class="bold">/episode</span><span> : Pour connaître l'épisode actuel</span><br>
                     </div>
@@ -88,7 +90,7 @@ $pager->setHeader();
                         <p>Le serveur créatif est un monde bac à sable où tu as la possibilité de faire des constructions
                             que tu peux reproduire en serveur Semi-RP
                             ou même build dans le seul but de la construction. C'est <span class="bold">toi</span> l'architecte !</p>
-                        <h2 class="st">Commandes utiles :</h2>
+                        <h2 class="st">Commandes :</h2>
                         <span class="bold">/spawn</span><span> : Pour retourner au spawn</span><br>
                     </div>
                 </div>
@@ -102,6 +104,7 @@ $pager->setHeader();
                             totale. Bienvenue en Anarchie !</p>
                         <h3 class="bold">2 - Rejoindre le serveur</h3>
                         <span>Rejoins le serveur depuis le lobby ou à l'aide de l'ip</span><span class="bold"> play.ctoutpt.fr</span>.<br>
+                        <span>Retrouve le site </span><a href="https://play.ctoutpt.fr">ici</a>.<br>
                     </div>
                 </div>
                 <br>
