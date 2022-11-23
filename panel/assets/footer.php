@@ -22,7 +22,7 @@
                     <li id="discord-footer" class="footer-item">
                         <a href="https://discord.gg/cE4eHEZWrD" target="_blank">
                             <img src="<?="../assets/images/discord.svg"?>" alt="discord" id="logo-f">
-                        </a
+                        </a>
                     </li>
                 </ul>
                 <br>
