@@ -14,35 +14,40 @@ class Request
 
     function get_actus(): void
     {
-        $req = "SELECT * FROM actus ORDER BY id DESC;";
+        $sql = "SELECT * FROM actus ORDER BY id DESC;";
 
         $conn = new Connector();
-        $mysqli = $conn->mysqli;
 
-        $result = $mysqli->query($req, MYSQLI_USE_RESULT);
+        $actus = $conn->dbRun($sql, [])->fetchAll(PDO::FETCH_ASSOC);
 
-        while ($row = mysqli_fetch_array($result)) {
-            $name = $row['name'];
-            $desc = $row['description'];
-            $date = $row['date'];
-            $publisher = $row['publisher'];
+        $nbActus = $this->getNumberOfActus();
 
+        foreach ($actus as $index => $value) {
             echo "\n";
             echo "                <div class='actu-item'>\n";
             echo "                    <div class='actu-title-content'>\n";
-            echo "                        <h2 class='actu-title'>$name</h2>\n";
-            echo "                        <span class='actu-subtitle'>Le $date Par $publisher</span>\n";
+            echo "                        <h2 class='actu-title'>{$value['name']}</h2>\n";
+            echo "                        <span class='actu-subtitle'>Le {$value['date']} Par {$value['publisher']}</span>\n";
             echo "                    </div>\n";
-            echo "                    <p class='actu-desc'>$desc</p>\n";
+            echo "                    <p class='actu-desc'>{$value['description']}</p>\n";
             echo "                </div>";
             echo "\n";
         }
-        if ($result->num_rows == 0) {
+
+        if ($nbActus == false) {
             echo "                <div class='actu-item'>\n";
             echo "                    <div class='actu-noresult'>\n";
             echo "                        <h2>Aucun Résultat...</h2>\n";
             echo "                    </div>\n";
             echo "                </div>";
         }
+    }
+
+    function getNumberOfActus() : array | bool{
+        $sql = "SELECT COUNT(id) AS 'nbActu' FROM actus GROUP BY id";
+        $conn = new Connector();
+        $nbActus = $conn->dbRun($sql, [])->fetch(PDO::FETCH_ASSOC);
+        
+        return $nbActus;
     }
 }
