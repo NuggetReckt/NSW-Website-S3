@@ -5,18 +5,20 @@ $pager = new PanelPager("Nouelle Actu");
 
 $pager->setHeader();
 
+// Variable POST
+$actu_name = filter_input(INPUT_POST, 'actu-name', FILTER_SANITIZE_SPECIAL_CHARS);
+$actu_desc = filter_input(INPUT_POST, 'actu-desc', FILTER_SANITIZE_SPECIAL_CHARS);
+
 $request = new PanelRequest();
 
-if (isset($_POST["actu-name"]) && isset($_POST["actu-desc"])) {
-
-    $actu_name = $_POST["actu-name"];
-    $actu_desc = $_POST["actu-desc"];
+if (isset($actu_name) && isset($actu_desc)) {
 
     $request->create_actu($actu_name, $actu_desc);
 }
 
 if ($_SESSION['admin'] == null) {
     header("Location: login.php?error=3");
+    exit();
 }
 
 if (isset($_GET['actu_created'])) {
