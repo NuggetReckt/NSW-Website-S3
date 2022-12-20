@@ -178,11 +178,7 @@ hr {
     border-radius: 7px;
 }
 
-::-moz-selection {
-
-}
-
-::selection {
+::selection, ::-moz-selection {
     background-color: #2C70BA;
     color: white;
 }
@@ -459,12 +455,14 @@ figcaption {
 }
 
 #body-other {
-    background: url(../images/background.png) no-repeat fixed 0 0;
-    background-size: 150%;
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 0;
+    background-attachment: fixed;
 }
 
 .main-top-col-wiki {
-    float: left;
     border-color: black;
     border-radius: 10px;
     box-shadow: 0 2px 2px 0 rgb(0 0 0 / 20%);

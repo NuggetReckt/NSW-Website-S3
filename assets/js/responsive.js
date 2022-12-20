@@ -13,3 +13,11 @@ navToggle.addEventListener("click", () => {
 
     }
 });
+
+window.addEventListener("scroll", function () {
+    const isVisible = navBar.getAttribute("data-visible");
+
+    if (isVisible === "true") {
+        window.scrollTo(0, 0);
+    }
+});
