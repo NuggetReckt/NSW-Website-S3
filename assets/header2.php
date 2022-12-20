@@ -9,9 +9,10 @@ $page = basename($_SERVER["PHP_SELF"]);
             echo "<body id='body-other'>";
         }
         ?>
+        <button class="responsive-nav-toggle" aria-controls="navbar-list" aria-expanded="false"></button>
         <div class="navbar-content">
             <nav>
-                <ul class="navbar-list">
+                <ul class="navbar-list" data-visible="false">
                     <li class="navbar-item">
                         <a href="<?="index.php"?>" class="navbar-item-a
                         <?php
