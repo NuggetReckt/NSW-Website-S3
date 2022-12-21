@@ -35,7 +35,7 @@ $pager->setHeader();
                     <div class="row" id="row-mid">
                         <div class="flex-container" id="flex-container-l">
                             <div id="pres">
-                                <h2>A Propos</h2>
+                                <h2>À Propos</h2>
                                 <p>Bienvenue sur NoSkillWorld Saison 3 !</p>
                                 <p>Rejoins-nous avec tes amis ou solo pour vivre d'inoubliables aventures RP.
                                     Pourquoi RP ? Les joueurs peuvent communiquer entre eux directement dans le jeu via Mumble.

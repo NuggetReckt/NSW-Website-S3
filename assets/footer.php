@@ -2,35 +2,27 @@
         </main>
         <div class="footer-content">
             <footer class="footer">
-                <ul class="footer-items" id="footer-l">
-                    <li id="affilié" class="footer-item">
+                <ul class="footer-items footer-item">
+                    <li id="footer-l">
                         <span>Non affilié avec Mojang AB.</span>
                         <br>
                         <span>Site dev avec</span><span style="color: #ce0000"> ❤ </span><span>par NuggetReckt</span>
+                        <br>
+                        <span>Nous contacter:
+                            <a href="mailto:contact@noskillworld.fr">contact@noskillworld.fr</a>
+                        </span>
                     </li>
-                    <li id="contact" class="footer-item">
-                        <span>Nous contacter : </span>
-                        <a href="mailto:contact@noskillworld.fr">contact@noskillworld.fr</a>
-                    </li>
-                </ul>
-                <ul class="footer-items" id="footer-r">
-                    <li id="twitter-footer" class="footer-item">
-                        <a href="https://twitter.com/NoSkillWorld" target="_blank">
+                    <li id="footer-r">
+                        <a href="https://twitter.com/NoSkillWorld" target="_blank" id="twitter-footer">
                             <img src="<?="/assets/images/twitter.svg"?>" alt="twitter" id="logo-f">
                         </a>
-                    </li>
-                    <li id="discord-footer" class="footer-item">
-                        <a href="https://discord.gg/cE4eHEZWrD" target="_blank">
+                        <a href="https://discord.gg/cE4eHEZWrD" target="_blank" id="discord-footer">
                             <img src="<?="/assets/images/discord.svg"?>" alt="discord" id="logo-f">
                         </a
                     </li>
                 </ul>
-                <br>
-                <br>
-                <br>
-                <br>
-                <hr>
-                <div class="sub-footer">
+                <hr class="footer-item">
+                <div class="sub-footer footer-item">
                     <span>Copyright © NoSKillWorld 2020 - 2022</span>
                 </div>
             </footer>
