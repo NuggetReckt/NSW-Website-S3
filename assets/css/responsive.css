@@ -109,7 +109,7 @@
         background-image: url("../images/icon-close.svg");
     }
 
-    #responsive-separator[aria-expanded="true"] {
+    #responsive-separator {
         display: block;
         border: none;
 

@@ -63,7 +63,7 @@ $page = basename($_SERVER["PHP_SELF"]);
                         }
                         ?>">Regles</a>
                     </li>
-                    <hr id="responsive-separator" aria-expanded="false">
+                    <hr id="responsive-separator">
                     <li class="navbar-item" id="nav-right">
                         <a href="https://play.noskillworld.fr/dynmap" target="_blank" class="navbar-item-a not-active">Dynmap</a>
                     </li>
