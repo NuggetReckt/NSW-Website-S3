@@ -14,10 +14,13 @@ navToggle.addEventListener("click", () => {
     }
 });
 
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll", disableScroll);
+window.addEventListener("touchmove", disableScroll);
+
+function disableScroll() {
     const isVisible = navBar.getAttribute("data-visible");
 
     if (isVisible === "true") {
         window.scrollTo(0, 0);
     }
-});
+}

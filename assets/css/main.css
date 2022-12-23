@@ -454,7 +454,7 @@ figcaption {
     text-align: center;
 }
 
-#staff-title, #wiki-title, #votes-title, #rules-title, #soon-title {
+.top-title > h1 {
     margin: 20px 0;
     color: white;
 }
@@ -498,16 +498,12 @@ figcaption {
     background-color: #ebebeb;
 }
 
-#votes-content {
-    height: 67vh;
-}
-
-#soon-content {
-    margin: 32vh 0;
+#top-content-soon {
+    margin: 0 0 65vh 0;
 }
 
 #votes-links {
-    margin: 0 auto;
+    margin: 0 auto 25vh auto;
     width: fit-content;
     text-align: left;
 }

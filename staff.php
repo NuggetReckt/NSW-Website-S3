@@ -5,7 +5,7 @@ $pager = new Pager("Equipe");
 $pager->setHeader();
 ?>
             <div class="top-content" id="top-content-staff">
-                <div id="top-title">
+                <div class="top-title">
                     <h1 id="staff-title">L'équipe</h1>
                 </div>
             </div>
