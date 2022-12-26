@@ -37,12 +37,13 @@ h2, h3 {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 20px;
+    line-height: 0;
 }
 
 h3 {
-    font-size: 19px;
-    margin: 25px 0;
+    font-size: 20px;
+    margin: 30px 0 20px;
 }
 
 .discord {

@@ -3,9 +3,11 @@ $page = basename($_SERVER["PHP_SELF"]);
 session_start();
 ?>
     </head>
+    <body id="body-other">
+    <button class="responsive-nav-toggle" aria-controls="navbar-list" aria-expanded="false"></button>
     <div class="navbar-content">
         <nav id="navbar">
-            <ul class="navbar-list">
+            <ul class="navbar-list" data-visible="false">
                 <li class="navbar-item">
                     <a href="<?="index.php"?>" class="navbar-item-a
                     <?php
@@ -26,6 +28,7 @@ session_start();
                     }
                     ?>">Nouvelle actu</a>
                 </li>
+                <hr id="responsive-separator">
                 <?php
                 echo "                <li class='navbar-item' id='nav-right'>\n";
                 if (isset($_SESSION['admin'])) {

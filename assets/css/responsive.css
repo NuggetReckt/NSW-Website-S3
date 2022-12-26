@@ -140,7 +140,7 @@
         margin: 10px 0;
     }
 
-    .top-content {
+    .top-content-others {
         margin-top: 5rem;
     }
 
@@ -148,7 +148,16 @@
         margin-top: 0;
     }
 
-    @media (max-width: 430px) {
+    .top-title-menu > h1 {
+
+    }
+
+    .pop-up-message {
+        top: 10%;
+        width: 300px;
+    }
+
+    @media (max-width: 475px) {
         .footer-item {
             justify-content: center;
             flex-direction: column;

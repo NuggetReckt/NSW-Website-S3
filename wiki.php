@@ -4,7 +4,7 @@ $pager = new Pager("Wiki");
 
 $pager->setHeader();
 ?>
-            <div class="top-content" id="top-content-wiki">
+            <div class="top-content top-content-others" id="top-content-wiki">
                 <div class="top-title">
                     <h1 id="wiki-title">Bienvenue sur le Wiki de NoSkillWorld !</h1>
                 </div>

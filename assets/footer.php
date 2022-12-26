@@ -13,12 +13,15 @@
                         </span>
                     </li>
                     <li id="footer-r">
+                        <a href="https://www.instagram.com/noskillworld/" target="_blank" id="insta-footer">
+                            <img src="<?="/assets/images/instagram.svg"?>" alt="insta" id="logo-f">
+                        </a>
                         <a href="https://twitter.com/NoSkillWorld" target="_blank" id="twitter-footer">
                             <img src="<?="/assets/images/twitter.svg"?>" alt="twitter" id="logo-f">
                         </a>
                         <a href="https://discord.gg/cE4eHEZWrD" target="_blank" id="discord-footer">
                             <img src="<?="/assets/images/discord.svg"?>" alt="discord" id="logo-f">
-                        </a
+                        </a>
                     </li>
                 </ul>
                 <hr class="footer-item">
@@ -58,5 +61,5 @@
         <script src="<?="assets/js/copy.js"?>"></script>
         <script src="<?="assets/js/top.js"?>"></script>
         <script src="<?="assets/js/responsive.js"?>"></script>
-        </body>
+    </body>
 </html>

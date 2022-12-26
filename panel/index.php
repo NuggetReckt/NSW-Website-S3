@@ -20,7 +20,11 @@ if (isset($_GET['logged'])) {
 }
 ?>
 
-
+    <div class="top-content top-content-menu" id="top-content-menu">
+        <div class="top-title-menu">
+            <h1 id="menu-title">Panel</h1>
+        </div>
+    </div>
 
 <?php
 $pager->setFooter();

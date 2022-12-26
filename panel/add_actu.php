@@ -1,13 +1,14 @@
 <?php
 require_once "assets/php/pager.php";
 require_once "assets/php/database/request.php";
-$pager = new PanelPager("Nouelle Actu");
+$pager = new PanelPager("Nouvelle Actu");
 
 $pager->setHeader();
 
 // Variable POST
 $actu_name = filter_input(INPUT_POST, 'actu-name', FILTER_SANITIZE_SPECIAL_CHARS);
 $actu_desc = filter_input(INPUT_POST, 'actu-desc', FILTER_SANITIZE_SPECIAL_CHARS);
+$err = filter_input(INPUT_GET, 'error', FILTER_VALIDATE_INT);
 
 $request = new PanelRequest();
 
@@ -26,18 +27,19 @@ if (isset($_GET['actu_created'])) {
     echo "            </div>\n";
 }
 
-if (isset($_GET['error'])) {
-    $err = $_GET['error'];
+if (isset($err)) {
 
-    if ($err == 2) {
-        echo "            <div class='pop-up-message' id='pop-up-fail'>\n";
-        echo "                <span>Les champs ne peuvent pas être vides !</span>\n";
-        echo "            </div>\n";
-    }
-    if ($err == 3) {
-        echo "            <div class='pop-up-message' id='pop-up-fail'>\n";
-        echo "                <span>Vous n'êtes pas connecté.</span>\n";
-        echo "            </div>\n";
+    switch ($err) {
+        case 2:
+            echo "            <div class='pop-up-message' id='pop-up-fail'>\n";
+            echo "                <span>Les champs ne peuvent pas être vides !</span>\n";
+            echo "            </div>\n";
+            break;
+        case 3:
+            echo "            <div class='pop-up-message' id='pop-up-fail'>\n";
+            echo "                <span>Vous n'êtes pas connecté.</span>\n";
+            echo "            </div>\n";
+            break;
     }
 }
 ?>

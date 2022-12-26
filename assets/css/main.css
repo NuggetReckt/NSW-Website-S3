@@ -138,8 +138,8 @@ nav, .footer-content {
     flex-wrap: wrap;
 }
 
-#twitter-footer {
-    margin-right: 15px;
+#twitter-footer, #insta-footer {
+    margin-right: 10px;
 }
 
 hr {
@@ -454,7 +454,7 @@ figcaption {
     text-align: center;
 }
 
-.top-title > h1 {
+.top-title > h1, .top-title-menu > h1 {
     margin: 20px 0;
     color: white;
 }
@@ -521,7 +521,7 @@ Pop-up style
 .pop-up-message {
     text-align: center;
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -561,7 +561,7 @@ textarea:focus-visible {
 }
 
 fieldset {
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 10px;
     margin: 0;
     padding: 10px;
@@ -580,7 +580,7 @@ label {
 
 label, input[type="submit"] {
     font-family: police_custom, sans-serif;
-    color: black;
+    color: white;
 }
 
 input[type="text"], input[type="password"], input[type="submit"], textarea {

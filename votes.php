@@ -4,7 +4,7 @@ $pager = new Pager("Votes");
 
 $pager->setHeader();
 ?>
-            <div class="top-content" id="top-content-votes">
+            <div class="top-content top-content-others" id="top-content-votes">
                 <div class="top-title">
                     <h1 id="votes-title">Voter pour le serveur</h1>
                 </div>
