@@ -15,7 +15,6 @@ use JetBrains\PhpStorm\NoReturn;
  * @property string $actu_date
  * @property string $actu_img_url
  */
-
 class PanelRequest
 {
     function __construct()
@@ -88,6 +87,42 @@ class PanelRequest
 
         $conn->dbRun($req, [$actu_name, $actu_desc, $actu_date, $actu_publisher]);
 
-        header("Location: add_actu.php?actu_created");
+        header("Location: create_actu.php?actu_created");
     }
+
+    function get_actus(): void
+    {
+        $sql = "SELECT * FROM actus ORDER BY id DESC;";
+        $conn = new Connector();
+        $result = $conn->dbRun($sql, [])->fetchAll(PDO::FETCH_ASSOC);
+
+        foreach ($result as $i => $value) {
+            echo "\n";
+            echo "<span>nom : {$value['name']}</span><br>\n";
+            echo "<span>contenu : {$value['description']}</span><br>\n";
+            echo "<span>auteur : {$value['publisher']}</span><br>\n";
+            echo "<span>date : {$value['date']}</span><br>\n";
+            echo "<hr>";
+            echo "\n";
+        }
+    }
+
+    function modify_actu_name(int $actu_id, string $actu_name): void {
+        $sql = "UPDATE actus SET name = '$actu_name' WHERE id = '$actu_id';";
+        $conn = new Connector();
+
+        $conn->dbRun($sql, [])->fetchAll(PDO::FETCH_ASSOC);
+
+        header("Location: index.php?actu_modified");
+    }
+
+    function modify_actu_desc(int $actu_id, string $actu_desc): void {
+        $sql = "UPDATE actus SET description = '$actu_desc' WHERE id = '$actu_id';";
+        $conn = new Connector();
+
+        $conn->dbRun($sql, [])->fetchAll(PDO::FETCH_ASSOC);
+
+        header("Location: index.php?actu_modified");
+    }
+
 }

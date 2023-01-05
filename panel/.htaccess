@@ -1,4 +1,4 @@
 RewriteEngine on
 RewriteRule ^menu$ index.php [NC]
-RewriteRule ^actus$ add_actu.php [NC]
+RewriteRule ^create$ create_actu.php [NC]
 RewriteRule ^login$ login.php [NC]

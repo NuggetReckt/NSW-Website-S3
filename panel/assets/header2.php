@@ -19,9 +19,9 @@ session_start();
                     ?>">Menu</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="<?="add_actu.php"?>" class="navbar-item-a
+                    <a href="<?="create_actu.php"?>" class="navbar-item-a
                     <?php
-                    if ($page == "add_actu.php") {
+                    if ($page == "create_actu.php") {
                         echo "active";
                     } else {
                         echo "not-active";

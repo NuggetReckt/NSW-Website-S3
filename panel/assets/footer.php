@@ -26,7 +26,7 @@
                 </ul>
                 <hr class="footer-item">
                 <div class="sub-footer footer-item">
-                    <span>Copyright © NoSKillWorld 2020 - 2022</span>
+                    <span>Copyright © NoSKillWorld 2020 - 2023</span>
                 </div>
             </footer>
         </div>

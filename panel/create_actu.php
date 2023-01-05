@@ -5,7 +5,7 @@ $pager = new PanelPager("Nouvelle Actu");
 
 $pager->setHeader();
 
-// Variable POST
+// Variable POST/GET
 $actu_name = filter_input(INPUT_POST, 'actu-name', FILTER_SANITIZE_SPECIAL_CHARS);
 $actu_desc = filter_input(INPUT_POST, 'actu-desc', FILTER_SANITIZE_SPECIAL_CHARS);
 $err = filter_input(INPUT_GET, 'error', FILTER_VALIDATE_INT);
@@ -44,7 +44,7 @@ if (isset($err)) {
 }
 ?>
     <div class="form" id="actu-form">
-        <form action="add_actu.php" method="POST">
+        <form action="create_actu.php" method="POST">
             <fieldset>
                 <div class="form-content">
                     <h1>Créer une actu</h1>

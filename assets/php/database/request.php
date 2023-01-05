@@ -22,7 +22,7 @@ class Request
 
         $nbActus = $this->getNumberOfActus();
 
-        foreach ($actus as $index => $value) {
+        foreach ($actus as $i => $value) {
             echo "\n";
             echo "                <div class='actu-item'>\n";
             echo "                    <div class='actu-title-content'>\n";
@@ -34,7 +34,7 @@ class Request
             echo "\n";
         }
 
-        if ($nbActus == false) {
+        if (!$nbActus) {
             echo "                <div class='actu-item'>\n";
             echo "                    <div class='actu-noresult'>\n";
             echo "                        <h2>Aucun Résultat...</h2>\n";
@@ -43,11 +43,12 @@ class Request
         }
     }
 
-    function getNumberOfActus() : array | bool{
+    function getNumberOfActus(): array|bool
+    {
         $sql = "SELECT COUNT(id) AS 'nbActu' FROM actus GROUP BY id";
         $conn = new Connector();
         $nbActus = $conn->dbRun($sql, [])->fetch(PDO::FETCH_ASSOC);
-        
+
         return $nbActus;
     }
 }

@@ -40,7 +40,7 @@ $pager->setHeader();
                                 <p>Rejoins-nous avec tes amis ou solo pour vivre d'inoubliables aventures RP.
                                     Pourquoi RP ? Les joueurs peuvent communiquer entre eux directement dans le jeu via Mumble.
                                     De plus, l'absence de home rend l'expérience de jeu plus réaliste.</p>
-                                <p>Le monde généré de manière customisée en minage comporte des paysages à couper le
+                                <p>La génération customisée en FarmZone comporte des paysages à couper le
                                     souffle et
                                     rend le minage plus fun ! Des events
                                     fréquents ainsi qu'un serveur Hardcore pimenteront ton aventure, mélangeant
