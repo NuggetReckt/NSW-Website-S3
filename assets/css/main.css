@@ -499,7 +499,50 @@ figcaption {
 }
 
 #top-content-soon {
-    margin: 0 0 65vh 0;
+    margin: 0 0 70vh 0;
+}
+
+#top-content-error {
+    margin: 0 0 64vh 0;
+}
+
+.error-subtitle {
+    margin-top: 30px;
+}
+
+.error-subtitle > a {
+    padding: 10px 20px;
+    margin: 0;
+    border-radius: 15px;
+    font-size: 18px;
+    transition: 1s;
+}
+
+.error-subtitle > #discord-link {
+    border: #5865F2 4px solid;
+    color: #5865F2;
+}
+
+.error-subtitle > #back-link {
+    border: #2C70BA 4px solid;
+    color: #2C70BA;
+}
+
+.error-subtitle > #discord-link:hover {
+    transition: 1s;
+    color: white;
+    background: #5865F2;
+}
+
+.error-subtitle > #back-link:hover {
+    transition: 1s;
+    color: white;
+    background: #2C70BA;
+}
+
+#error-separator {
+    color: white;
+    margin: 0 10px;
 }
 
 #votes-links {

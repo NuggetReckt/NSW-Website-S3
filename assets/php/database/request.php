@@ -47,8 +47,6 @@ class Request
     {
         $sql = "SELECT COUNT(id) AS 'nbActu' FROM actus GROUP BY id";
         $conn = new Connector();
-        $nbActus = $conn->dbRun($sql, [])->fetch(PDO::FETCH_ASSOC);
-
-        return $nbActus;
+        return $conn->dbRun($sql, [])->fetch(PDO::FETCH_ASSOC);
     }
 }
