@@ -32,6 +32,8 @@ $err = filter_input(INPUT_GET, 'error', FILTER_VALIDATE_INT);
                             case 504:
                                 echo $err, " Gateway Timeout.";
                                 break;
+                            default:
+                                echo "Unknown error.";
                         }
                     }
                     ?>
