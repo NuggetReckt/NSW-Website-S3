@@ -107,7 +107,8 @@ class PanelRequest
         }
     }
 
-    function modify_actu_name(int $actu_id, string $actu_name): void {
+    function modify_actu_name(int $actu_id, string $actu_name): void
+    {
         $sql = "UPDATE actus SET name = '$actu_name' WHERE id = '$actu_id';";
         $conn = new Connector();
 
@@ -116,7 +117,8 @@ class PanelRequest
         header("Location: index.php?actu_modified");
     }
 
-    function modify_actu_desc(int $actu_id, string $actu_desc): void {
+    function modify_actu_desc(int $actu_id, string $actu_desc): void
+    {
         $sql = "UPDATE actus SET description = '$actu_desc' WHERE id = '$actu_id';";
         $conn = new Connector();
 
@@ -124,5 +126,4 @@ class PanelRequest
 
         header("Location: index.php?actu_modified");
     }
-
 }
