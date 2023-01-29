@@ -97,13 +97,30 @@ class PanelRequest
         $result = $conn->dbRun($sql, [])->fetchAll(PDO::FETCH_ASSOC);
 
         foreach ($result as $i => $value) {
+            $id = $value['id'];
+
             echo "\n";
-            echo "<span>nom : {$value['name']}</span><br>\n";
-            echo "<span>contenu : {$value['description']}</span><br>\n";
-            echo "<span>auteur : {$value['publisher']}</span><br>\n";
-            echo "<span>date : {$value['date']}</span><br>\n";
-            echo "<hr>";
+            echo "                <div class='actu-item-panel'>\n";
+            echo "                    <h2 class='actu-title-panel'>{$value['name']}</h2>\n";
+            echo "                    <button class='actu-edit-toggle' aria-controls='actu-edit-$id' aria-expanded='false'>Edit</button>";
+            echo "                </div>";
+
+            echo "                <div class='actu-edit-item' data-visible='true'>\n";
+            echo "                    <div class='actu-title-content-edit'>\n";
+            echo "                        <h2 class='actu-title-edit'>{$value['name']}</h2>\n";
+            echo "                        <span>Le {$value['date']} Par {$value['author']}</span>";
+            echo "                    </div>\n";
+            echo "                    <p class='actu-desc-panel'>{$value['description']}</p>\n";
+            echo "                </div>";
             echo "\n";
+        }
+
+        if ($result == null) {
+            echo "                <div class='actu-item-panel'>\n";
+            echo "                    <div class='actu-noresult-panel'>\n";
+            echo "                        <h2>Aucun Résultat...</h2>\n";
+            echo "                    </div>\n";
+            echo "                </div>";
         }
     }
 

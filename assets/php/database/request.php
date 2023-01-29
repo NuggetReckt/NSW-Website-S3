@@ -23,8 +23,10 @@ class Request
         $nbActus = $this->getNumberOfActus();
 
         foreach ($actus as $i => $value) {
+            $id = $value['id'];
+
             echo "\n";
-            echo "                <div class='actu-item'>\n";
+            echo "                <div class='actu-item' id='actu-$id'>\n";
             echo "                    <div class='actu-title-content'>\n";
             echo "                        <h2 class='actu-title'>{$value['name']}</h2>\n";
             echo "                        <span class='actu-subtitle'>Le {$value['date']} Par {$value['publisher']}</span>\n";
