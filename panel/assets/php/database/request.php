@@ -105,7 +105,7 @@ class PanelRequest
             echo "                    <button class='actu-edit-toggle' aria-controls='actu-edit-$id' aria-expanded='false'>Edit</button>";
             echo "                </div>";
 
-            echo "                <div class='actu-edit-item' data-visible='true'>\n";
+            echo "                <div class='actu-edit-item' data-visible='true' id='actu-edit-$id'>\n";
             echo "                    <div class='actu-title-content-edit'>\n";
             echo "                        <h2 class='actu-title-edit'>{$value['name']}</h2>\n";
             echo "                        <span>Le {$value['date']} Par {$value['author']}</span>";
