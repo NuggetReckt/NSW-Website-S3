@@ -92,17 +92,17 @@ class PanelRequest
 
     function get_actus(): void
     {
-        $sql = "SELECT * FROM actus ORDER BY id DESC;";
+        $sql = "SELECT id, name, description FROM actus ORDER BY id DESC;";
         $conn = new Connector();
         $result = $conn->dbRun($sql, [])->fetchAll(PDO::FETCH_ASSOC);
 
         foreach ($result as $i => $value) {
-            $id = $value['id'];
 
             echo "\n";
             echo "                <div class='actu-item-panel'>\n";
             echo "                    <h2 class='actu-title-panel'>{$value['name']}</h2>\n";
-            echo "                    <button class='actu-edit-toggle' aria-controls='actu-edit' aria-expanded='false' value='$id'>Edit</button>";
+            // echo "                    <button class='actu-edit-toggle' aria-controls='actu-edit' aria-expanded='false' value='$id'>Edit</button>";
+            echo "                        <a href=\"modif_actu.php?id={$value['id']}\">Edit {$value['id']}</a> ";
             echo "                </div>";
 
             echo "                <div class='actu-edit-item' data-visible='true' id='actu-edit'>\n";
@@ -124,9 +124,12 @@ class PanelRequest
         }
     }
 
-    function modify_actu_name(int $actu_id, string $actu_name): void
+
+    // Fonctions pour modifier les actus et pour recuperer les données des actus
+
+    function modify_actu(int $actu_id, string $actu_name, string $actu_desc): void
     {
-        $sql = "UPDATE actus SET name = '$actu_name' WHERE id = '$actu_id';";
+        $sql = "UPDATE actus SET name = '$actu_name', description = '$actu_desc' WHERE id = '$actu_id';";
         $conn = new Connector();
 
         $conn->dbRun($sql, [])->fetchAll(PDO::FETCH_ASSOC);
@@ -134,13 +137,12 @@ class PanelRequest
         header("Location: index.php?actu_modified");
     }
 
-    function modify_actu_desc(int $actu_id, string $actu_desc): void
+    function get_actus_id_name_desc(int $id): array
     {
-        $sql = "UPDATE actus SET description = '$actu_desc' WHERE id = '$actu_id';";
+        $sql = "SELECT id, name, description FROM actus WHERE id = ?;";
         $conn = new Connector();
+        $result = $conn->dbRun($sql, [$id])->fetch(PDO::FETCH_ASSOC);
 
-        $conn->dbRun($sql, [])->fetchAll(PDO::FETCH_ASSOC);
-
-        header("Location: index.php?actu_modified");
+        return $result;
     }
 }
