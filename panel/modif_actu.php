@@ -1,7 +1,7 @@
 <?php
 require_once "assets/php/pager.php";
 require_once "assets/php/database/request.php";
-$pager = new PanelPager("Modifcation Actu");
+$pager = new PanelPager("Modification Actu");
 
 $pager->setHeader();
 

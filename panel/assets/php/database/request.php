@@ -101,16 +101,7 @@ class PanelRequest
             echo "\n";
             echo "                <div class='actu-item-panel'>\n";
             echo "                    <h2 class='actu-title-panel'>{$value['name']}</h2>\n";
-            // echo "                    <button class='actu-edit-toggle' aria-controls='actu-edit' aria-expanded='false' value='$id'>Edit</button>";
-            echo "                        <a href=\"modif_actu.php?id={$value['id']}\">Edit {$value['id']}</a> ";
-            echo "                </div>";
-
-            echo "                <div class='actu-edit-item' data-visible='true' id='actu-edit'>\n";
-            echo "                    <div class='actu-title-content-edit'>\n";
-            echo "                        <h2 class='actu-title-edit'>{$value['name']}</h2>\n";
-            echo "                        <span>Le {$value['date']} Par {$value['author']}</span>";
-            echo "                    </div>\n";
-            echo "                    <p class='actu-desc-panel'>{$value['description']}</p>\n";
+            echo "                        <a href='modif_actu.php?id={$value['id']}'>Edit</a>\n";
             echo "                </div>";
             echo "\n";
         }

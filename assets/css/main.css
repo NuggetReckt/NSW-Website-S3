@@ -588,7 +588,7 @@ figcaption {
     margin: 0;
 }
 
-.actu-item-panel > button {
+.actu-item-panel > a {
     align-content: flex-end;
     border: none;
     border-radius: 7px;
@@ -599,14 +599,10 @@ figcaption {
     transition: 1s;
 }
 
-.actu-item-panel > button:hover {
+.actu-item-panel > a:hover {
     background-color: #2C70BA;
     color: #1a1a1a;
     transition: 1s;
-}
-
-.actu-edit-item {
-    display: none;
 }
 
 /*-----------------------------------------

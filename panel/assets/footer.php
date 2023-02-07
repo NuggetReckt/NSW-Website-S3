@@ -31,6 +31,5 @@
             </footer>
         </div>
         <script src="<?="../assets/js/responsive.js"?>"></script>
-        <script src="<?="assets/js/editor.js"?>"></script>
     </body>
 </html>
