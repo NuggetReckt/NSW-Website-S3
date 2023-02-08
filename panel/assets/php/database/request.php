@@ -43,7 +43,7 @@ class PanelRequest
 
             $user_password = $result['password'];
 
-            if ($password == $user_password) {
+            if (password_verify($password, $user_password)) {
 
                 $_SESSION['admin'] = $username;
 
