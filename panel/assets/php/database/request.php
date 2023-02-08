@@ -56,6 +56,7 @@ class PanelRequest
                 //Mot de passe incorrect pour cet utilisateur
                 header("Location: login.php?error=1");
                 session_abort();
+                exit();
             }
             if ($username != $user_username) {
                 header("Location: login.php?error=1");
@@ -132,8 +133,6 @@ class PanelRequest
     {
         $sql = "SELECT id, name, description FROM actus WHERE id = ?;";
         $conn = new Connector();
-        $result = $conn->dbRun($sql, [$id])->fetch(PDO::FETCH_ASSOC);
-
-        return $result;
+        return $conn->dbRun($sql, [$id])->fetch(PDO::FETCH_ASSOC);
     }
 }
