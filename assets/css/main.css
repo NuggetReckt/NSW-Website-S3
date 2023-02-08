@@ -3,7 +3,7 @@ Main style
 -----------------------------------------*/
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
     font-family: police_custom, sans-serif;
     margin: 0;
     padding: 0;
@@ -570,6 +570,11 @@ figcaption {
     font-size: 30px;
 }
 
+.actu-noresult-panel {
+    color: black;
+    margin: 0 !important;
+}
+
 .actu-title-panel {
     color: black;
 }
@@ -585,24 +590,46 @@ figcaption {
 
 .actu-item-panel > h2 {
     align-content: flex-start;
+    align-self: center;
     margin: 0;
 }
 
-.actu-item-panel > a {
+.actu-item-panel > div {
     align-content: flex-end;
-    border: none;
+    align-self: center;
+}
+
+.actu-item-panel > div > a {
     border-radius: 7px;
-    color: #2C70BA;
     font-family: police_custom, sans-serif;
     font-size: 16px;
     padding: 5px 10px;
-    transition: 1s;
+    transition: 500ms;
 }
 
-.actu-item-panel > a:hover {
+.actu-item-panel > div > a:hover {
+    transition: 500ms;
+}
+
+.actu-item-panel > div > #actu-goto, .actu-item-panel > div > #actu-edit {
+    border: 3px #2C70BA solid;
+    color: #2C70BA;
+}
+
+.actu-item-panel > div > #actu-goto:hover, .actu-item-panel > div > #actu-edit:hover {
     background-color: #2C70BA;
     color: #1a1a1a;
-    transition: 1s;
+}
+
+
+.actu-item-panel > div > #actu-delete {
+    border: 3px #a60000 solid;
+    color: #a60000;
+}
+
+.actu-item-panel > div > #actu-delete:hover {
+    background-color: #a60000;
+    color: #1a1a1a;
 }
 
 /*-----------------------------------------

@@ -98,20 +98,21 @@ class PanelRequest
         $result = $conn->dbRun($sql, [])->fetchAll(PDO::FETCH_ASSOC);
 
         foreach ($result as $i => $value) {
-
             echo "\n";
             echo "                <div class='actu-item-panel'>\n";
             echo "                    <h2 class='actu-title-panel'>{$value['name']}</h2>\n";
-            echo "                        <a href='modif_actu.php?id={$value['id']}'>Edit</a>\n";
+            echo "                    <div>";
+            echo "                        <a href='../index.php#actu-{$value['id']}' target='_blank' id='actu-goto'>Go</a>\n";
+            echo "                        <a href='edit_actu.php?id={$value['id']}' id='actu-edit'>Edit</a>\n";
+            echo "                        <a href='index.php?delete-actu&actu-id={$value['id']}' id='actu-delete'>Delete</a>\n";
+            echo "                     </div>";
             echo "                </div>";
             echo "\n";
         }
 
         if ($result == null) {
             echo "                <div class='actu-item-panel'>\n";
-            echo "                    <div class='actu-noresult-panel'>\n";
-            echo "                        <h2>Aucun Résultat...</h2>\n";
-            echo "                    </div>\n";
+            echo "                    <h2 class='actu-noresult-panel'>Aucun Résultat...</h2>\n";
             echo "                </div>";
         }
     }
@@ -134,5 +135,13 @@ class PanelRequest
         $sql = "SELECT id, name, description FROM actus WHERE id = ?;";
         $conn = new Connector();
         return $conn->dbRun($sql, [$id])->fetch(PDO::FETCH_ASSOC);
+    }
+
+    function delete_actu(int $actu_id): void
+    {
+        $sql = "DELETE FROM actus WHERE id = ?;";
+        $conn = new Connector();
+
+        $conn->dbRun($sql, [$actu_id])->fetchAll(PDO::FETCH_ASSOC);
     }
 }
