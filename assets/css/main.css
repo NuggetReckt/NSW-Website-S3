@@ -381,16 +381,16 @@ figcaption {
     margin: 0;
 }
 
-#discord-iframe-content {
-
-}
-
 #h2-discord, #h2-twitter {
     text-align: center;
 }
 
+#discord-iframe {
+    margin-bottom: -8px;
+}
+
 .discord-iframe-footer-content {
-    margin: 0 !important;
+    margin: 0;
     padding-top: 3px;
     background-color: #5865F2;
     border-bottom-left-radius: 5px;

@@ -6,7 +6,7 @@
                     <li id="footer-l">
                         <span>Non affilié avec Mojang AB.</span>
                         <br>
-                        <span>Site dev avec</span><span style="color: #ce0000"> ❤ </span><span>par NuggetReckt</span>
+                        <span>Dev avec</span><span style="color: #ce0000"> ❤ </span><span>par NuggetReckt & Mamakse</span>
                         <br>
                         <span>Nous contacter:
                             <a href="mailto:contact@noskillworld.fr">contact@noskillworld.fr</a>
@@ -26,7 +26,7 @@
                 </ul>
                 <hr class="footer-item">
                 <div class="sub-footer footer-item">
-                    <span>Copyright © NoSKillWorld 2020 - 2022</span>
+                    <span>Copyright © NoSKillWorld 2020 - 2023</span>
                 </div>
             </footer>
         </div>
