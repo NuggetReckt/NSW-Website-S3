@@ -31,5 +31,6 @@
             </footer>
         </div>
         <script src="<?="../assets/js/responsive.js"?>"></script>
+        <script src="<?="assets/js/password_toggle.js"?>"></script>
     </body>
 </html>

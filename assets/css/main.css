@@ -742,7 +742,26 @@ textarea {
     margin: auto 10px;
 }
 
+input[type="button"] {
+    cursor: pointer;
+
+    border-radius: 7px;
+    font-family: police_custom, sans-serif;
+    font-size: 14px;
+    padding: 3px 8px;
+    border: 2px #2C70BA solid;
+    color: #2C70BA;
+    transition: 500ms;
+}
+
+input[type="button"]:hover {
+    background-color: #2C70BA;
+    color: #1a1a1a;
+    transition: 500ms;
+}
+
 input[type="submit"] {
+    cursor: pointer;
     transition: 1s;
     color: #2C70BA;
     background-color: white;

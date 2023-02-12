@@ -32,33 +32,20 @@ class PanelRequest
         $conn = new Connector();
 
         $req = "SELECT password FROM admins WHERE username ='$username';";
-        $req2 = "SELECT username FROM admins;";
-
         $result = $conn->dbRun($req, [])->fetch(PDO::FETCH_ASSOC);
-        $result2 = $conn->dbRun($req2, [])->fetch(PDO::FETCH_ASSOC);
-
-        $user_username = $result2['username'];
 
         if ($username != null && $password != null) {
-
             $user_password = $result['password'];
 
             if (password_verify($password, $user_password)) {
-
                 $_SESSION['admin'] = $username;
 
-                //echo "Mot de passe correct.";
+                //Mot de passe correct
                 sleep(1);
-
                 header("Location: index.php?logged");
             } else {
-                sleep(1);
                 //Mot de passe incorrect pour cet utilisateur
-                header("Location: login.php?error=1");
-                session_abort();
-                exit();
-            }
-            if ($username != $user_username) {
+                sleep(1);
                 header("Location: login.php?error=1");
                 session_abort();
                 exit();

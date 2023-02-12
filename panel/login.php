@@ -46,7 +46,8 @@ if (isset($err)) {
                 </label>
                 <br>
                 <label>Mot de Passe<br>
-                    <input type="password" name="password" class="input" placeholder="mot de passe" required="">
+                    <input type="password" name="password" class="input" placeholder="mot de passe" required="" id="password-input">
+                    <input type="button" onclick="onToggle()" value="View">
                 </label>
                 <br>
                 <input type="submit" value="Login">
