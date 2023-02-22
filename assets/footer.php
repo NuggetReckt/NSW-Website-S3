@@ -14,13 +14,13 @@
                     </li>
                     <li id="footer-r">
                         <a href="https://www.instagram.com/noskillworld/" target="_blank" id="insta-footer">
-                            <img src="<?="/assets/images/instagram.svg"?>" alt="insta" id="logo-f">
+                            <img src="<?="/assets/images/instagram.svg"?>" alt="insta" class="logo-f" id="logo-f-insta">
                         </a>
                         <a href="https://twitter.com/NoSkillWorld" target="_blank" id="twitter-footer">
-                            <img src="<?="/assets/images/twitter.svg"?>" alt="twitter" id="logo-f">
+                            <img src="<?="/assets/images/twitter.svg"?>" alt="twitter" class="logo-f" id="logo-f-twitter">
                         </a>
                         <a href="https://discord.gg/cE4eHEZWrD" target="_blank" id="discord-footer">
-                            <img src="<?="/assets/images/discord.svg"?>" alt="discord" id="logo-f">
+                            <img src="<?="/assets/images/discord.svg"?>" alt="discord" class="logo-f" id="logo-f-discord">
                         </a>
                     </li>
                 </ul>

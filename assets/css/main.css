@@ -138,6 +138,10 @@ nav, .footer-content {
     flex-wrap: wrap;
 }
 
+.logo-f:hover {
+    filter: invert(39%) sepia(29%) saturate(1799%) hue-rotate(177deg) brightness(92%) contrast(87%);
+}
+
 #twitter-footer, #insta-footer {
     margin-right: 10px;
 }
@@ -764,7 +768,7 @@ input[type="checkbox"] {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #1a1a1a;
+    background-color: #464646;
     -webkit-transition: .4s;
     transition: .4s;
 }
