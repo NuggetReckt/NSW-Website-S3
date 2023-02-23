@@ -1,24 +1,25 @@
 <?php
+require_once "../assets/php/pager.php";
 
-class Pager
+class WikiPager
 {
     public string $title;
-    public bool $isUnderMaintenance = false;
 
     function __construct($title)
     {
         ini_set("default_charset", "UTF-8");
 
         $this->title = $title;
+        $pager = new Pager("");
 
-        if ($this->isUnderMaintenance) {
-            header("Location: maintenance.php");
+        if ($pager->isUnderMaintenance) {
+            header("Location: ../maintenance.php");
         }
     }
 
     private function setTitle(): void
     {
-        echo "<title>", $this->title, " - NoSkillWorld</title>";
+        echo "<title> Wiki (", $this->title, ") - NoSkillWorld</title>";
     }
 
     function setHeader(): void
@@ -32,6 +33,6 @@ class Pager
 
     function setFooter(): void
     {
-        require_once "assets/footer.php";
+        require_once "../assets/footer.php";
     }
 }

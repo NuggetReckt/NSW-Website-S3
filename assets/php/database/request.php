@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @property string $username
- * @property string $password
- */
-
 class Request
 {
     function __construct()

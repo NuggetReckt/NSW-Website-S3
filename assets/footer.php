@@ -1,3 +1,6 @@
+<?php
+$page = basename(dirname($_SERVER["PHP_SELF"]));
+?>
         </div>
         </main>
         <div class="footer-content">
@@ -58,8 +61,16 @@
                     elt.innerHTML = "Erreur 💩";
             }
         </script>
-        <script src="<?="assets/js/copy.js"?>"></script>
-        <script src="<?="assets/js/top.js"?>"></script>
-        <script src="<?="assets/js/responsive.js"?>"></script>
+        <?php
+        if ($page == "wiki") {
+            echo "        <script src='../assets/js/copy.js'></script>\n";
+            echo "        <script src='../assets/js/top.js'></script>\n";
+            echo "        <script src='../assets/js/responsive.js'></script>\n";
+        } else {
+            echo "        <script src='assets/js/copy.js'></script>\n";
+            echo "        <script src='assets/js/top.js'></script>\n";
+            echo "        <script src='assets/js/responsive.js'></script>\n";
+        }
+        ?>
     </body>
 </html>

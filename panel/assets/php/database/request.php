@@ -1,5 +1,4 @@
 <?php
-
 use JetBrains\PhpStorm\NoReturn;
 
 /**
@@ -15,8 +14,10 @@ use JetBrains\PhpStorm\NoReturn;
  * @property string $actu_date
  * @property string $actu_img_url
  */
-class PanelRequest
+
+#[AllowDynamicProperties] class PanelRequest
 {
+
     function __construct()
     {
         require_once "../assets/php/database/connector.php";

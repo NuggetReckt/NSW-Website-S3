@@ -1,9 +1,22 @@
 <?php
-$page = basename($_SERVER["PHP_SELF"]);
+
+function echoIfActive($current_page): void
+{
+    if (getPage() == $current_page) {
+        echo "active";
+    } else {
+        echo "not-active";
+    }
+}
+
+function getPage() : string
+{
+    return basename($_SERVER["PHP_SELF"]);
+}
 ?>
     </head>
         <?php
-        if ($page == "index.php") {
+        if (getPage() == "index.php") {
             echo "<body>";
         } else {
             echo "<body id='body-other'>";
@@ -14,54 +27,19 @@ $page = basename($_SERVER["PHP_SELF"]);
             <nav>
                 <ul class="navbar-list" data-visible="false">
                     <li class="navbar-item">
-                        <a href="<?="index.php"?>" class="navbar-item-a
-                        <?php
-                        if ($page == "index.php") {
-                            echo "active";
-                        } else {
-                            echo "not-active";
-                        }
-                        ?>">Accueil</a>
+                        <a href="<?="index.php"?>" class="navbar-item-a <?php echoIfActive("index.php")?>">Accueil</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="<?="wiki.php"?>" class="navbar-item-a
-                        <?php
-                        if ($page == "wiki.php") {
-                            echo "active";
-                        } else {
-                            echo "not-active";
-                        }
-                        ?>">Wiki</a>
+                        <a href="<?="/wiki"?>" class="navbar-item-a <?php echoIfActive("wiki")?>">Wiki</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="<?="votes.php"?>" class="navbar-item-a
-                        <?php
-                        if ($page == "votes.php") {
-                            echo "active";
-                        } else {
-                            echo "not-active";
-                        }
-                        ?>">Votes</a>
+                        <a href="<?="votes.php"?>" class="navbar-item-a <?php echoIfActive("votes.php")?>">Votes</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="<?="staff.php"?>" class="navbar-item-a
-                        <?php
-                        if ($page == "staff.php") {
-                            echo "active";
-                        } else {
-                            echo "not-active";
-                        }
-                        ?>">Equipe</a>
+                        <a href="<?="staff.php"?>" class="navbar-item-a <?php echoIfActive("staff.php")?>">Equipe</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="<?="cgu-cgv.php"?>" class="navbar-item-a
-                        <?php
-                        if ($page == "cgu-cgv.php") {
-                            echo "active";
-                        } else {
-                            echo "not-active";
-                        }
-                        ?>">Regles</a>
+                        <a href="<?="cgu-cgv.php"?>" class="navbar-item-a <?php echoIfActive("cgu-cgv.php")?>">Regles</a>
                     </li>
                     <hr id="responsive-separator">
                     <li class="navbar-item" id="nav-right">
