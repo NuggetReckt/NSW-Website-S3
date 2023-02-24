@@ -495,12 +495,12 @@ figcaption {
 }
 
 .main-top-col-wiki > a > img {
-    height: 175px;
-    width: 175px;
+    height: 172px;
+    width: 172px;
 }
 
 .main-top-col-wiki > a > span {
-    font-size: 22px;
+    font-size: 24px;
     display: block;
     color: black;
 }
