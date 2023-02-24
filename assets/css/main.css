@@ -480,15 +480,40 @@ figcaption {
     border-radius: 10px;
     box-shadow: 0 2px 2px 0 rgb(0 0 0 / 20%);
     flex-wrap: wrap;
-    display: flex;
+    display: inline-flex;
+    text-align: center;
+    vertical-align: top;
     justify-content: center;
     -webkit-box-align: center;
     -webkit-box-pack: justify;
-    padding: 13px;
+    padding: 40px 10px;
     color: white;
     background-color: #2C70BA;
     font-family: police_custom_bold, sans-serif;
-    width: 16%;
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.main-top-col-wiki > a > img {
+    height: 175px;
+    width: 175px;
+}
+
+.main-top-col-wiki > a > span {
+    font-size: 22px;
+    display: block;
+    color: black;
+}
+
+.main-top-col-wiki {
+    transition: 500ms;
+}
+
+.main-top-col-wiki:hover {
+    transition: 500ms;
+    background-color: #2766a8;
+    box-shadow: -4px 4px 8px rgba(38, 38, 38, 0.2);
+    transform: translateY(-8px);
 }
 
 #row {

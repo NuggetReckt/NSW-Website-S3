@@ -13,20 +13,41 @@ $pager->setHeader();
     </div>
     <div id="wiki-nav">
         <div id="row">
-            <div class="main-top-col-wiki" id="top-semirp">
-                <span><a href="" class="bold" style="color: black;">link 1</a></span>
+            <div class="main-top-col-wiki" id="wiki-jobs">
+                <a href="jobs.php" class="bold">
+                    <img src="../assets/images/axe.png" alt="jobs-icon">
+                    <span>Jobs</span>
+                </a>
             </div>
-            <div class="main-top-col-wiki" id="top-hardcore">
-                <span><a href="" class="bold" style="color: black;">link 2</a></span>
+            <div class="main-top-col-wiki" id="wiki-lands">
+                <a href="lands.php" class="bold">
+                    <img src="../assets/images/tent.png" alt="lands-icon">
+                    <span>Lands</span>
+                </a>
             </div>
-            <div class="main-top-col-wiki" id="top-creatif">
-                <span><a href="" class="bold" style="color: black;">link 3</a></span>
+            <div class="main-top-col-wiki" id="wiki-wp">
+                <a href="warpplayer.php" class="bold">
+                    <img src="../assets/images/black-hole.png" alt="wp-icon">
+                    <span>WarpPlayer</span>
+                </a>
             </div>
-            <div class="main-top-col-wiki" id="top-ctoutpt">
-                <span><a href="" class="bold" style="color: black;">link 4</a></span>
+            <div class="main-top-col-wiki" id="wiki-hdv">
+                <a href="hdv.php" class="bold">
+                    <img src="../assets/images/price.png" alt="hdv-icon">
+                    <span>Hôtel Des Ventes</span>
+                </a>
             </div>
-            <div class="main-top-col-wiki" id="top-qr">
-                <span><a href="" class="bold" style="color: black;">link 5</a></span>
+            <div class="main-top-col-wiki" id="wiki-hc">
+                <a href="hardcore.php" class="bold">
+                    <img src="../assets/images/heartbeat.png" alt="hc-icon">
+                    <span>HardCore</span>
+                </a>
+            </div>
+            <div class="main-top-col-wiki" id="wiki-lore">
+                <a href="lore.php" class="bold">
+                    <img src="../assets/images/literature.png" alt="lore-icon">
+                    <span>Lore</span>
+                </a>
             </div>
         </div>
     </div>
