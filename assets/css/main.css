@@ -187,7 +187,12 @@ hr {
     border-radius: 7px;
 }
 
-::selection, ::-moz-selection {
+::-moz-selection {
+    background-color: #2C70BA;
+    color: white;
+}
+
+::selection {
     background-color: #2C70BA;
     color: white;
 }
