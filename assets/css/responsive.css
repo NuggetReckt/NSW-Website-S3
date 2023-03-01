@@ -1,7 +1,7 @@
 @media (max-width: 1165px) {
-
-    .main-top-col-wiki {
-
+    .main-top-col-wiki > a > img {
+        height: 170px;
+        width: 170px;
     }
 }
 
@@ -14,6 +14,11 @@
         color: white;
         font-family: police_custom_bold sans-serif;
         width: 26%;
+    }
+
+    .main-top-col-wiki > a > img {
+        height: 150px;
+        width: 150px;
     }
 
     .flex-container {
@@ -136,6 +141,20 @@
         max-width: 100%;
     }
 
+    .main-top-col-wiki {
+        width: 28%;
+        margin-bottom: 20px;
+    }
+
+    .main-top-col-wiki > a > img {
+        height: 130px;
+        width: 130px;
+    }
+
+    .main-top-col-wiki > a > span {
+        font-size: 20px;
+    }
+
     .main-top-big {
         margin: 10px 0;
     }
@@ -148,23 +167,33 @@
         margin-top: 0;
     }
 
-    .top-title-menu > h1 {
-
-    }
-
     .pop-up-message {
         top: 10%;
         width: 300px;
     }
+}
 
-    @media (max-width: 475px) {
-        .footer-item {
-            justify-content: center;
-            flex-direction: column;
-        }
+@media (max-width: 475px) {
+    .main-top-col-wiki {
+        width: 43%;
+        padding: 23px 10px;
+    }
 
-        #footer-r {
-            margin-top: 20px;
-        }
+    .main-top-col-wiki > a > img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .main-top-col-wiki > a > span {
+        font-size: 18px;
+    }
+
+    .footer-item {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #footer-r {
+        margin-top: 20px;
     }
 }

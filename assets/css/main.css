@@ -512,8 +512,6 @@ figcaption {
     border-color: black;
     border-radius: 10px;
     box-shadow: 0 2px 2px 0 rgb(0 0 0 / 20%);
-    flex-wrap: wrap;
-    display: inline-flex;
     text-align: center;
     vertical-align: top;
     justify-content: center;
@@ -525,6 +523,7 @@ figcaption {
     font-family: police_custom_bold, sans-serif;
     width: 30%;
     margin-bottom: 30px;
+    transition: 500ms;
 }
 
 .main-top-col-wiki > a > img {
@@ -536,10 +535,6 @@ figcaption {
     font-size: 24px;
     display: block;
     color: black;
-}
-
-.main-top-col-wiki {
-    transition: 500ms;
 }
 
 .main-top-col-wiki:hover {
