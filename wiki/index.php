@@ -37,6 +37,12 @@ $pager->setHeader();
                     <span>Hôtel Des Ventes</span>
                 </a>
             </div>
+            <div class="main-top-col-wiki" id="wiki-homes">
+                <a href="homes.php" class="bold">
+                    <img src="../assets/images/house.png" alt="homes-icon">
+                    <span>Homes</span>
+                </a>
+            </div>
             <div class="main-top-col-wiki" id="wiki-hc">
                 <a href="hardcore.php" class="bold">
                     <img src="../assets/images/heartbeat.png" alt="hc-icon">
@@ -49,7 +55,22 @@ $pager->setHeader();
                     <span>Lore</span>
                 </a>
             </div>
+            <div class="main-top-col-wiki" id="wiki-mumble">
+                <a href="mumble.php" class="bold">
+                    <img src="../assets/images/headphones.png" alt="mumble-icon">
+                    <span>Mumble</span>
+                </a>
+            </div>
+            <div class="main-top-col-wiki" id="wiki-qr">
+                <a href="questions-reponses.php" class="bold">
+                    <img src="../assets/images/search.png" alt="qr-icon">
+                    <span>Questions/Réponses</span>
+                </a>
+            </div>
         </div>
+    </div>
+    <div id="credits-icons">
+        <span>Beautiful icons by Freepik on <a href="https://flaticon.com" target="_blank">flaticon.com</a></span>
     </div>
 
 <?php

@@ -174,25 +174,27 @@ hr {
     transition: 1s;
 }
 
-::-webkit-scrollbar {
+*::-webkit-scrollbar {
     width: 6px;
+    border: none;
+    background-color: transparent;
 }
 
-::-webkit-scrollbar-track {
-    display: none;
+*::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.7);
 }
 
-::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     background: #2C70BA;
     border-radius: 7px;
 }
 
-::-moz-selection {
+*::-moz-selection {
     background-color: #2C70BA;
     color: white;
 }
 
-::selection {
+*::selection {
     background-color: #2C70BA;
     color: white;
 }
@@ -556,6 +558,13 @@ figcaption {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+#credits-icons {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
 }
 
 .docu-content, #votes-links {
