@@ -11,10 +11,10 @@ class Connector
 
     function __construct()
     {
-        $this->username = USERNAME;
-        $this->password = USERPASS;
-        $this->database = DBNAME;
-        $this->server = HOST;
+        $this->username = DB_USERNAME;
+        $this->password = DB_PASSWORD;
+        $this->database = DB_DBNAME;
+        $this->server = DB_HOST;
         $this->port = 3306;
     }
 
