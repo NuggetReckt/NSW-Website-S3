@@ -1,7 +1,7 @@
 <?php
 require_once "assets/php/pager.php";
 
-$pager = new WikiPager("Homes");
+$pager = new WikiPager("Mumble");
 
 $pager->setHeader();
 ?>
