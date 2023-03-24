@@ -500,11 +500,50 @@ figcaption {
     color: white;
 }
 
+.table-of-contents-wiki {
+    align-self: flex-start;
+    min-width: 270px;
+    padding: 7px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px 2px rgb(0 0 0 / 20%);
+}
+
+.table-of-contents-wiki > h3{
+    margin: 0;
+}
+
+.table-wiki-list {
+    margin: 0;
+    padding-left: 30px;
+}
+
+.table-wiki-item {
+
+}
+
 .wiki-content {
     background: white;
     padding: 15px;
     border-radius: 7px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.wiki-article {
+    width: 100%;
+    margin-right: 15px;
+}
+
+.wiki-article-title {
+    margin-bottom: 20px;
+}
+
+.wiki-article-title > hr {
+    background-color: #1a1a1a !important;
+    padding: 1px 0;
+    margin: 0;
 }
 
 #body-other {

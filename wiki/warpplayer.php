@@ -14,10 +14,51 @@ $pager->setHeader();
     </div>
     <div class="wiki-content">
         <div class="table-of-contents-wiki">
-
+            <h3>Table des matières</h3>
+            <ol class="table-wiki-list">
+                <li class="table-wiki-item">
+                    <a href="#1">Présentation</a>
+                </li>
+                <li class="table-wiki-item">
+                    <a href="#2">Créer son premier warp</a>
+                </li>
+                <li class="table-wiki-item">
+                    <a href="#2">Administrer son warp</a>
+                </li>
+                <li class="table-wiki-item">
+                    <a href="#3">Interagir avec les autres warps</a>
+                </li>
+            </ol>
         </div>
         <div class="wiki-article">
+            <div class="wiki-article-title">
+                <h2 id="1">1. Présentation</h2>
+                <hr>
+            </div>
+            <div class="wiki-article-content">
 
+            </div>
+            <div class="wiki-article-title">
+                <h2 id="2">2. Créer son premier warp</h2>
+                <hr>
+            </div>
+            <div class="wiki-article-content">
+
+            </div>
+            <div class="wiki-article-title">
+                <h2 id="3">3. Administrer son warp</h2>
+                <hr>
+            </div>
+            <div class="wiki-article-content">
+
+            </div>
+            <div class="wiki-article-title">
+                <h2 id="4">4. Interagir avec les autres warps</h2>
+                <hr>
+            </div>
+            <div class="wiki-article-content">
+
+            </div>
         </div>
     </div>
 
