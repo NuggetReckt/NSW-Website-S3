@@ -64,11 +64,11 @@ $page = basename(dirname($_SERVER["PHP_SELF"]));
         <?php
         if ($page == "wiki") {
             echo "        <script src='../assets/js/copy.js'></script>\n";
-            echo "        <script src='../assets/js/top.js'></script>\n";
+            echo "        <script src='../assets/js/scroll.js'></script>\n";
             echo "        <script src='../assets/js/responsive.js'></script>\n";
         } else {
             echo "        <script src='assets/js/copy.js'></script>\n";
-            echo "        <script src='assets/js/top.js'></script>\n";
+            echo "        <script src='assets/js/scroll.js'></script>\n";
             echo "        <script src='assets/js/responsive.js'></script>\n";
         }
         ?>
