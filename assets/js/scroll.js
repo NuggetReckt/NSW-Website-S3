@@ -1,5 +1,4 @@
 let toTopButton = document.getElementById("to-top");
-let tableOfContent = document.getElementById("table-of-contents-wiki")
 
 window.onscroll = function () {
     onScroll();
