@@ -142,7 +142,7 @@ nav, .footer-content {
     filter: invert(39%) sepia(29%) saturate(1799%) hue-rotate(177deg) brightness(92%) contrast(87%);
 }
 
-#twitter-footer, #insta-footer {
+#twitter-footer, #insta-footer, #tiktok-footer {
     margin-right: 10px;
 }
 
