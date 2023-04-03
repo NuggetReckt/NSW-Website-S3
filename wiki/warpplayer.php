@@ -36,36 +36,29 @@ $pager->setHeader();
                 <hr>
             </div>
             <div class="wiki-article-content">
-                <span>
-                    Potenti suspendisse ipsum penatibus vitae iaculis adipiscing magna consectetur nisl sem cubilia dapibus nullam bibendum leo letius in nec eleifend malesuada sit phasellus litora mattis class finibus condimentum luctus magnis ultrices urna pede est accumsan interdum integer inceptos sed arcu efficitur aliquet tortor mus ridiculus odio dis commodo montes diam fusce netus maecenas aenean etiam metus enim nisi velit maximus elit vivamus mollis felis eget placerat lobortis euismod orci vulputate aliquam pulvinar tempus curabitur nam consectetuer mauris pharetra rhoncus viverra lorem facilisi augue et gravida ante venenatis justo lacinia purus vel ullamcorper duis neque fames fermentum imperdiet amet consequat
-                </span>
+                <img src="../assets/images/info.png" alt="info">
+                <p class="wiki-p">Les WarpPlayers te permettent en jeu de pouvoir promouvoir ton projet RP, shop ou
+                    quelconque ferme.
+                    Via un beau menu, tu peux voir les warps ajoutés par les joueurs et les rejoindre en cliquant dessus
+                    !</p>
             </div>
             <div class="wiki-article-title">
                 <h2 id="2">2. Créer son premier warp</h2>
                 <hr>
             </div>
             <div class="wiki-article-content">
-                <span>
-                    Potenti suspendisse ipsum penatibus vitae iaculis adipiscing magna consectetur nisl sem cubilia dapibus nullam bibendum leo letius in nec eleifend malesuada sit phasellus litora mattis class finibus condimentum luctus magnis ultrices urna pede est accumsan interdum integer inceptos sed arcu efficitur aliquet tortor mus ridiculus odio dis commodo montes diam fusce netus maecenas aenean etiam metus enim nisi velit maximus elit vivamus mollis felis eget placerat lobortis euismod orci vulputate aliquam pulvinar tempus curabitur nam consectetuer mauris pharetra rhoncus viverra lorem facilisi augue et gravida ante venenatis justo lacinia purus vel ullamcorper duis neque fames fermentum imperdiet amet consequat
-                </span>
             </div>
             <div class="wiki-article-title">
                 <h2 id="3">3. Administrer son warp</h2>
                 <hr>
             </div>
             <div class="wiki-article-content">
-                <span>
-                    Potenti suspendisse ipsum penatibus vitae iaculis adipiscing magna consectetur nisl sem cubilia dapibus nullam bibendum leo letius in nec eleifend malesuada sit phasellus litora mattis class finibus condimentum luctus magnis ultrices urna pede est accumsan interdum integer inceptos sed arcu efficitur aliquet tortor mus ridiculus odio dis commodo montes diam fusce netus maecenas aenean etiam metus enim nisi velit maximus elit vivamus mollis felis eget placerat lobortis euismod orci vulputate aliquam pulvinar tempus curabitur nam consectetuer mauris pharetra rhoncus viverra lorem facilisi augue et gravida ante venenatis justo lacinia purus vel ullamcorper duis neque fames fermentum imperdiet amet consequat
-                </span>
             </div>
             <div class="wiki-article-title">
                 <h2 id="4">4. Interagir avec les autres warps</h2>
                 <hr>
             </div>
             <div class="wiki-article-content">
-                <span>
-                    Potenti suspendisse ipsum penatibus vitae iaculis adipiscing magna consectetur nisl sem cubilia dapibus nullam bibendum leo letius in nec eleifend malesuada sit phasellus litora mattis class finibus condimentum luctus magnis ultrices urna pede est accumsan interdum integer inceptos sed arcu efficitur aliquet tortor mus ridiculus odio dis commodo montes diam fusce netus maecenas aenean etiam metus enim nisi velit maximus elit vivamus mollis felis eget placerat lobortis euismod orci vulputate aliquam pulvinar tempus curabitur nam consectetuer mauris pharetra rhoncus viverra lorem facilisi augue et gravida ante venenatis justo lacinia purus vel ullamcorper duis neque fames fermentum imperdiet amet consequat
-                </span>
             </div>
         </div>
     </div>
