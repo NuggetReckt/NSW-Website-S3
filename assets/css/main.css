@@ -540,7 +540,7 @@ figcaption {
 }
 
 .wiki-article-title {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .wiki-article-title > hr {
@@ -549,19 +549,56 @@ figcaption {
     margin: 0;
 }
 
+.wiki-article-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -15px;
+}
+
 .wiki-article-content {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    height: min-content;
+    margin-bottom: 15px;
+}
+
+.wiki-article-content-no-separation {
+    margin-bottom: 5px;
 }
 
 .wiki-article-content > img {
-    height: 35px;
+    height: 34px;
+}
+
+.wiki-img-highlight-info {
+    filter: invert(39%) sepia(38%) saturate(1225%) hue-rotate(174deg) brightness(91%) contrast(89%);
+}
+
+.wiki-img-highlight-warn {
+    filter: invert(66%) sepia(67%) saturate(4852%) hue-rotate(359deg) brightness(104%) contrast(100%);
+}
+
+.wiki-img-highlight-forbidden {
+    filter: invert(19%) sepia(79%) saturate(6967%) hue-rotate(1deg) brightness(100%) contrast(124%);
+}
+
+.wiki-command-exemple {
+    background-color: #1a1a1a;
+    border-radius: 6px;
+    color: white;
+    padding: 3px 5px;
+    font-size: 14px;
 }
 
 .wiki-p {
-    border-left: rgba(0, 0, 0, 0.65) 4px solid;
-    padding-left: 5px;
-    margin: 0 0 0 5px;
+    text-indent: 15px;
+    margin: 0;
+}
+
+.wiki-p-highlight {
+    border-left: rgba(0, 0, 0, 0.55) 4px solid;
+    padding-left: 8px;
+    margin: 0 0 0 8px;
 }
 
 #body-other {
