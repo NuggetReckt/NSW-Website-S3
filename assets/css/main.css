@@ -508,7 +508,6 @@ figcaption {
     box-shadow: 0 0 10px 2px rgb(0 0 0 / 20%);
     top: 15px;
     position: sticky;
-    position: -webkit-sticky;
 }
 
 .table-of-contents-wiki > h3 {
@@ -518,10 +517,6 @@ figcaption {
 .table-wiki-list {
     margin: 0;
     padding-left: 30px;
-}
-
-.table-wiki-item {
-
 }
 
 .wiki-content {
@@ -552,22 +547,46 @@ figcaption {
 .wiki-article-wrapper {
     display: flex;
     flex-direction: column;
-    margin-bottom: -15px;
+    margin-bottom: -13px;
 }
 
 .wiki-article-content {
     display: flex;
     align-items: center;
     height: min-content;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
+}
+
+.wiki-article-content-centered {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wiki-subsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wiki-p-img-legend {
+    text-indent: unset;
+    margin: 2px 0 0;
 }
 
 .wiki-article-content-no-separation {
     margin-bottom: 5px;
 }
 
-.wiki-article-content > img {
+.wiki-img-highlight {
     height: 34px;
+}
+
+.wiki-img-exemple {
+    height: 245px;
+    border-radius: 7px;
 }
 
 .wiki-img-highlight-info {
