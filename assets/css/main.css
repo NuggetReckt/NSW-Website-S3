@@ -557,6 +557,13 @@ figcaption {
     margin-bottom: 13px;
 }
 
+.wiki-article-content-steps {
+    display: flex;
+    align-items: flex-start;
+    height: min-content;
+    margin-bottom: 13px;
+}
+
 .wiki-article-content-centered {
     display: flex;
     flex-direction: row;
@@ -601,6 +608,13 @@ figcaption {
     filter: invert(19%) sepia(79%) saturate(6967%) hue-rotate(1deg) brightness(100%) contrast(124%);
 }
 
+.wiki-img-step {
+    filter: invert(39%) sepia(38%) saturate(1225%) hue-rotate(174deg) brightness(91%) contrast(89%);
+
+    height: 30px;
+    margin-top: 5px;
+}
+
 .wiki-command-exemple {
     background-color: #1a1a1a;
     border-radius: 6px;
@@ -622,6 +636,12 @@ figcaption {
     border-left: rgba(0, 0, 0, 0.55) 4px solid;
     padding-left: 8px;
     margin: 0 0 0 8px;
+}
+
+.wiki-p-step {
+    border-left: rgba(0, 0, 0, 0.55) 4px solid;
+    padding-left: 5px;
+    margin: 0 0 0 5px;
 }
 
 #body-other {
