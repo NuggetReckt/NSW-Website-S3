@@ -26,7 +26,7 @@ $pager->setHeader();
                     <a href="#3">Installation</a>
                 </li>
                 <li class="table-wiki-item">
-                    <a href="#3">Configuration</a>
+                    <a href="#4">Configuration</a>
                 </li>
             </ol>
         </div>
@@ -132,7 +132,7 @@ $pager->setHeader();
                     </p>
                 </div>
                 <div class="wiki-article-content-steps">
-                    <img src="../assets/images/step3.png" class="wiki-img-step"
+                    <img src="../assets/images/step5.png" class="wiki-img-step"
                          alt="step">
                     <p class="wiki-p-step">
                         Télécharge le mod MumbleLink en cliquant sur le lien suivant (Toujours pour la version [version]
@@ -140,11 +140,15 @@ $pager->setHeader();
                         <a href="" target="_blank">Télécharger le MumbleLink</a> <br>
                         Puis place le fichier <span class="wiki-command-exemple">fabric-mumblelink-mod-x.x.x.jar</span>
                         dans le dossier <span class="wiki-command-exemple">mods</span> dans ton <span
-                                class="wiki-command-exemple">.minecraft</span>. <br><br>
+                            class="wiki-command-exemple">.minecraft</span>. <br><br>
                         Comment accéder au dossier <span class="wiki-command-exemple">.minecraft</span> ?<br>
-                        Execute le raccourci clavier <span class="wiki-command-exemple">WIN + R</span> et tape l'entrée
+                        - Sur Windows, execute le raccourci clavier <span class="wiki-command-exemple">WIN + R</span> et
+                        tape l'entrée
                         <span class="wiki-command-exemple">%appdata%</span> dans la fenêtre qui vient de s'ouvrir. Tu
-                        trouveras dans ce dossier le fameux <span class="wiki-command-exemple">.minecraft</span>.
+                        trouveras dans ce dossier le fameux <span class="wiki-command-exemple">.minecraft</span>. <br>
+                        - Sur Mac, execute le raccourci clavier <span class="wiki-command-exemple">maj + ⌘ + G</span>
+                        puis copier-coller le chemin suivant :
+                        <span class="wiki-command-exemple">~/Library/Application Support/minecraft</span>
                     </p>
                 </div>
             </div>
@@ -153,15 +157,51 @@ $pager->setHeader();
                 <hr>
             </div>
             <div class="wiki-article-wrapper">
-                <div class="wiki-article-content">
-                    <p class="wiki-p"></p>
+                <div class="wiki-article-content-steps">
+                    <img src="../assets/images/step6.png" class="wiki-img-step"
+                         alt="step">
+                    <p class="wiki-p-step">
+                        La configuration de Mumble se passe dans l'onglet "Configurer" puis dans "Réglages..." depuis la
+                        fenêtre de base.<br>
+                        Dans la même fenêtre de configuration, dans l'onglet "Plugin", activer le plugin "Link" comme
+                        montré sur le screen ci-dessous :
+                        <img src="../assets/images/mumble1.png" class="wiki-img-exemple-solo" alt="mumble1-img"><br>
+                        Veilles également à ce que l'option "Lier au jeu et transmettre la position" soit activée, comme
+                        montré sur ce même screenshot.
+                    </p>
                 </div>
-                <div class="wiki-article-content">
-                    <p class="wiki-p"></p>
+                <div class="wiki-article-content-steps">
+                    <img src="../assets/images/step7.png" class="wiki-img-step"
+                         alt="step">
+                    <p class="wiki-p-step">
+                        Dans l'onglet "Sortie audio", mettre la distance maximale à 70m et la distance minimale à 1m.
+                        Veilles à ce que la position audio soit activée.<br>
+                        <img src="../assets/images/mumble2.png" class="wiki-img-exemple-solo" alt="mumble2-img">
+                    </p>
+                </div>
+                <div class="wiki-article-content-steps">
+                    <img src="../assets/images/step8.png" class="wiki-img-step"
+                         alt="step">
+                    <p class="wiki-p-step">
+                        Une fois toutes ces étapes effectuées, clique sur "Appliquer" puis sur "OK". <br>
+                        Mumble est configuré !
+                    </p>
+                </div>
+                <div class="wiki-article-content-steps">
+                    <img src="../assets/images/step9.png" class="wiki-img-step"
+                         alt="step">
+                    <p class="wiki-p-step">
+                        Maintenant, nous allons devoir ajouter un serveur. Pour ce faire, dans la fenêtre principale,
+                        clique sur l'onglet "Serveur" puis sur "Se Connecter". Ensuite, clique sur "Ajouter Nouveau" et
+                        rentre l'adresse <span class="wiki-command-exemple">mumble.noskillworld.fr</span>, laisse le
+                        port tel quel, met ton Pseudo In-Game puis
+                        nomme le serveur comme tu le souhaites. Tu devrais avoir quelque chose qui ressemble à ça :
+                        <img src="../assets/images/mumble3.png" class="wiki-img-exemple" alt="mumble2-img"><br>
+                        Lance ton jeu, C'est Bon !
+                    </p>
                 </div>
             </div>
         </div>
-    </div>
 
 <?php
 $pager->setFooter();

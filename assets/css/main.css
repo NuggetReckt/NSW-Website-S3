@@ -591,6 +591,11 @@ figcaption {
     height: 34px;
 }
 
+.wiki-img-exemple-solo {
+    height: 30vw;
+    border-radius: 7px;
+}
+
 .wiki-img-exemple {
     height: 245px;
     border-radius: 7px;
@@ -619,7 +624,7 @@ figcaption {
     background-color: #1a1a1a;
     border-radius: 6px;
     color: white;
-    padding: 3px 5px;
+    padding: 2px 5px;
     font-size: 14px;
 }
 
