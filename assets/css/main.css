@@ -175,13 +175,12 @@ hr {
 }
 
 *::-webkit-scrollbar {
-    width: 6px;
+    width: 7px;
     border: none;
-    background-color: transparent;
 }
 
 *::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.7);
+    background: #1a1a1a;
 }
 
 *::-webkit-scrollbar-thumb {
@@ -210,6 +209,11 @@ Actus style
     width: 100%;
     box-shadow: 0 0 10px 1px rgb(0 0 0 / 20%);
     background-color: #ebebeb;
+}
+
+.actus-content::-webkit-scrollbar-track {
+    background-color: #ffffff;
+!important;
 }
 
 .actu-title-content, .actu-noresult {
