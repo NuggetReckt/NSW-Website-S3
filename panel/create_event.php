@@ -1,36 +1,30 @@
 <?php
 require_once "assets/php/pager.php";
 require_once "assets/php/database/request.php";
-$pager = new PanelPager("Modification Actu");
+$pager = new PanelPager("Nouvel Event");
 
 $pager->setHeader();
 
 // Variable POST/GET
-$actu_id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
-$event_name = filter_input(INPUT_POST, 'actu-name', FILTER_SANITIZE_SPECIAL_CHARS) ?? null;
-$actu_desc = filter_input(INPUT_POST, 'actu-desc', FILTER_SANITIZE_SPECIAL_CHARS) ?? null;
+$event_name = filter_input(INPUT_POST, 'event-name', FILTER_SANITIZE_SPECIAL_CHARS);
+$event_date = filter_input(INPUT_POST, 'event-date', FILTER_SANITIZE_SPECIAL_CHARS);
+$event_hour = filter_input(INPUT_POST, 'event-hour', FILTER_SANITIZE_SPECIAL_CHARS);
 $err = filter_input(INPUT_GET, 'error', FILTER_VALIDATE_INT);
 
 $request = new PanelRequest();
 
-if (isset($event_name) || isset($actu_desc)) {
-    $request->modify_actu($actu_id, $event_name, $actu_desc);
+if (isset($event_name) && isset($event_date) && isset($event_hour)) {
+    $request->create_event($event_name, $event_date, $event_hour);
 }
-
-$actuData = $request->get_actus_id_name_desc($actu_id);
-
-$event_name = filter_input(INPUT_POST, 'actu-name', FILTER_SANITIZE_SPECIAL_CHARS) ?? $actuData['name'];
-$actu_desc = filter_input(INPUT_POST, 'actu-desc', FILTER_SANITIZE_SPECIAL_CHARS) ?? $actuData['description'];
-
 
 if ($_SESSION['admin'] == null) {
     header("Location: login.php?error=3");
     exit();
 }
 
-if (isset($_GET['actu_created'])) {
+if (isset($_GET['event_created'])) {
     echo "            <div class='pop-up-message' id='pop-up-success'>\n";
-    echo "                <span>Actu créée avec succès.</span>\n";
+    echo "                <span>Event créé avec succès.</span>\n";
     echo "            </div>\n";
 }
 
@@ -51,19 +45,21 @@ if (isset($err)) {
 }
 ?>
     <div class="form" id="actu-form">
-        <form method="POST">
+        <form action="create_event.php" method="POST">
             <fieldset>
                 <div class="form-content">
-                    <h1>Modifier une actu</h1>
-                    <label>Titre de l'actu<br>
-                        <input type="text" name="actu-name" class="input" placeholder="Titre de l'actualité" value="<?= $event_name ?>">
+                    <h1>Créer un évent</h1>
+                    <label>Titre de l'évent<br>
+                        <input type="text" name="event-name" class="input" placeholder="Titre de l'évent"
+                               required="">
                     </label>
                     <br>
-                    <label>Actu<br>
-                        <textarea name="actu-desc" rows="6" placeholder="Votre actu"><?= $actu_desc ?></textarea>
+                    <label>Date/Heure<br>
+                        <input type="date" name="event-date" min="2023-01-01" required=""><br>
+                        <input type="time" name="event-hour" required="">
                     </label>
                     <br>
-                    <input type="submit" value="Modifier l'actu">
+                    <input type="submit" value="Créer l'évent">
                 </div>
             </fieldset>
         </form>

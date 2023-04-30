@@ -74,6 +74,14 @@ if (isset($_GET['delete-actu'])) {
             <?php $request->get_actus() ?>
         </div>
     </div>
+    <div class="manage-event-content">
+        <div class="manage-event-title">
+            <h1>Events</h1>
+        </div>
+        <div class="manage-events">
+            <?php //$request->get_events() ?>
+        </div>
+    </div>
 <?php
 $pager->setFooter();
 ?>

@@ -36,10 +36,13 @@ function getPage() : string
                         <a href="<?="votes.php"?>" class="navbar-item-a <?php echoIfActive("votes.php")?>">Votes</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="<?="staff.php"?>" class="navbar-item-a <?php echoIfActive("staff.php")?>">Equipe</a>
+                        <a href="<?="events.php"?>" class="navbar-item-a <?php echoIfActive("events.php")?>">Events</a>
                     </li>
                     <li class="navbar-item">
                         <a href="<?="cgu-cgv.php"?>" class="navbar-item-a <?php echoIfActive("cgu-cgv.php")?>">Regles</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="<?="staff.php"?>" class="navbar-item-a <?php echoIfActive("staff.php")?>">Equipe</a>
                     </li>
                     <hr id="responsive-separator">
                     <li class="navbar-item" id="nav-right">

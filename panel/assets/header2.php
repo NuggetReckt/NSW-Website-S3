@@ -28,6 +28,16 @@ session_start();
                     }
                     ?>">Nouvelle actu</a>
                 </li>
+                <li class="navbar-item">
+                    <a href="<?="create_event.php"?>" class="navbar-item-a
+                    <?php
+                    if ($page == "create_event.php") {
+                        echo "active";
+                    } else {
+                        echo "not-active";
+                    }
+                    ?>">Nouvel event</a>
+                </li>
                 <hr id="responsive-separator">
                 <?php
                 echo "                <li class='navbar-item' id='nav-right'>\n";

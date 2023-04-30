@@ -1,4 +1,5 @@
 <?php
+
 use JetBrains\PhpStorm\NoReturn;
 
 /**
@@ -14,7 +15,6 @@ use JetBrains\PhpStorm\NoReturn;
  * @property string $actu_date
  * @property string $actu_img_url
  */
-
 #[AllowDynamicProperties] class PanelRequest
 {
 
@@ -64,7 +64,7 @@ use JetBrains\PhpStorm\NoReturn;
         exit();
     }
 
-    #[NoReturn] function create_actu(string $actu_name, string $actu_desc): void
+    function create_actu(string $actu_name, string $actu_desc): void
     {
         $actu_publisher = $_SESSION['admin'];
 
@@ -79,6 +79,16 @@ use JetBrains\PhpStorm\NoReturn;
         header("Location: create_actu.php?actu_created");
     }
 
+    function create_event(string $event_name, string $date, string $hour): void
+    {
+        $conn = new Connector();
+        $req = "INSERT INTO events (name, date, hour) VALUES (?, ?, ?)";
+
+        $conn->dbRun($req, [$event_name, $date, $hour]);
+
+        header("Location: create_event.php?event_created");
+    }
+
     function get_actus(): void
     {
         $sql = "SELECT id, name, description FROM actus ORDER BY id DESC;";
@@ -86,7 +96,6 @@ use JetBrains\PhpStorm\NoReturn;
         $result = $conn->dbRun($sql, [])->fetchAll(PDO::FETCH_ASSOC);
 
         foreach ($result as $i => $value) {
-            echo "\n";
             echo "                <div class='actu-item-panel'>\n";
             echo "                    <h2 class='actu-title-panel'>{$value['name']}</h2>\n";
             echo "                    <div>";
@@ -95,7 +104,6 @@ use JetBrains\PhpStorm\NoReturn;
             echo "                        <a href='index.php?delete-actu&actu-id={$value['id']}' id='actu-delete'>Delete</a>\n";
             echo "                     </div>";
             echo "                </div>";
-            echo "\n";
         }
 
         if ($result == null) {
@@ -106,7 +114,7 @@ use JetBrains\PhpStorm\NoReturn;
     }
 
 
-    // Fonctions pour modifier les actus et pour recuperer les données des actus
+    // Fonctions pour modifier les actus et pour récupérer les données des actus
 
     function modify_actu(int $actu_id, string $actu_name, string $actu_desc): void
     {

@@ -778,11 +778,11 @@ figcaption {
     margin-bottom: 0;
 }
 
-.manage-actus-content {
+.manage-actus-content, .manage-event-content {
     color: white;
 }
 
-.manage-actus-title > h1 {
+.manage-actus-title > h1, .manage-event-title > h1 {
     text-decoration: underline;
     font-size: 30px;
 }
@@ -940,7 +940,7 @@ label, input[type="submit"] {
     color: white;
 }
 
-input[type="text"], input[type="password"], input[type="submit"], textarea {
+input[type="text"], input[type="password"], input[type="submit"], input[type="date"], input[type="time"], textarea {
     border: 1px solid black;
     border-radius: 5px;
     padding: 10px;

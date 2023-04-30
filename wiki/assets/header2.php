@@ -1,8 +1,3 @@
-<?php
-$current_page = basename($_SERVER["PHP_SELF"]);
-$page = basename(dirname($_SERVER["PHP_SELF"]));
-
-?>
 </head>
 <body id='body-other'>
 <button class="responsive-nav-toggle" aria-controls="navbar-list" aria-expanded="false"></button>
@@ -19,10 +14,13 @@ $page = basename(dirname($_SERVER["PHP_SELF"]));
                 <a href="<?="../votes.php"?>" class="navbar-item-a not-active">Votes</a>
             </li>
             <li class="navbar-item">
-                <a href="<?="../staff.php"?>" class="navbar-item-a not-active">Equipe</a>
+                <a href="<?="../events.php"?>" class="navbar-item-a not-active">Events</a>
             </li>
             <li class="navbar-item">
                 <a href="<?="../cgu-cgv.php"?>" class="navbar-item-a not-active">Regles</a>
+            </li>
+            <li class="navbar-item">
+                <a href="<?="../staff.php"?>" class="navbar-item-a not-active">Equipe</a>
             </li>
             <hr id="responsive-separator">
             <li class="navbar-item" id="nav-right">
