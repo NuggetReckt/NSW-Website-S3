@@ -14,7 +14,9 @@ $err = filter_input(INPUT_GET, 'error', FILTER_VALIDATE_INT);
 $request = new PanelRequest();
 
 if (isset($event_name) && isset($event_date) && isset($event_hour)) {
-    $request->create_event($event_name, $event_date, $event_hour);
+    $datetime = date_format($event_date + $event_hour, "Y-m-d H:i:s");
+
+    $request->create_event($event_name, $datetime);
 }
 
 if ($_SESSION['admin'] == null) {

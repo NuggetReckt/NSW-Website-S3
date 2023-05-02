@@ -11,11 +11,9 @@ class Request
     {
         $sql = "SELECT * FROM actus ORDER BY id DESC;";
         $conn = new Connector();
-        $actus = $conn->dbRun($sql, [])->fetchAll(PDO::FETCH_ASSOC);
+        $result = $conn->dbRun($sql, [])->fetchAll(PDO::FETCH_ASSOC);
 
-        $nbActus = $this->getNumberOfActus();
-
-        foreach ($actus as $i => $value) {
+        foreach ($result as $i => $value) {
             $id = $value['id'];
             $name = $value['name'];
             $date = $value['date'];
@@ -31,7 +29,7 @@ class Request
             echo "                    </div>\n";
         }
 
-        if (!$nbActus) {
+        if ($result == null) {
             echo "                    <div class='actu-item'>\n";
             echo "                        <div class='actu-noresult'>\n";
             echo "                         <h2>Aucun Résultat...</h2>\n";
@@ -49,20 +47,20 @@ class Request
         foreach ($result as $i => $value) {
             $id = $value['id'];
             $name = $value['name'];
-            $date = $value['date'];
-            $hour = $value['hour'];
+            $datetime = $value['datetime'];
 
             echo "<div class='event-item' id='event-$id'>";
             echo "    <h1 class='event-title'>$name</h1>";
-            echo "    <h2 class='actu-subtitle'>Le $date à $hour</h2>";
+            echo "    <h2 class='actu-subtitle'>Le $datetime</h2>";
             echo "</div>";
         }
-    }
 
-    function getNumberOfActus(): array|bool
-    {
-        $sql = "SELECT COUNT(id) AS 'nbActu' FROM actus GROUP BY id";
-        $conn = new Connector();
-        return $conn->dbRun($sql, [])->fetch(PDO::FETCH_ASSOC);
+        if ($result == null) {
+            echo "                    <div class='event-item'>\n";
+            echo "                        <div class='event-noresult'>\n";
+            echo "                         <h2>Aucun évent à venir... (pour l'instant)</h2>\n";
+            echo "                        </div>\n";
+            echo "                    </div>\n";
+        }
     }
 }

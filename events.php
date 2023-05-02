@@ -11,8 +11,8 @@ $pager->setHeader();
                     <h1 id="events-title">Events à venir</h1>
                 </div>
             </div>
-            <div id="event-wrapper">
-                <?php //$request->get_events();?>
+            <div id="events-wrapper">
+                <?php $request->get_events();?>
             </div>
 <?php
 $pager->setFooter();

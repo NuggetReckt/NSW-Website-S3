@@ -21,6 +21,7 @@ use JetBrains\PhpStorm\NoReturn;
     function __construct()
     {
         require_once "../assets/php/database/connector.php";
+        date_default_timezone_set('Europe/Paris');
     }
 
     #[NoReturn] function login(string $username, string $password): void
@@ -68,7 +69,6 @@ use JetBrains\PhpStorm\NoReturn;
     {
         $actu_publisher = $_SESSION['admin'];
 
-        date_default_timezone_set('Europe/Paris');
         $actu_date = date('d/m/Y');
 
         $conn = new Connector();
@@ -79,12 +79,12 @@ use JetBrains\PhpStorm\NoReturn;
         header("Location: create_actu.php?actu_created");
     }
 
-    function create_event(string $event_name, string $date, string $hour): void
+    function create_event(string $event_name, $datetime): void
     {
         $conn = new Connector();
-        $req = "INSERT INTO events (name, date, hour) VALUES (?, ?, ?)";
+        $req = "INSERT INTO events (name, datetime) VALUES (?, ?, ?)";
 
-        $conn->dbRun($req, [$event_name, $date, $hour]);
+        $conn->dbRun($req, [$event_name, $datetime]);
 
         header("Location: create_event.php?event_created");
     }
@@ -96,12 +96,15 @@ use JetBrains\PhpStorm\NoReturn;
         $result = $conn->dbRun($sql, [])->fetchAll(PDO::FETCH_ASSOC);
 
         foreach ($result as $i => $value) {
+            $name = $value['name'];
+            $id = $value['id'];
+
             echo "                <div class='actu-item-panel'>\n";
-            echo "                    <h2 class='actu-title-panel'>{$value['name']}</h2>\n";
+            echo "                    <h2 class='actu-title-panel'>$name</h2>\n";
             echo "                    <div>";
-            echo "                        <a href='../index.php#actu-{$value['id']}' target='_blank' id='actu-goto'>Go</a>\n";
-            echo "                        <a href='edit_actu.php?id={$value['id']}' id='actu-edit'>Edit</a>\n";
-            echo "                        <a href='index.php?delete-actu&actu-id={$value['id']}' id='actu-delete'>Delete</a>\n";
+            echo "                        <a href='../index.php#actu-$id' target='_blank' id='actu-goto'>Go</a>\n";
+            echo "                        <a href='edit_actu.php?id=$id' id='actu-edit'>Edit</a>\n";
+            echo "                        <a href='index.php?delete-actu&actu-id=$id' id='actu-delete'>Delete</a>\n";
             echo "                     </div>";
             echo "                </div>";
         }

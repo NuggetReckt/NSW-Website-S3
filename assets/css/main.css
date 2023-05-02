@@ -219,7 +219,7 @@ Actus style
 .actu-title-content, .actu-noresult {
     margin: 0;
     border-radius: 7px 7px 0 0;
-    background: #492337 url(../images/background.png) center no-repeat;
+    background: #492337 url(../images/background_card.png) center no-repeat;
     background-position-x: -400px;
     background-position-y: -200px;
     width: 100%;
@@ -343,10 +343,10 @@ figcaption {
 
 #top-title-index {
     height: 450px;
-    background-size: cover;
     border-radius: 0 0 7px 7px;
-    background: #492337 url(../images/background.png) center fixed no-repeat;
-    background-position-y: -250px;
+    background: #101F30 url(../images/background.png) center fixed no-repeat;
+    background-position-y: -200px;
+    background-size: cover;
     margin: 0;
 }
 
@@ -654,11 +654,8 @@ figcaption {
 }
 
 #body-other {
-    background-image: url(../images/background.png);
-    background-repeat: no-repeat;
-    background-position-x: 0;
-    background-position-y: 0;
-    background-attachment: fixed;
+    background: #101F30 url(../images/background.png) fixed no-repeat;
+    background-size: cover;
 }
 
 .main-top-col-wiki {
