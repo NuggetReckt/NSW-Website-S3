@@ -32,7 +32,7 @@ class Request
         if ($result == null) {
             echo "                    <div class='actu-item'>\n";
             echo "                        <div class='actu-noresult'>\n";
-            echo "                         <h2>Aucun Résultat...</h2>\n";
+            echo "                            <h2>Aucun Résultat...</h2>\n";
             echo "                        </div>\n";
             echo "                    </div>\n";
         }
@@ -56,10 +56,8 @@ class Request
         }
 
         if ($result == null) {
-            echo "                    <div class='event-item'>\n";
-            echo "                        <div class='event-noresult'>\n";
-            echo "                         <h2>Aucun évent à venir... (pour l'instant)</h2>\n";
-            echo "                        </div>\n";
+            echo "                    <div class='event-item event-item-noresult'>\n";
+            echo "                        <h2>Aucun évent à venir... (pour le moment)</h2>\n";
             echo "                    </div>\n";
         }
     }

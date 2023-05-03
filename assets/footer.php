@@ -69,6 +69,7 @@ $page = basename(dirname($_SERVER["PHP_SELF"]));
             echo "        <script src='../assets/js/copy.js'></script>\n";
             echo "        <script src='../assets/js/scroll.js'></script>\n";
             echo "        <script src='../assets/js/responsive.js'></script>\n";
+            echo "        <script src='../assets/js/enhance.js'></script>\n";
         } else {
             echo "        <script src='assets/js/copy.js'></script>\n";
             echo "        <script src='assets/js/scroll.js'></script>\n";

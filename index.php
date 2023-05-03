@@ -26,7 +26,9 @@ $pager->setHeader();
                             </figcaption>
                         </div>
                         <div class="main-top-big main-top-col">
-                            <span id="players_count"></span>&nbsp;<span>joueurs connectés / </span><span id="slots_count"></span>
+                            <span id="players_count"></span>&nbsp;
+                            <span>joueurs connectés/</span>
+                            <span id="slots_count"></span>
                         </div>
                         <div class="main-top-col-b main-top-col">
                             <span id="is_online"></span>

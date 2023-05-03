@@ -76,11 +76,11 @@ $pager->setHeader();
             </div>
             <div class="wiki-article-wrapper">
                 <div class="wiki-article-content-centered">
-                    <div class="wiki-subsection">
+                    <div class="wiki-subsection" id="img1" onclick="enhanceImg('img1')">
                         <img src="../assets/images/background.png" class="wiki-img-exemple" alt="gui1-img">
                         <p class="wiki-p-img-legend">Image 1</p>
                     </div>
-                    <div class="wiki-subsection">
+                    <div class="wiki-subsection" id="img2" onclick="enhanceImg('img2')">
                         <img src="../assets/images/background.png" class="wiki-img-exemple" alt="gui2-img">
                         <p class="wiki-p-img-legend">Image 2</p>
                     </div>

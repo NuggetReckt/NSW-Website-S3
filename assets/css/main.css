@@ -199,7 +199,7 @@ hr {
 }
 
 /*-----------------------------------------
-Actus style
+Actus, events style
 -----------------------------------------*/
 
 .actus-content {
@@ -256,6 +256,21 @@ Actus style
 
 .actu-item, .actus-content {
     border-radius: 7px !important;
+}
+
+.events-wrapper {
+    margin-bottom: 20px;
+    border-radius: 7px;
+    background: white;
+}
+
+.event-item, .event-item-noresult {
+    text-align: center;
+    color: black;
+}
+
+.event-item > h2 {
+    margin: 0;
 }
 
 /*-----------------------------------------
@@ -345,7 +360,7 @@ figcaption {
     height: 450px;
     border-radius: 0 0 7px 7px;
     background: #101F30 url(../images/background.png) center fixed no-repeat;
-    background-position-y: -200px;
+    background-position-y: -210px;
     background-size: cover;
     margin: 0;
 }
@@ -544,7 +559,7 @@ figcaption {
 
 .wiki-article-title > hr {
     background-color: #1a1a1a !important;
-    padding: .08em 0 !important;
+    padding: 2px 0 !important;
     margin: 0 !important;
 }
 
@@ -596,12 +611,12 @@ figcaption {
 }
 
 .wiki-img-exemple-solo {
-    height: 30vw;
+    max-height: 28vw;
     border-radius: 7px;
 }
 
 .wiki-img-exemple {
-    height: 245px;
+    max-height: 18vw;
     border-radius: 7px;
 }
 

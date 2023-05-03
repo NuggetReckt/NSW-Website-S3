@@ -1,7 +1,21 @@
+@media (max-width: 1500px) {
+    .wiki-img-exemple {
+        max-height: 15vw;
+    }
+}
+
 @media (max-width: 1165px) {
     .main-top-col-wiki > a > img {
         height: 170px;
         width: 170px;
+    }
+
+    .wiki-article-content-centered {
+        flex-direction: column;
+    }
+
+    .wiki-img-exemple {
+        max-height: 22vw;
     }
 }
 
@@ -50,11 +64,33 @@
     #h2-discord, #h2-twitter {
         text-align: left;
     }
+
+    .wiki-img-exemple-solo {
+        max-height: 19vw;
+    }
 }
 
 @media (max-width: 925px) {
     main, .navbar-list, .footer {
         margin: 0 10px;
+    }
+
+    .wiki-img-exemple-solo {
+        max-height: 32vw;
+    }
+}
+
+@media (max-width: 870px) {
+    .wiki-content {
+        flex-direction: column;
+    }
+
+    .table-of-contents-wiki {
+        position: static;
+    }
+
+    .wiki-img-exemple {
+        max-height: 35vw;
     }
 }
 

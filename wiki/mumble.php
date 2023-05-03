@@ -164,8 +164,8 @@ $pager->setHeader();
                         La configuration de Mumble se passe dans l'onglet "Configurer" puis dans "Réglages..." depuis la
                         fenêtre de base.<br>
                         Dans la même fenêtre de configuration, dans l'onglet "Plugin", activer le plugin "Link" comme
-                        montré sur le screen ci-dessous :
-                        <img src="../assets/images/mumble1.png" class="wiki-img-exemple-solo" alt="mumble1-img"><br>
+                        montré sur le screen ci-dessous : <br>
+                        <img src="../assets/images/mumble1.png" class="wiki-img-exemple-solo" alt="mumble1-img" id="img1" onclick="enhanceImg('img1')"><br>
                         Veilles également à ce que l'option "Lier au jeu et transmettre la position" soit activée, comme
                         montré sur ce même screenshot.
                     </p>
@@ -176,7 +176,7 @@ $pager->setHeader();
                     <p class="wiki-p-step">
                         Dans l'onglet "Sortie audio", mettre la distance maximale à 70m et la distance minimale à 1m.
                         Veilles à ce que la position audio soit activée.<br>
-                        <img src="../assets/images/mumble2.png" class="wiki-img-exemple-solo" alt="mumble2-img">
+                        <img src="../assets/images/mumble2.png" class="wiki-img-exemple-solo" alt="mumble2-img" id="img2" onclick="enhanceImg('img2')">
                     </p>
                 </div>
                 <div class="wiki-article-content-steps">
@@ -195,8 +195,8 @@ $pager->setHeader();
                         clique sur l'onglet "Serveur" puis sur "Se Connecter". Ensuite, clique sur "Ajouter Nouveau" et
                         rentre l'adresse <span class="wiki-command-exemple">mumble.noskillworld.fr</span>, laisse le
                         port tel quel, met ton Pseudo In-Game puis
-                        nomme le serveur comme tu le souhaites. Tu devrais avoir quelque chose qui ressemble à ça :
-                        <img src="../assets/images/mumble3.png" class="wiki-img-exemple" alt="mumble2-img"><br>
+                        nomme le serveur comme tu le souhaites. Tu devrais avoir quelque chose qui ressemble à ça :<br>
+                        <img src="../assets/images/mumble3.png" class="wiki-img-exemple-solo" alt="mumble3-img" id="img3" onclick="enhanceImg('img3')"><br>
                         Lance ton jeu, C'est Bon !
                     </p>
                 </div>
