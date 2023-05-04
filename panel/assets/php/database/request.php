@@ -82,7 +82,7 @@ use JetBrains\PhpStorm\NoReturn;
     function create_event(string $event_name, $datetime): void
     {
         $conn = new Connector();
-        $req = "INSERT INTO events (name, datetime) VALUES (?, ?, ?)";
+        $req = "INSERT INTO events (name, datetime) VALUES (?, ?)";
 
         $conn->dbRun($req, [$event_name, $datetime]);
 
