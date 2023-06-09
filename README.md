@@ -1,7 +1,5 @@
 # NSW Website S3
 
-<hr>
-
 ### Introduction
 
 Site internet de la Saison 3 du serveur Minecraft NoSkillWorld
