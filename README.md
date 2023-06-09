@@ -1,8 +1,18 @@
-># NSW Website S3
->### Site internet de la Saison 3 du serveur Minecraft NoSkillWorld
-><br>
->Si vous rencontrez un bug, n'hésitez pas à nous le soumettre via discord en créant un ticket : https://discord.noskillworld.fr
->
->*Développé par NuggetReckt & Mamakse*
->
-><img src="https://play.noskillworld.fr/assets/images/logo_nsw.png" alt="nsw-logo" width="200"/>
+# NSW Website S3
+
+<hr>
+
+### Introduction
+
+Site internet de la Saison 3 du serveur Minecraft NoSkillWorld
+
+Si vous rencontrez un bug, n'hésitez pas à nous le soumettre via discord en créant un
+ticket : https://discord.noskillworld.fr
+
+### Licence
+
+Code source sous licence GNU General Public License v3.0, consultez la [licence](LICENSE.md) pour plus d'informations
+
+<hr>
+
+*Développé par NuggetReckt & Mamakse*
