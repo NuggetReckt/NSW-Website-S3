@@ -1,4 +1,10 @@
 <?php
+require_once "../assets/php/messages.php";
+require_once "assets/php/database/request.php";
+
+$request = new PanelRequest();
+$msg = new Messages();
+
 $page = basename($_SERVER["PHP_SELF"]);
 session_start();
 ?>
@@ -9,7 +15,7 @@ session_start();
         <nav id="navbar">
             <ul class="navbar-list" data-visible="false">
                 <li class="navbar-item">
-                    <a href="<?="index.php"?>" class="navbar-item-a
+                    <a href="<?= "index.php" ?>" class="navbar-item-a
                     <?php
                     if ($page == "index.php") {
                         echo "active";
@@ -19,7 +25,7 @@ session_start();
                     ?>">Menu</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="<?="create_actu.php"?>" class="navbar-item-a
+                    <a href="<?= "create_actu.php" ?>" class="navbar-item-a
                     <?php
                     if ($page == "create_actu.php") {
                         echo "active";
@@ -29,7 +35,7 @@ session_start();
                     ?>">Nouvelle actu</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="<?="create_event.php"?>" class="navbar-item-a
+                    <a href="<?= "create_event.php" ?>" class="navbar-item-a
                     <?php
                     if ($page == "create_event.php") {
                         echo "active";
@@ -38,6 +44,19 @@ session_start();
                     }
                     ?>">Nouvel event</a>
                 </li>
+                <?php
+                if (isset($_SESSION['admin'])) {
+                    if ($request->isAdmin($_SESSION['admin'])) {
+                        echo "<li class='navbar-item'>\n";
+                        if ($page == "create_admin.php") {
+                            echo "<a href='create_admin.php' class='navbar-item-a active'>Nouvel admin</a>\n";
+                        } else {
+                            echo "<a href='create_admin.php' class='navbar-item-a not-active'>Nouvel admin</a>\n";
+                        }
+                        echo "</li>";
+                    }
+                }
+                ?>
                 <hr id="responsive-separator">
                 <?php
                 echo "                <li class='navbar-item' id='nav-right'>\n";
@@ -63,10 +82,7 @@ session_start();
         <main>
 <?php
 if (isset($_GET['disconnected'])) {
-    echo "            <div class='pop-up-message' id='pop-up-success'>\n";
-    echo "                <span>Vous avez été déconnecté avec succès.</span>\n";
-    echo "            </div>\n";
-
+    $msg->printSuccess("disconnected");
     session_unset();
 }
 ?>

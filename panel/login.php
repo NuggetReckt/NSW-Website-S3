@@ -1,39 +1,24 @@
 <?php
 require_once "assets/php/pager.php";
 require_once "assets/php/database/request.php";
+require_once "../assets/php/messages.php";
 $pager = new PanelPager("Login");
 
 $pager->setHeader();
 
-// Variable
+$request = new PanelRequest();
+$msg = new Messages();
+
 $username = filter_input(INPUT_POST, 'username', FILTER_UNSAFE_RAW);
 $password = filter_input(INPUT_POST, 'password', FILTER_UNSAFE_RAW);
 $err = filter_input(INPUT_GET, 'error', FILTER_VALIDATE_INT);
 
-
 if (isset($username) && isset($password)) {
-    $request = new PanelRequest();
     $request->login($username, $password);
 }
-if (isset($err)) {
 
-    switch ($err) {
-        case 1:
-            echo "            <div class='pop-up-message' id='pop-up-fail'>\n";
-            echo "                <span>Mot de passe ou utilisateur incorrect.</span>\n";
-            echo "            </div>\n";
-            break;
-        case 2:
-            echo "            <div class='pop-up-message' id='pop-up-fail'>\n";
-            echo "                <span>Les champs ne peuvent pas être vides !</span>\n";
-            echo "            </div>\n";
-            break;
-        case 3:
-            echo "            <div class='pop-up-message' id='pop-up-fail'>\n";
-            echo "                <span>Vous n'êtes pas connecté.</span>\n";
-            echo "            </div>\n";
-            break;
-    }
+if (isset($err)) {
+    $msg->printError($err);
 }
 ?>
 <div class="form" id="login-form">

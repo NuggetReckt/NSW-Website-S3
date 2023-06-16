@@ -133,6 +133,7 @@ use JetBrains\PhpStorm\NoReturn;
     {
         $sql = "SELECT id, name, description FROM actus WHERE id = ?;";
         $conn = new Connector();
+
         return $conn->dbRun($sql, [$id])->fetch(PDO::FETCH_ASSOC);
     }
 
@@ -142,5 +143,15 @@ use JetBrains\PhpStorm\NoReturn;
         $conn = new Connector();
 
         $conn->dbRun($sql, [$actu_id])->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    function isAdmin(string $username): bool
+    {
+        $sql = "SELECT permission FROM admins WHERE username = ?;";
+        $conn = new Connector();
+
+        $result = $conn->dbRun($sql, [$username])->fetch(PDO::FETCH_ASSOC);
+
+        return $result['permission'] == "admin";
     }
 }

@@ -1,6 +1,7 @@
 <?php
 require_once "assets/php/pager.php";
 require_once "assets/php/database/request.php";
+require_once "../assets/php/messages.php";
 $pager = new PanelPager("Nouvelle Actu");
 
 $pager->setHeader();
@@ -11,36 +12,23 @@ $actu_desc = filter_input(INPUT_POST, 'actu-desc', FILTER_SANITIZE_SPECIAL_CHARS
 $err = filter_input(INPUT_GET, 'error', FILTER_VALIDATE_INT);
 
 $request = new PanelRequest();
-
-if (isset($actu_name) && isset($actu_desc)) {
-    $request->create_actu($actu_name, $actu_desc);
-}
+$msg = new Messages();
 
 if ($_SESSION['admin'] == null) {
     header("Location: login.php?error=3");
     exit();
 }
 
+if (isset($actu_name) && isset($actu_desc)) {
+    $request->create_actu($actu_name, $actu_desc);
+}
+
 if (isset($_GET['actu_created'])) {
-    echo "            <div class='pop-up-message' id='pop-up-success'>\n";
-    echo "                <span>Actu créée avec succès.</span>\n";
-    echo "            </div>\n";
+    $msg->printSuccess("actu_created");
 }
 
 if (isset($err)) {
-
-    switch ($err) {
-        case 2:
-            echo "            <div class='pop-up-message' id='pop-up-fail'>\n";
-            echo "                <span>Les champs ne peuvent pas être vides !</span>\n";
-            echo "            </div>\n";
-            break;
-        case 3:
-            echo "            <div class='pop-up-message' id='pop-up-fail'>\n";
-            echo "                <span>Vous n'êtes pas connecté.</span>\n";
-            echo "            </div>\n";
-            break;
-    }
+    $msg->printError($err);
 }
 ?>
     <div class="form" id="actu-form">

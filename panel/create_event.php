@@ -1,6 +1,7 @@
 <?php
 require_once "assets/php/pager.php";
 require_once "assets/php/database/request.php";
+require_once "../assets/php/messages.php";
 $pager = new PanelPager("Nouvel Event");
 
 $pager->setHeader();
@@ -12,6 +13,12 @@ $event_hour = filter_input(INPUT_POST, 'event-hour', FILTER_SANITIZE_SPECIAL_CHA
 $err = filter_input(INPUT_GET, 'error', FILTER_VALIDATE_INT);
 
 $request = new PanelRequest();
+$msg = new Messages();
+
+if ($_SESSION['admin'] == null) {
+    header("Location: login.php?error=3");
+    exit();
+}
 
 if (isset($event_name) && isset($event_date) && isset($event_hour)) {
     $datetime = date_format($event_date + $event_hour, "Y-m-d H:i:s");
@@ -19,31 +26,12 @@ if (isset($event_name) && isset($event_date) && isset($event_hour)) {
     $request->create_event($event_name, $datetime);
 }
 
-if ($_SESSION['admin'] == null) {
-    header("Location: login.php?error=3");
-    exit();
-}
-
 if (isset($_GET['event_created'])) {
-    echo "            <div class='pop-up-message' id='pop-up-success'>\n";
-    echo "                <span>Event créé avec succès.</span>\n";
-    echo "            </div>\n";
+    $msg->printSuccess("event_created");
 }
 
 if (isset($err)) {
-
-    switch ($err) {
-        case 2:
-            echo "            <div class='pop-up-message' id='pop-up-fail'>\n";
-            echo "                <span>Les champs ne peuvent pas être vides !</span>\n";
-            echo "            </div>\n";
-            break;
-        case 3:
-            echo "            <div class='pop-up-message' id='pop-up-fail'>\n";
-            echo "                <span>Vous n'êtes pas connecté.</span>\n";
-            echo "            </div>\n";
-            break;
-    }
+    $msg->printError($err);
 }
 ?>
     <div class="form" id="actu-form">
