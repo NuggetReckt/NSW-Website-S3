@@ -65,6 +65,9 @@ use JetBrains\PhpStorm\NoReturn;
         exit();
     }
 
+
+    // Fonction en lien avec la gestion des actualités
+
     function create_actu(string $actu_name, string $actu_desc): void
     {
         $actu_publisher = $_SESSION['admin'];
@@ -77,16 +80,6 @@ use JetBrains\PhpStorm\NoReturn;
         $conn->dbRun($req, [$actu_name, $actu_desc, $actu_date, $actu_publisher]);
 
         header("Location: create_actu.php?actu_created");
-    }
-
-    function create_event(string $event_name, $datetime): void
-    {
-        $conn = new Connector();
-        $req = "INSERT INTO events (name, datetime) VALUES (?, ?)";
-
-        $conn->dbRun($req, [$event_name, $datetime]);
-
-        header("Location: create_event.php?event_created");
     }
 
     function get_actus(): void
@@ -153,5 +146,44 @@ use JetBrains\PhpStorm\NoReturn;
         $result = $conn->dbRun($sql, [$username])->fetch(PDO::FETCH_ASSOC);
 
         return $result['permission'] == "admin";
+    }
+
+    // Fonction de gestion des evenements
+
+    function create_event(string $event_name, $datetime): void
+    {
+        $conn = new Connector();
+        $req = "INSERT INTO events (name, datetime) VALUES (?, ?)";
+
+        $conn->dbRun($req, [$event_name, $datetime]);
+
+        header("Location: create_event.php?event_created");
+    }
+
+    function get_events() : void
+    {
+        $sql = "SELECT id, name, datetime FROM events ORDER BY id DESC;";
+        $conn = new Connector();
+        $result = $conn->dbRun($sql, [])->fetchAll(PDO::FETCH_ASSOC);
+
+        foreach ($result as $i => $value) {
+            $name = $value['name'];
+            $id = $value['id'];
+
+            echo "                <div class='event-item-panel'>\n";
+            echo "                    <h2 class='event-title-panel'>$name</h2>\n";
+            echo "                    <div>";
+            // echo "                        <a href='../index.php#actu-$id' target='_blank' id='event-goto'>Go</a>\n";
+            // echo "                        <a href='edit_actu.php?id=$id' id='event-edit'>Edit</a>\n";
+            // echo "                        <a href='index.php?delete-actu&actu-id=$id' id='event-delete'>Delete</a>\n";
+            echo "                     </div>";
+            echo "                </div>";
+        }
+
+        if ($result == null) {
+            echo "                <div class='event-item-panel'>\n";
+            echo "                    <h2 class='event-noresult-panel'>Aucun Résultat...</h2>\n";
+            echo "                </div>";
+        }
     }
 }

@@ -12,6 +12,7 @@ $event_date = filter_input(INPUT_POST, 'event-date', FILTER_SANITIZE_SPECIAL_CHA
 $event_hour = filter_input(INPUT_POST, 'event-hour', FILTER_SANITIZE_SPECIAL_CHARS);
 $err = filter_input(INPUT_GET, 'error', FILTER_VALIDATE_INT);
 
+
 $request = new PanelRequest();
 $msg = new Messages();
 
@@ -21,7 +22,7 @@ if ($_SESSION['admin'] == null) {
 }
 
 if (isset($event_name) && isset($event_date) && isset($event_hour)) {
-    $datetime = date_format($event_date + $event_hour, "Y-m-d H:i:s");
+    $datetime = $event_date . " " . $event_hour;
 
     $request->create_event($event_name, $datetime);
 }

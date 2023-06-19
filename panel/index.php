@@ -62,7 +62,7 @@ if (isset($_GET['delete-actu'])) {
             <h1>Events</h1>
         </div>
         <div class="manage-events">
-            <?php //$request->get_events() ?>
+            <?php $request->get_events() ?>
         </div>
     </div>
 <?php
