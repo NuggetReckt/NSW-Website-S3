@@ -40,11 +40,17 @@ class Messages
             case "actu_modified":
                 $msg = "Actu modifiée avec succès.";
                 break;
+            case "event_modified":
+                $msg = "Event modifié avec succès.";
+                break;
             case "event_created":
                 $msg = "Event créé avec succès.";
                 break;
             case "actu_deleted":
                 $msg = "Actu supprimée avec succès.";
+                break;
+            case "event_deleted":
+                $msg = "Event supprimée avec succès.";
                 break;
             case "disconnected":
                 $msg = "Vous avez été déconnecté avec succès.";

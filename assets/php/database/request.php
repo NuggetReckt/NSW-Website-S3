@@ -57,7 +57,8 @@ class Request
 
         if ($result == null) {
             echo "                    <div class='event-item event-item-noresult'>\n";
-            echo "                        <h2>Aucun évent à venir... (pour le moment)</h2>\n";
+            echo "                        <h1>Aucun évent à venir...</h1>\n";
+            echo "                        <span>(pour le moment)</span>";
             echo "                    </div>\n";
         }
     }

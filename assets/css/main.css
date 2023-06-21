@@ -269,8 +269,19 @@ Actus, events style
     color: black;
 }
 
-.event-item > h2 {
+.event-item > h1 {
     margin: 0;
+}
+
+.event-item-noresult {
+    margin: 0;
+    line-height: 0.8;
+    padding: 8px 0;
+}
+
+.event-item-noresult > span {
+    font-size: 15px;
+    color: #2c70ba;
 }
 
 /*-----------------------------------------
@@ -799,16 +810,16 @@ figcaption {
     font-size: 30px;
 }
 
-.actu-noresult-panel {
+.actu-noresult-panel, .event-noresult-panel {
     color: black;
     margin: 0 !important;
 }
 
-.actu-title-panel {
+.actu-title-panel, .event-title-panel {
     color: black;
 }
 
-.actu-item-panel {
+.actu-item-panel, .event-item-panel {
     background-color: white;
     border-radius: 12px;
     padding: 15px;
@@ -817,18 +828,18 @@ figcaption {
     justify-content: space-between;
 }
 
-.actu-item-panel > h2 {
+.actu-item-panel > h2, .event-item-panel > h2 {
     align-content: flex-start;
     align-self: center;
     margin: 0;
 }
 
-.actu-item-panel > div {
+.actu-item-panel > div, .event-item-panel > div {
     align-content: flex-end;
     align-self: center;
 }
 
-.actu-item-panel > div > a {
+.actu-item-panel > div > a, .event-item-panel > div > a {
     border-radius: 7px;
     font-family: police_custom, sans-serif;
     font-size: 16px;
@@ -836,27 +847,27 @@ figcaption {
     transition: 500ms;
 }
 
-.actu-item-panel > div > a:hover {
+.panel-safe-button:hover, .panel-unsafe-button:hover {
     transition: 500ms;
 }
 
-.actu-item-panel > div > #actu-goto, .actu-item-panel > div > #actu-edit {
+.panel-safe-button {
     border: 3px #2C70BA solid;
     color: #2C70BA;
 }
 
-.actu-item-panel > div > #actu-goto:hover, .actu-item-panel > div > #actu-edit:hover {
+.panel-safe-button:hover {
     background-color: #2C70BA;
     color: #1a1a1a;
 }
 
 
-.actu-item-panel > div > #actu-delete {
+.panel-unsafe-button {
     border: 3px #a60000 solid;
     color: #a60000;
 }
 
-.actu-item-panel > div > #actu-delete:hover {
+.panel-unsafe-button:hover {
     background-color: #a60000;
     color: #1a1a1a;
 }

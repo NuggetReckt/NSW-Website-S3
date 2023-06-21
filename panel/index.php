@@ -16,26 +16,41 @@ if ($_SESSION['admin'] == null) {
 $err = filter_input(INPUT_GET, 'error', FILTER_VALIDATE_INT);
 $actu_id = filter_input(INPUT_GET, 'actu-id', FILTER_VALIDATE_INT);
 
-if (isset($_GET['actu_modified'])) {
-    $msg->printSuccess("actu_modified");
-} else if (isset($_GET['actu_deleted'])) {
-    $msg->printSuccess("actu_deleted");
+if (isset($_GET['logged'])) {
+    $username = $_SESSION['admin'];
+    $msg->printWelcome($username);
 }
 
 if (isset($err)) {
     $msg->printError($err);
 }
 
-if (isset($_GET['logged'])) {
-    $username = $_SESSION['admin'];
-    $msg->printWelcome($username);
+if (isset($_GET['actu_modified'])) {
+    $msg->printSuccess("actu_modified");
+} else if (isset($_GET['actu_deleted'])) {
+    $msg->printSuccess("actu_deleted");
+} else if (isset($_GET['event_deleted'])) {
+    $msg->printSuccess("event_deleted");
+} else if (isset($_GET['event_modified'])) {
+    $msg->printSuccess("event_modified");
 }
 
 if (isset($_GET['delete-actu'])) {
-    if ($actu_id != null) {
+    if ($actu_id >= 0) {
         if ($request->isAdmin($_SESSION['admin'])) {
             $request->delete_actu($actu_id);
             header("Location: index.php?actu_deleted");
+        } else {
+            header("Location: index.php?error=5");
+        }
+    } else {
+        header("Location: index.php?error=4");
+    }
+} else if (isset($_GET['delete-event'])) {
+    if ($actu_id >= 0) {
+        if ($request->isAdmin($_SESSION['admin'])) {
+            $request->delete_event($actu_id);
+            header("Location: index.php?event_deleted");
         } else {
             header("Location: index.php?error=5");
         }

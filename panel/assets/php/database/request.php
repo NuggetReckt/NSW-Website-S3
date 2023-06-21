@@ -95,9 +95,9 @@ use JetBrains\PhpStorm\NoReturn;
             echo "                <div class='actu-item-panel'>\n";
             echo "                    <h2 class='actu-title-panel'>$name</h2>\n";
             echo "                    <div>";
-            echo "                        <a href='../index.php#actu-$id' target='_blank' id='actu-goto'>Go</a>\n";
-            echo "                        <a href='edit_actu.php?id=$id' id='actu-edit'>Edit</a>\n";
-            echo "                        <a href='index.php?delete-actu&actu-id=$id' id='actu-delete'>Delete</a>\n";
+            echo "                        <a href='../index.php#actu-$id' target='_blank' id='actu-goto' class='panel-safe-button'>Go</a>\n";
+            echo "                        <a href='edit_actu.php?id=$id' id='actu-edit' class='panel-safe-button'>Edit</a>\n";
+            echo "                        <a href='index.php?delete-actu&actu-id=$id' id='actu-delete' class='panel-unsafe-button'>Delete</a>\n";
             echo "                     </div>";
             echo "                </div>";
         }
@@ -138,6 +138,14 @@ use JetBrains\PhpStorm\NoReturn;
         $conn->dbRun($sql, [$actu_id])->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    function delete_event(int $event_id): void
+    {
+        $sql = "DELETE FROM events WHERE id = ?;";
+        $conn = new Connector();
+
+        $conn->dbRun($sql, [$event_id])->fetchAll(PDO::FETCH_ASSOC);
+    }
+
     function isAdmin(string $username): bool
     {
         $sql = "SELECT permission FROM admins WHERE username = ?;";
@@ -160,7 +168,7 @@ use JetBrains\PhpStorm\NoReturn;
         header("Location: create_event.php?event_created");
     }
 
-    function get_events() : void
+    function get_events(): void
     {
         $sql = "SELECT id, name, datetime FROM events ORDER BY id DESC;";
         $conn = new Connector();
@@ -173,9 +181,9 @@ use JetBrains\PhpStorm\NoReturn;
             echo "                <div class='event-item-panel'>\n";
             echo "                    <h2 class='event-title-panel'>$name</h2>\n";
             echo "                    <div>";
-            // echo "                        <a href='../index.php#actu-$id' target='_blank' id='event-goto'>Go</a>\n";
-            // echo "                        <a href='edit_actu.php?id=$id' id='event-edit'>Edit</a>\n";
-            // echo "                        <a href='index.php?delete-actu&actu-id=$id' id='event-delete'>Delete</a>\n";
+            echo "                        <a href='../events.php#event-$id' target='_blank' id='event-goto' class='panel-safe-button'>Go</a>\n";
+            echo "                        <a href='edit_event.php?id=$id' id='event-edit' class='panel-safe-button'>Edit</a>\n";
+            echo "                        <a href='index.php?delete-event&actu-id=$id' id='event-delete' class='panel-unsafe-button'>Delete</a>\n";
             echo "                     </div>";
             echo "                </div>";
         }
