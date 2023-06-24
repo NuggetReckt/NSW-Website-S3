@@ -6,12 +6,11 @@ $pager = new PanelPager("Nouvel Event");
 
 $pager->setHeader();
 
-// Variable POST/GET
+//Variables POST/GET
 $event_name = filter_input(INPUT_POST, 'event-name', FILTER_SANITIZE_SPECIAL_CHARS);
 $event_date = filter_input(INPUT_POST, 'event-date', FILTER_SANITIZE_SPECIAL_CHARS);
 $event_hour = filter_input(INPUT_POST, 'event-hour', FILTER_SANITIZE_SPECIAL_CHARS);
 $err = filter_input(INPUT_GET, 'error', FILTER_VALIDATE_INT);
-
 
 $request = new PanelRequest();
 $msg = new Messages();

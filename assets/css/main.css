@@ -953,8 +953,9 @@ label {
 }
 
 .form-content h1 {
-    margin: 10px;
+    margin: 15px;
     text-align: center;
+    line-height: 25px;
     color: #2C70BA;
 }
 

@@ -160,11 +160,10 @@ use JetBrains\PhpStorm\NoReturn;
 
     function create_event(string $event_name, $datetime): void
     {
+        $req = "INSERT INTO events (name, datetime) VALUES (?, ?);";
         $conn = new Connector();
-        $req = "INSERT INTO events (name, datetime) VALUES (?, ?)";
 
         $conn->dbRun($req, [$event_name, $datetime]);
-
         header("Location: create_event.php?event_created");
     }
 
@@ -193,5 +192,14 @@ use JetBrains\PhpStorm\NoReturn;
             echo "                    <h2 class='event-noresult-panel'>Aucun Résultat...</h2>\n";
             echo "                </div>";
         }
+    }
+
+    function create_admin($username, $password, $permission): void
+    {
+        $sql = "INSERT INTO admins (username, password, permission) VALUES (?, ?, ?);";
+        $conn = new Connector();
+
+        $conn->dbRun($sql, [$username, $password, $permission]);
+        header("Location: create_admin.php?admin_created");
     }
 }

@@ -52,6 +52,9 @@ class Messages
             case "event_deleted":
                 $msg = "Event supprimée avec succès.";
                 break;
+            case "admin_created":
+                $msg = "Admin créé avec succès.";
+                break;
             case "disconnected":
                 $msg = "Vous avez été déconnecté avec succès.";
                 break;
