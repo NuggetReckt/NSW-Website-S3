@@ -39,7 +39,7 @@ if (isset($err)) {
             <fieldset>
                 <div class="form-content">
                     <h1>Créer un évent</h1>
-                    <label>Titre de l'évent<br>
+                    <label>Titre de l'Event<br>
                         <input type="text" name="event-name" class="input" placeholder="Titre de l'évent"
                                required="">
                     </label>
@@ -49,7 +49,7 @@ if (isset($err)) {
                         <input type="time" name="event-hour" required="">
                     </label>
                     <br>
-                    <input type="submit" value="Créer l'évent">
+                    <input type="submit" value="Créer l'Event">
                 </div>
             </fieldset>
         </form>
