@@ -5,7 +5,7 @@ class Pager
     public string $title;
     public bool $isUnderMaintenance = false;
 
-    function __construct($title)
+    public function __construct($title)
     {
         ini_set("default_charset", "UTF-8");
 
@@ -21,7 +21,7 @@ class Pager
         echo "<title>", $this->title, " - NoSkillWorld</title>";
     }
 
-    function setHeader(): void
+    public function setHeader(): void
     {
         require_once "assets/header1.php";
         echo "\n";
@@ -30,7 +30,7 @@ class Pager
         require_once "assets/header2.php";
     }
 
-    function setFooter(): void
+    public function setFooter(): void
     {
         require_once "assets/footer.php";
     }

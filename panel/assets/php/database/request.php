@@ -112,9 +112,9 @@ use JetBrains\PhpStorm\NoReturn;
 
     // Fonctions pour modifier les actus et pour récupérer les données des actus
 
-    function modify_actu(int $actu_id, string $actu_name, string $actu_desc): void
+    function modify_actu(int $id, string $actu_name, string $actu_desc): void
     {
-        $sql = "UPDATE actus SET name = '$actu_name', description = '$actu_desc' WHERE id = '$actu_id';";
+        $sql = "UPDATE actus SET name = '$actu_name', description = '$actu_desc' WHERE id = '$id';";
         $conn = new Connector();
 
         $conn->dbRun($sql, [])->fetchAll(PDO::FETCH_ASSOC);
@@ -122,9 +122,27 @@ use JetBrains\PhpStorm\NoReturn;
         header("Location: index.php?actu_modified");
     }
 
-    function get_actus_id_name_desc(int $id): array
+    function modify_event(int $id, string $name, string $date): void
+    {
+        $sql = "UPDATE events SET name = '$name', date = '$date' WHERE id = '$id';";
+        $conn = new Connector();
+
+        $conn->dbRun($sql, [])->fetchAll(PDO::FETCH_ASSOC);
+
+        header("Location: index.php?event_modified");
+    }
+
+    function get_actus_by_id(int $id): array
     {
         $sql = "SELECT id, name, description FROM actus WHERE id = ?;";
+        $conn = new Connector();
+
+        return $conn->dbRun($sql, [$id])->fetch(PDO::FETCH_ASSOC);
+    }
+
+    function get_event_by_id(int $id): array
+    {
+        $sql = "SELECT id, name, datetime FROM events WHERE id = ?;";
         $conn = new Connector();
 
         return $conn->dbRun($sql, [$id])->fetch(PDO::FETCH_ASSOC);
