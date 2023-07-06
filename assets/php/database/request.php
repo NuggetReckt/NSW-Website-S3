@@ -33,6 +33,7 @@ class Request
             echo "                    <div class='actu-item'>\n";
             echo "                        <div class='actu-noresult'>\n";
             echo "                            <h2>Aucun Résultat...</h2>\n";
+            echo "                            <span>Pour le moment</span>";
             echo "                        </div>\n";
             echo "                    </div>\n";
         }
@@ -50,8 +51,11 @@ class Request
             $datetime = $value['datetime'];
 
             echo "<div class='event-item' id='event-$id'>";
-            echo "    <h1 class='event-title'>$name</h1>";
-            echo "    <h2 class='actu-subtitle'>Le $datetime</h2>";
+            echo "    <div class='event-title-content'>";
+            echo "        <h1 class='event-title'>$name</h1>";
+            echo "        <h2 class='event-subtitle'>Le $datetime</h2>";
+            echo "    </div>";
+            echo "    <a class='event-link' target='_blank' href='https://discord.gg/qZFeAwDTut'>Rejoindre</a>";
             echo "</div>";
         }
 
