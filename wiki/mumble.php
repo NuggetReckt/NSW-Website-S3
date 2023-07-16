@@ -37,7 +37,7 @@ $pager->setHeader();
             </div>
             <div class="wiki-article-wrapper">
                 <div class="wiki-article-content">
-                    <p class="wiki-p">Mumble est un logiciel gratuit et open source pour la communication vocale de
+                    <p class="wiki-p">Mumble est un logiciel gratuit et open-source pour la communication vocale de
                         proximité. Il est utilisé pour les joueurs souhaitant avoir une immersion en jeu plus importante
                         que le chat vocal traditionnel, comme Teamspeak ou Discord par exemple. En jeu, si ton ami
                         s'éloigne de ta position, tu l'entendras de moins en moins fort, puis plus du tout.</p>
@@ -59,11 +59,11 @@ $pager->setHeader();
                     <img src="../assets/images/information-point.png" class="wiki-img-highlight wiki-img-highlight-info"
                          alt="info">
                     <p class="wiki-p-highlight">
-                        Si utilisation d'un client quelconque comprenant le MumbleLink (Lunar, Badlion,...) :<br>
+                        Si utilisation d'un client quelconque comprenant déjà le MumbleLink (Lunar, Badlion,...) :<br>
                         - MumbleLink Activé<br>
                         <br>
                         Si utilisation du client Fabric :<br>
-                        - Fabric en version 1.19.2<br>
+                        - Fabric en version 1.20.1<br>
                         - Le mod MumbleLink pour Fabric
                     </p>
                 </div>
@@ -86,7 +86,7 @@ $pager->setHeader();
                          alt="warn">
                     <p class="wiki-p-highlight">
                         La version Mac de mumble actuelle n'est pas stable.<br>
-                        Il est possible que certaines fonctionnalités ne fonctionne pas pour le moment.
+                        Il est possible que certaines fonctionnalités ne fonctionnent pas pour le moment.
                     </p>
                 </div>
                 <div class="wiki-article-content-steps">
@@ -95,9 +95,9 @@ $pager->setHeader();
                     <p class="wiki-p-step">
                         Installe le client Mumble depuis le lien ci-dessous selon ton système d'exploitation :<br>
                         - <a href="https://download.mumble.com/en/mumble_client-1.4.230.x64.msi"
-                             target="_blank">Windows</a><br>
+                             target="_blank" class="underline">Windows</a><br>
                         - <a href="https://download.mumble.com/en/mumble_client-1.4.230.x64.dmg"
-                             target="_blank">MacOs</a>
+                             target="_blank" class="underline">MacOs</a>
                     </p>
                 </div>
                 <div class="wiki-article-content-steps">
@@ -114,33 +114,35 @@ $pager->setHeader();
                     <p class="wiki-p-step">
                         Télécharge l'installeur universel pour Fabric en cliquant sur le lien suivant :<br>
                         <a href="https://maven.fabricmc.net/net/fabricmc/fabric-installer/0.11.2/fabric-installer-0.11.2.jar"
-                           target="_blank">Télécharger Fabric</a>
+                           target="_blank" class="underline">Télécharger Fabric</a>
                     </p>
                 </div>
                 <div class="wiki-article-content-steps">
                     <img src="../assets/images/step4.png" class="wiki-img-step"
                          alt="step">
                     <p class="wiki-p-step">
-                        Ouvre le fichier <span class="wiki-command-exemple">fabric-installer-x.x.x.jar</span> precedent
+                        Ouvre le fichier <span class="wiki-command-exemple">fabric-installer-x.x.x.jar</span>
+                        précédemment
                         téléchargé et une fois la fenêtre ouverte, sélectionne la
-                        version [version], laisse la rubrique "Version du loader" tel quel, veille à ce que "Créer un
+                        version 1.20.1, laisse la rubrique "Version du loader" telle quelle, veille à ce que "Créer un
                         profil" soit coché et clique sur "Installer". Fabric va s'installer et une fois fini, il devrait
                         apparaître dans le launcher de Minecraft.<br>
                         S'il n'apparait pas, pas de panique ! Dans le launcher
                         officiel, clique sur l'onglet "Configuration" puis clique sur "Nouvelle configuration". Ensuite
-                        cherche la bonne version de Fabric et créé ta nouvelle configuration
+                        cherche la bonne version de Fabric et créé ta nouvelle configuration.
                     </p>
                 </div>
                 <div class="wiki-article-content-steps">
                     <img src="../assets/images/step5.png" class="wiki-img-step"
                          alt="step">
                     <p class="wiki-p-step">
-                        Télécharge le mod MumbleLink en cliquant sur le lien suivant (Toujours pour la version [version]
-                        de Minecraft) :<br>
-                        <a href="https://www.curseforge.com/api/v1/mods/321669/files/4031799/download" target="_blank">Télécharger le MumbleLink</a> <br>
+                        Télécharge le mod MumbleLink en cliquant sur le lien suivant (Toujours pour la version 1.20.1
+                        de Minecraft) :
+                        <a href="https://www.curseforge.com/api/v1/mods/321669/files/4031799/download" target="_blank"
+                           class="underline">Télécharger le MumbleLink</a> <br>
                         Puis place le fichier <span class="wiki-command-exemple">fabric-mumblelink-mod-x.x.x.jar</span>
                         dans le dossier <span class="wiki-command-exemple">mods</span> dans ton <span
-                            class="wiki-command-exemple">.minecraft</span>. <br><br>
+                                class="wiki-command-exemple">.minecraft</span>. <br><br>
                         Comment accéder au dossier <span class="wiki-command-exemple">.minecraft</span> ?<br>
                         - Sur Windows, execute le raccourci clavier <span class="wiki-command-exemple">WIN + R</span> et
                         tape l'entrée
@@ -165,7 +167,8 @@ $pager->setHeader();
                         fenêtre de base.<br>
                         Dans la même fenêtre de configuration, dans l'onglet "Plugin", activer le plugin "Link" comme
                         montré sur le screen ci-dessous : <br>
-                        <img src="../assets/images/mumble1.png" class="wiki-img-exemple-solo" alt="mumble1-img" id="img1" onclick="enhanceImg('img1')"><br>
+                        <img src="../assets/images/mumble1.png" class="wiki-img-exemple-solo" alt="mumble1-img"
+                             id="img1" onclick="enhanceImg('img1')"><br>
                         Veilles également à ce que l'option "Lier au jeu et transmettre la position" soit activée, comme
                         montré sur ce même screenshot.
                     </p>
@@ -176,7 +179,8 @@ $pager->setHeader();
                     <p class="wiki-p-step">
                         Dans l'onglet "Sortie audio", mettre la distance maximale à 70m et la distance minimale à 1m.
                         Veilles à ce que la position audio soit activée.<br>
-                        <img src="../assets/images/mumble2.png" class="wiki-img-exemple-solo" alt="mumble2-img" id="img2" onclick="enhanceImg('img2')">
+                        <img src="../assets/images/mumble2.png" class="wiki-img-exemple-solo" alt="mumble2-img"
+                             id="img2" onclick="enhanceImg('img2')">
                     </p>
                 </div>
                 <div class="wiki-article-content-steps">
@@ -196,7 +200,8 @@ $pager->setHeader();
                         rentre l'adresse <span class="wiki-command-exemple">mumble.noskillworld.fr</span>, laisse le
                         port tel quel, met ton Pseudo In-Game puis
                         nomme le serveur comme tu le souhaites. Tu devrais avoir quelque chose qui ressemble à ça :<br>
-                        <img src="../assets/images/mumble3.png" class="wiki-img-exemple-solo" alt="mumble3-img" id="img3" onclick="enhanceImg('img3')"><br>
+                        <img src="../assets/images/mumble3.png" class="wiki-img-exemple-solo" alt="mumble3-img"
+                             id="img3" onclick="enhanceImg('img3')"><br>
                         Lance ton jeu, C'est Bon !
                     </p>
                 </div>

@@ -49,11 +49,11 @@ $pager->setHeader();
                     <p class="wiki-p-highlight">
                         Quelques précisions : <br>
                         - Un warp est accessible par n'importe qui. Il est donc conseillé de claim la zone avant de
-                        créer ton warp.<br>
+                        créer ton warp. (Plus d'infos <a class="underline" href="lands.php">ici</a>.) <br>
                         - Un warp n'est pas un home ! Si un warp n'est utile que pour vous (par exemple un point de
                         téléportation à sa base), il sera supprimé par un membre de l'équipe.<br>
-                        - La commande <span class="wiki-command-exemple">/wp</span> est un alias de <span
-                            class="wiki-command-exemple">/warpplayer</span>.
+                        - La commande <span class="wiki-command-exemple">/wp</span> est un alias de la commande
+                        principale<span class="wiki-command-exemple">/warpplayer</span>.
                     </p>
                 </div>
             </div>
@@ -65,7 +65,7 @@ $pager->setHeader();
                 <div class="wiki-article-content">
                     <p class="wiki-p">Pour créer ton warp, c'est très simple ! Tout ce que tu as à faire, c'est te
                         mettre à l'endroit où tu veux que ton warp soit, puis taper la commande <br><span
-                            class="wiki-command-exemple">/wp set [nom_warp]</span>. Facile, non ?
+                                class="wiki-command-exemple">/wp set [nom_warp]</span>. Facile, non ?
                     </p>
                 </div>
                 <div class="wiki-article-content wiki-article-content-no-separation">
@@ -111,7 +111,7 @@ $pager->setHeader();
                     <p class="wiki-p-highlight">
                         Commandes supplémentaires :<br>
                         - Ajouter une description: <span
-                            class="wiki-command-exemple">/wp desc set [nom_warp] [desc]</span> <br>
+                                class="wiki-command-exemple">/wp desc set [nom_warp] [desc]</span> <br>
                         - Mettre une icône personnalisée: <span class="wiki-command-exemple">/wp </span> <br>
                         - Ban/Unban un joueur de votre warp: <span class="wiki-command-exemple">/wp ban remove|set [nom_warp] [joueur]</span>
                         <br>
@@ -128,11 +128,11 @@ $pager->setHeader();
             <div class="wiki-article-wrapper">
                 <div class="wiki-article-content">
                     <p class="wiki-p">Téléporte toi au warp d'un autre joueur à l'aide de la commande <span
-                            class="wiki-command-exemple">/wp [nom_warp]</span>.</p>
+                                class="wiki-command-exemple">/wp [nom_warp]</span>.</p>
                 </div>
                 <div class="wiki-article-content">
                     <p class="wiki-p">Note les warps des autres joueurs avec la commande <span
-                            class="wiki-command-exemple">/wp rate [nom_warp] [1-5]</span> (note de 1 à 5).</p>
+                                class="wiki-command-exemple">/wp rate [nom_warp] [1-5]</span> (note de 1 à 5).</p>
                 </div>
             </div>
         </div>
