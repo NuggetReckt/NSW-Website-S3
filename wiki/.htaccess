@@ -1,0 +1,11 @@
+RewriteEngine on
+RewriteRule ^wiki$ index.php [NC]
+RewriteRule ^hardcore$ hardcore.php [NC]
+RewriteRule ^hdv$ hdv.php [NC]
+RewriteRule ^jobs$ jobs.php [NC]
+RewriteRule ^lands$ lands.php [NC]
+RewriteRule ^lore$ lore.php [NC]
+RewriteRule ^mumble$ mumble.php [NC]
+RewriteRule ^question-reponses$ question-reponses.php [NC]
+RewriteRule ^q-r$ question-reponses.php [NC]
+RewriteRule ^warpplayer$ warpplayer.php [NC]

@@ -327,6 +327,7 @@ Actus, events style
 
 .event-link:hover {
     box-shadow: -4px 4px 8px rgba(38, 38, 38, 0.2);
+    background-color: #4350e7;
     transition: 500ms;
 }
 
@@ -710,6 +711,24 @@ figcaption {
 
 .wiki-p-no-indent {
     text-indent: 0 !important;
+}
+
+.qr-content {
+    margin-bottom: 13px;
+    line-height: 23px;
+}
+
+.qr-question {
+    margin: 0;
+    font-size: 22px;
+}
+
+.qr-answer {
+    border-left: rgba(0, 0, 0, 0.55) 4px solid;
+    padding-left: 6px;
+    margin: 0 0 0 6px;
+    font-size: 18px;
+    color: #3a3a3a;
 }
 
 .wiki-p-highlight {

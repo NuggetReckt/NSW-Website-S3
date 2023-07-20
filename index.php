@@ -51,7 +51,7 @@ $pager->setHeader();
                                     vivre de formidables aventures !</p>
                                 <p style="margin-bottom: 0">Bon jeu sur NoSkillWorld !</p>
                             </div>
-                            <h2>Actualités</h2>
+                            <h2 id="actus">Actualités</h2>
                             <div class="actus-content">
                                 <?php $req->get_actus();?>
                             </div>

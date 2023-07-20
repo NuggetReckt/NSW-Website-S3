@@ -1,4 +1,8 @@
 RewriteEngine on
 RewriteRule ^menu$ index.php [NC]
-RewriteRule ^create$ create_actu.php [NC]
 RewriteRule ^login$ login.php [NC]
+RewriteRule ^create-actu$ create_actu.php [NC]
+RewriteRule ^create-admin$ create_admin.php [NC]
+RewriteRule ^create-event$ create_event.php [NC]
+RewriteRule ^edit-actu$ edit_actu.php [NC]
+RewriteRule ^edit-event$ edit_event.php [NC]
