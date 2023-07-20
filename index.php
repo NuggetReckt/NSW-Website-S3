@@ -1,8 +1,10 @@
 <?php
 require_once "assets/php/pager.php";
 require_once "assets/php/database/request.php";
+require_once "assets/php/server.php";
 $pager = new Pager("Accueil");
 $req = new Request();
+$server = new Server();
 
 $pager->setHeader();
 ?>
@@ -10,7 +12,7 @@ $pager->setHeader();
                 <div class="top-title" id="top-title-index">
                     <div class="top-title-content">
                         <img alt="logo" src="assets/images/logo_nsw.png" id="title-logo">
-                        <h2 id="logo">NoSKillWorld</h2>
+                        <h2 id="logo">NoSkillWorld</h2>
                         <h3>Serveur Minecraft Semi-RP</h3>
                     </div>
                 </div>
@@ -26,12 +28,10 @@ $pager->setHeader();
                             </figcaption>
                         </div>
                         <div class="main-top-big main-top-col">
-                            <span id="players_count"></span>&nbsp;
-                            <span>joueurs connectés/</span>
-                            <span id="slots_count"></span>
+                            <span><?= $server->getPlayerCount() ?></span>
                         </div>
                         <div class="main-top-col-b main-top-col">
-                            <span id="is_online"></span>
+                            <span><?= $server->getServerStatus() ?></span>
                         </div>
                     </div>
                     <div class="row" id="row-mid">
@@ -53,7 +53,7 @@ $pager->setHeader();
                             </div>
                             <h2 id="actus">Actualités</h2>
                             <div class="actus-content">
-                                <?php $req->get_actus();?>
+                                <?php $req->get_actus() ?>
                             </div>
                             <h2>Trailer du serveur</h2>
                             <div id="youtube-iframe">

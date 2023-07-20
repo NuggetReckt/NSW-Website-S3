@@ -37,33 +37,6 @@ $page = basename(dirname($_SERVER["PHP_SELF"]));
             </footer>
         </div>
         <button onclick="topFunction()" id="to-top" title="Haut de page"></button>
-
-        <script type="text/javascript"
-                src="https://www.serveurs-minecraft.org/api/players_count.php?id=60934&format=jsonp"></script>
-        <script type="text/javascript"
-                src="https://www.serveurs-minecraft.org/api/slots_count.php?id=60934&format=jsonp"></script>
-        <script type="text/javascript"
-                src="https://www.serveurs-minecraft.org/api/is_online.php?id=60934&format=jsonp"></script>
-        <script type="text/javascript">
-            window.onload = function () {
-                let players = document.getElementById("players_count");
-                let slots = document.getElementById("slots_count");
-                let elt = document.getElementById("is_online");
-                if (serveurs_minecraft_org_players_count >= 0 && serveurs_minecraft_org_slots_count >= 0) {
-                    players.innerHTML = serveurs_minecraft_org_players_count;
-                    slots.innerHTML = serveurs_minecraft_org_slots_count;
-                } else {
-                    players.innerHTML = '?';
-                    slots.innerHTML = '?';
-                }
-                if (serveurs_minecraft_org_is_online === true)
-                    elt.innerHTML = "Serveur en ligne :)";
-                else if (serveurs_minecraft_org_is_online === false)
-                    elt.innerHTML = "Serveur hors ligne :/";
-                else
-                    elt.innerHTML = "Erreur 💩";
-            }
-        </script>
         <?php
         if ($page == "wiki") {
             echo "        <script src='../assets/js/copy.js'></script>\n";
