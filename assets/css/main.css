@@ -673,6 +673,10 @@ figcaption {
     border-radius: 7px;
 }
 
+.wiki-img-exemple-solo:hover, .wiki-img-exemple:hover {
+    cursor: zoom-in;
+}
+
 .wiki-img-exemple {
     max-height: 18vw;
     border-radius: 7px;

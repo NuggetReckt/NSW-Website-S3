@@ -78,8 +78,8 @@ $pager->setHeader();
                     <h3 class="qr-question">Combien de slots (emplacements) le serveur peut-il accueillir ?</h3>
                     <h3 class="qr-answer">Le serveur peut accueillir au total 100 joueurs maximum. Cependant, le nombre
                         de slots est réduit à 40 sur les serveurs comme le Semi-RP par exemple afin d'éviter le lag au
-                        maximum. Le nombre de joueurs que le serveur est susceptible de changer à tout moment en
-                        fonction de l'affluence.</h3>
+                        maximum. Le nombre de joueurs que le serveur peut accueillir est susceptible de changer à tout
+                        moment en fonction de l'affluence.</h3>
                 </div>
                 <div class="qr-content">
                     <h3 class="qr-question">Dois-je obligatoirement installer des mods spécifiques pour jouer sur le
