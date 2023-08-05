@@ -14,22 +14,28 @@
                     </li>
                     <li id="footer-r">
                         <a href="https://www.tiktok.com/@noskillworld_mc" target="_blank" id="tiktok-footer">
-                            <img src="<?="/assets/images/tiktok.svg"?>" alt="tiktok" class="logo-f" id="logo-f-tiktok">
+                            <img src="<?= "/assets/images/tiktok.svg" ?>" alt="tiktok" class="logo-f"
+                                 id="logo-f-tiktok">
                         </a>
                         <a href="https://www.instagram.com/noskillworld/" target="_blank" id="insta-footer">
-                            <img src="<?="/assets/images/instagram.svg"?>" alt="insta" class="logo-f" id="logo-f-insta">
+                            <img src="<?= "/assets/images/instagram.svg" ?>" alt="insta" class="logo-f"
+                                 id="logo-f-insta">
                         </a>
                         <a href="https://twitter.com/NoSkillWorld" target="_blank" id="twitter-footer">
-                            <img src="<?="/assets/images/twitter.svg"?>" alt="twitter" class="logo-f" id="logo-f-twitter">
+                            <img src="<?= "/assets/images/twitter.svg" ?>" alt="twitter" class="logo-f"
+                                 id="logo-f-twitter">
                         </a>
                         <a href="https://discord.gg/cE4eHEZWrD" target="_blank" id="discord-footer">
-                            <img src="<?="/assets/images/discord.svg"?>" alt="discord" class="logo-f" id="logo-f-discord">
+                            <img src="<?= "/assets/images/discord.svg" ?>" alt="discord" class="logo-f"
+                                 id="logo-f-discord">
                         </a>
                     </li>
                 </ul>
                 <hr class="footer-item">
                 <div class="sub-footer footer-item">
-                    <span>Copyright © NoSKillWorld 2020 - 2023</span>
+                    <span><a href="../../cgu-cgv.php">CGU/CGV</a> - <a href="../../rules.php">Règles</a> - <a
+                                href="https://statut.noskillworld.fr" target="_blank">Statut</a></span>
+                    <span>Copyright © NoSkillWorld 2020 - 2023</span>
                 </div>
             </footer>
         </div>

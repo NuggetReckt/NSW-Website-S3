@@ -157,6 +157,7 @@ hr {
 
 .sub-footer {
     justify-content: center;
+    flex-direction: column;
 }
 
 #to-top {
@@ -732,6 +733,7 @@ figcaption {
     padding-left: 6px;
     margin: 0 0 0 6px;
     font-size: 18px;
+    line-height: 19px;
     color: #3a3a3a;
 }
 
