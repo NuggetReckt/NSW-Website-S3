@@ -2,8 +2,8 @@
 
 class Pager
 {
-    public string $title;
-    public bool $isUnderMaintenance = false;
+    private string $title;
+    private bool $isUnderMaintenance = true;
 
     public function __construct($title)
     {
@@ -11,7 +11,9 @@ class Pager
 
         $this->title = $title;
 
-        if ($this->isUnderMaintenance) {
+        $extension = pathinfo(basename($_SERVER["PHP_SELF"]), PATHINFO_EXTENSION);
+
+        if ($this->isUnderMaintenance && $extension == "php") {
             header("Location: maintenance.php");
         }
     }
