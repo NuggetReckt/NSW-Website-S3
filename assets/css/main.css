@@ -129,6 +129,7 @@ nav, .footer-content {
 
 #footer-l {
     justify-content: left;
+    line-height: 15px;
 }
 
 #footer-r {
@@ -158,6 +159,7 @@ hr {
 .sub-footer {
     justify-content: center;
     flex-direction: column;
+    line-height: 15px;
 }
 
 #to-top {

@@ -86,7 +86,7 @@ $pager->setHeader();
                         serveur ?</h3>
                     <h3 class="qr-answer">Non, aucun. NoSkillWorld n'est pas un serveur moddé. Cependant, tu peux
                         rejoindre le serveur avec des mods installés sur ton client, tout en respectant les
-                        <a href="../cgu-cgv.php" class="underline"> règles du serveur</a>.</h3>
+                        <a href="cgu-cgv.php" class="underline"> règles du serveur</a>.</h3>
                 </div>
             </div>
             <div class="wiki-article-title">
@@ -133,17 +133,17 @@ $pager->setHeader();
                     <h3 class="qr-question">Y a-t-il des restrictions ou des limitations particulières concernant les
                         constructions des joueurs, sur les entités et objets sur le serveur ?</h3>
                     <h3 class="qr-answer">Oui, et elles sont référencées
-                        <a href="../cgu-cgv.php" class="underline">ici</a>.</h3>
+                        <a href="cgu-cgv.php" class="underline">ici</a>.</h3>
                 </div>
                 <div class="qr-content">
                     <h3 class="qr-question">Existe-t-il des règles spécifiques au serveur ?</h3>
                     <h3 class="qr-answer">Oui, et elles sont disponibles
-                        <a href="../cgu-cgv.php" class="underline">ici</a>.</h3>
+                        <a href="cgu-cgv.php" class="underline">ici</a>.</h3>
                 </div>
                 <div class="qr-content">
                     <h3 class="qr-question">Le grief, vol de ressources est-il autorisé ?</h3>
                     <h3 class="qr-answer">Non il ne l'est pas, et peut même être sanctionné. Voir les
-                        <a href="../cgu-cgv.php" class="underline">règles</a> pour plus d'informations.
+                        <a href="cgu-cgv.php" class="underline">règles</a> pour plus d'informations.
                     </h3>
                 </div>
                 <div class="qr-content">
@@ -151,7 +151,7 @@ $pager->setHeader();
                         inapproprié sur le serveur ?</h3>
                     <h3 class="qr-answer">Sur le serveur, toute action (directe ou indirecte) pouvant nuire aux autres
                         joueurs est sanctionnée. Que ce soit de la tricherie ou des insultes dans le chat, ces actions
-                        sont sanctionnées. Voir les <a href="../cgu-cgv.php" class="underline">règles</a> pour plus
+                        sont sanctionnées. Voir les <a href="cgu-cgv.php" class="underline">règles</a> pour plus
                         d'informations.
                     </h3>
                 </div>

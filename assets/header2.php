@@ -1,22 +1,22 @@
 <?php
 
-function echoIfActive($current_page): void
+function echoIfActive($page): void
 {
-    if (getPage() == $current_page) {
+    if (getCurrentPage() == $page) {
         echo "active";
     } else {
         echo "not-active";
     }
 }
 
-function getPage() : string
+function getCurrentPage() : string
 {
     return basename($_SERVER["PHP_SELF"]);
 }
 ?>
     </head>
         <?php
-        if (getPage() == "index.php") {
+        if (getCurrentPage() == "index.php") {
             echo "<body>";
         } else {
             echo "<body id='body-other'>";
@@ -39,7 +39,7 @@ function getPage() : string
                         <a href="<?="events.php"?>" class="navbar-item-a <?php echoIfActive("events.php")?>">Events</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="<?="cgu-cgv.php"?>" class="navbar-item-a <?php echoIfActive("cgu-cgv.php")?>">Regles</a>
+                        <a href="<?="wiki/rules.php"?>" class="navbar-item-a <?php echoIfActive("cgu-cgv.php")?>">Regles</a>
                     </li>
                     <li class="navbar-item">
                         <a href="<?="staff.php"?>" class="navbar-item-a <?php echoIfActive("staff.php")?>">Equipe</a>

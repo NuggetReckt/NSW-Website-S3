@@ -3,7 +3,7 @@
 class Pager
 {
     private string $title;
-    private bool $isUnderMaintenance = true;
+    public bool $isUnderMaintenance = false;
 
     public function __construct($title)
     {
