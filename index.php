@@ -39,16 +39,18 @@ $pager->setHeader();
                             <div id="pres">
                                 <h2>À Propos</h2>
                                 <p>Bienvenue sur NoSkillWorld Saison 3 !</p>
-                                <p>Rejoins-nous avec tes amis ou solo pour vivre d'inoubliables aventures RP.
-                                    Pourquoi RP ? Les joueurs peuvent communiquer entre eux directement dans le jeu via Mumble.
-                                    De plus, l'absence de home rend l'expérience de jeu plus réaliste.</p>
-                                <p>La génération customisée en FarmZone comporte des paysages à couper le
-                                    souffle et
-                                    rend le minage plus fun ! Des events
-                                    fréquents ainsi qu'un serveur Hardcore pimenteront ton aventure, mélangeant
-                                    adrénaline et satisfaction !
-                                    Rejoins <span class="bold">play.noskillworld.fr</span> pour
-                                    vivre de formidables aventures !</p>
+                                <p>
+                                    Habitasse sodales porta phasellus nam praesent morbi facilisis aliquet ut commodo habitant
+                                    hendrerit accumsan dapibus est libero ornare felis maximus ad rutrum penatibus aliquam
+                                    nostra potenti lacus sollicitudin letius justo cubilia sociosqu taciti ligula ultricies feugiat
+                                    primis cras in scelerisque ullamcorper fringilla curae tempus quam id parturient volutpat p
+                                    orttitor quis
+                                </p>
+                                <p>
+                                    En bref, NoSkillWorld c'est de la bonne ambiance, de l'aventure, de l'exploration et beaucoup de rigolade.
+                                    Rejoins-nous dès maintenant en jeu sur <span class="bold">play.noskillworld.fr</span>
+                                    pour vivre d'inoubliables aventures !
+                                </p>
                                 <p style="margin-bottom: 0">Bon jeu sur NoSkillWorld !</p>
                             </div>
                             <h2 id="actus">Actualités</h2>

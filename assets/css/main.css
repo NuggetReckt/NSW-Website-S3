@@ -134,9 +134,9 @@ nav, .footer-content {
 
 #footer-r {
     justify-content: right;
-
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .logo-f:hover {
