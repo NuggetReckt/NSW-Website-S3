@@ -10,6 +10,7 @@ $pager->setHeader();
 $event_name = filter_input(INPUT_POST, 'event-name', FILTER_SANITIZE_SPECIAL_CHARS);
 $event_date = filter_input(INPUT_POST, 'event-date', FILTER_SANITIZE_SPECIAL_CHARS);
 $event_hour = filter_input(INPUT_POST, 'event-hour', FILTER_SANITIZE_SPECIAL_CHARS);
+$event_desc = filter_input(INPUT_POST, 'event-desc', FILTER_SANITIZE_SPECIAL_CHARS);
 $err = filter_input(INPUT_GET, 'error', FILTER_VALIDATE_INT);
 
 $request = new PanelRequest();
@@ -20,10 +21,9 @@ if ($_SESSION['admin'] == null) {
     exit();
 }
 
-if (isset($event_name) && isset($event_date) && isset($event_hour)) {
+if (isset($event_name) && isset($event_date) && isset($event_hour) && isset($event_desc)) {
     $datetime = $event_date . " " . $event_hour;
-
-    $request->create_event($event_name, $datetime);
+    $request->create_event($event_name, $datetime, $event_desc);
 }
 
 if (isset($_GET['event_created'])) {
@@ -47,6 +47,11 @@ if (isset($err)) {
                     <label>Date/Heure<br>
                         <input type="date" name="event-date" min="2023-01-01" required=""><br>
                         <input type="time" name="event-hour" required="">
+                    </label>
+                    <br>
+                    <label>Description<br>
+                        <textarea name="event-desc" rows="6" required=""
+                                  placeholder="La description de votre évent"></textarea>
                     </label>
                     <br>
                     <input type="submit" value="Créer l'Event">

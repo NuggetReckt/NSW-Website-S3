@@ -257,7 +257,7 @@ Actus, events style
     font-size: 11px;
 }
 
-.actu-desc {
+.actu-desc, .event-desc {
     margin: 0;
     padding: 5px;
 }
@@ -281,6 +281,11 @@ Actus, events style
     text-align: center;
     border-radius: 7px;
     color: black;
+}
+
+.event-separator {
+    margin: 0;
+    background-color: #1a1a1a;
 }
 
 .event-item-noresult {
@@ -313,10 +318,12 @@ Actus, events style
 }
 
 .event-title {
+    line-height: 25px;
     margin: 0;
 }
 
 .event-subtitle {
+    margin: 0 0 4px 0;
     font-size: 14px;
 }
 
@@ -960,6 +967,10 @@ Pop-up style
     width: 500px;
     padding: 14px;
     border-radius: 7px;
+    -moz-animation-name: popUpAnimation;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-duration: 4s;
     animation-name: popUpAnimation;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;

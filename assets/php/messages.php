@@ -23,7 +23,6 @@ class Messages
                 $msg = "Vous n'avez pas la permission !";
                 break;
         }
-
         echo "            <div class='pop-up-message' id='pop-up-fail'>\n";
         echo "                <span>$msg</span>\n";
         echo "            </div>\n";
@@ -59,7 +58,6 @@ class Messages
                 $msg = "Vous avez été déconnecté avec succès.";
                 break;
         }
-
         echo "            <div class='pop-up-message' id='pop-up-success'>\n";
         echo "                <span>$msg</span>\n";
         echo "            </div>\n";

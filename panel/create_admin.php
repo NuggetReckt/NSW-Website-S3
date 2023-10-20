@@ -37,7 +37,7 @@ if (isset($err)) {
         <form action="create_admin.php" method="POST">
             <fieldset>
                 <div class="form-content">
-                    <h1>Créer un compte admin</h1>
+                    <h1>Créer un compte administrateur</h1>
                     <label>Nom d'utilisateur<br>
                         <input type="text" name="username" class="input" placeholder="Nom d'utilisateur"
                                required="">

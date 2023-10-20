@@ -50,13 +50,17 @@ class Request
             $name = $value['name'];
             $datetime = $value['datetime'];
 
-            echo "<div class='event-item' id='event-$id'>";
-            echo "    <div class='event-title-content'>";
-            echo "        <h1 class='event-title'>$name</h1>";
-            echo "        <h2 class='event-subtitle'>Le $datetime</h2>";
-            echo "    </div>";
-            echo "    <a class='event-link' target='_blank' href='https://discord.gg/qZFeAwDTut'>Rejoindre</a>";
-            echo "</div>";
+            echo "<div class='event-item' id='event-$id'>\n";
+            echo "    <div class='event-title-content'>\n";
+            echo "        <h1 class='event-title'>$name</h1>\n";
+            echo "        <h2 class='event-subtitle'>Le $datetime</h2>\n";
+            echo "        <hr class='event-separator'>\n";
+            echo "    </div>\n";
+            echo "    <div class='event-content'>\n";
+            echo "        <p class='event-desc'></p>\n";
+            echo "    </div>\n";
+            echo "    <a class='event-link' target='_blank' href='https://discord.gg/qZFeAwDTut'>Rejoindre</a>\n";
+            echo "</div>\n";
         }
 
         if ($result == null) {

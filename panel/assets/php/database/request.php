@@ -36,29 +36,27 @@ use JetBrains\PhpStorm\NoReturn;
         $req = "SELECT password FROM admins WHERE username ='$username';";
         $result = $conn->dbRun($req, [])->fetch(PDO::FETCH_ASSOC);
 
-        if ($username != null && $password != null) {
-            $user_password = $result['password'];
-
-            if (password_verify($password, $user_password)) {
+        if ($result == null) {
+            sleep(1);
+            header("Location: login.php?error=1");
+            session_abort();
+        } else if ($password == null || $username == null) {
+            //Les champs ne peuvent pas être vides
+            header("Location: login.php?error=2");
+            session_abort();
+        } else {
+            if (password_verify($password, $result['password'])) {
+                //Le mot de passe est correct
                 $_SESSION['admin'] = $username;
-
-                //Mot de passe correct
                 sleep(1);
                 header("Location: index.php?logged");
             } else {
-                //Mot de passe incorrect pour cet utilisateur
+                //le mot de passe est incorrect
                 sleep(1);
                 header("Location: login.php?error=1");
                 session_abort();
-                exit();
             }
-        } else {
-            //Les champs ne peuvent pas être vides !
-            header("Location: login.php?error=2");
-            session_abort();
-            exit();
         }
-
         unset($username);
         unset($password);
         unset($user_password);
@@ -176,12 +174,12 @@ use JetBrains\PhpStorm\NoReturn;
 
     // Fonction de gestion des evenements
 
-    function create_event(string $event_name, $datetime): void
+    function create_event(string $event_name, string $datetime, string $desc): void
     {
-        $req = "INSERT INTO events (name, datetime) VALUES (?, ?);";
+        $req = "INSERT INTO events (name, datetime, $desc) VALUES (?, ?, ?);";
         $conn = new Connector();
 
-        $conn->dbRun($req, [$event_name, $datetime]);
+        $conn->dbRun($req, [$event_name, $datetime, $desc]);
         header("Location: create_event.php?event_created");
     }
 
