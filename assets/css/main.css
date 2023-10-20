@@ -257,7 +257,7 @@ Actus, events style
     font-size: 11px;
 }
 
-.actu-desc, .event-desc {
+.actu-desc {
     margin: 0;
     padding: 5px;
 }
@@ -284,8 +284,8 @@ Actus, events style
 }
 
 .event-separator {
-    margin: 0;
-    background-color: #1a1a1a;
+    margin: 0 20px 2px 20px;
+    background-color: #5e5e5e;
 }
 
 .event-item-noresult {
@@ -325,6 +325,10 @@ Actus, events style
 .event-subtitle {
     margin: 0 0 4px 0;
     font-size: 14px;
+}
+
+.event-content {
+    height: 100%;
 }
 
 .event-link {
