@@ -50,7 +50,7 @@ if (isset($err)) {
                     </label>
                     <br>
                     <label>Description<br>
-                        <textarea name="event-desc" rows="6" required=""
+                        <textarea name="event-desc" rows="3" required=""
                                   placeholder="La description de votre évent"></textarea>
                     </label>
                     <br>

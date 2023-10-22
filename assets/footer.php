@@ -16,6 +16,10 @@ $page = basename(dirname($_SERVER["PHP_SELF"]));
                                     href="mailto:contact@noskillworld.fr">contact@noskillworld.fr</a></span>
                     </li>
                     <li id="footer-r">
+                        <a href="https://www.youtube.com/@noskillworld_mc" target="_blank" id="youtube-footer">
+                            <img src="<?= "/assets/images/youtube.svg" ?>" alt="youtube" class="logo-f"
+                                 id="logo-f-youtube">
+                        </a>
                         <a href="https://www.tiktok.com/@noskillworld_mc" target="_blank" id="tiktok-footer">
                             <img src="<?= "/assets/images/tiktok.svg" ?>" alt="tiktok" class="logo-f"
                                  id="logo-f-tiktok">
