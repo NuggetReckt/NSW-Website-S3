@@ -6,11 +6,11 @@
                     <li id="footer-l">
                         <span>Non affilié avec Mojang AB.</span>
                         <br>
-                        <span>Site dev avec</span><span style="color: #ce0000"> ❤ </span><span>par NuggetReckt</span>
+                        <span>Dev avec</span><span
+                                style="color: #ce0000"> ❤ </span><span>par NuggetReckt & Mamakse</span>
                         <br>
-                        <span>Nous contacter:
-                            <a href="mailto:contact@noskillworld.fr">contact@noskillworld.fr</a>
-                        </span>
+                        <span>Nous contacter: <a
+                                    href="mailto:contact@noskillworld.fr">contact@noskillworld.fr</a></span>
                     </li>
                     <li id="footer-r">
                         <a href="https://www.youtube.com/@noskillworld_mc" target="_blank" id="youtube-footer">
