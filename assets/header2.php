@@ -9,19 +9,23 @@ function echoIfActive($page): void
     }
 }
 
-function getCurrentPage() : string
+function echoBody(): void
+{
+    if (getCurrentPage() == "index.php") {
+        echo "<body>";
+    } else {
+        echo "<body id='body-other'>";
+    }
+}
+
+function getCurrentPage(): string
 {
     return basename($_SERVER["PHP_SELF"]);
 }
+
 ?>
     </head>
-        <?php
-        if (getCurrentPage() == "index.php") {
-            echo "<body>";
-        } else {
-            echo "<body id='body-other'>";
-        }
-        ?>
+        <?php echoBody() ?>
         <button class="responsive-nav-toggle" aria-controls="navbar-list" aria-expanded="false"></button>
         <div class="navbar-content">
             <nav>

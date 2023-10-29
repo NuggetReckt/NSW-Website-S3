@@ -1,12 +1,11 @@
 <?php
 
-
 function echoIfWiki(): void
 {
-    if (str_starts_with(getCurrentDir(), "/wiki/")) {
+    if (str_starts_with(getCurrentDir(), "/wiki/") && getCurrentDir() != "/wiki/rules.php") {
         echo "active";
     } else {
-        echo "no-active";
+        echo "not-active";
     }
 }
 
@@ -15,7 +14,7 @@ function echoIfRules(): void
     if (getCurrentDir() == "/wiki/rules.php") {
         echo "active";
     } else {
-        echo "no-active";
+        echo "not-active";
     }
 }
 
