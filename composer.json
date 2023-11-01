@@ -16,5 +16,12 @@
     "amphp/amp": "3.0.0",
     "revolt/event-loop": "v1.0.4",
     "ext-pdo": "*"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "prepend-autoloader": false,
+    "platform": {
+      "php": "8.2.12"
+    }
   }
 }
