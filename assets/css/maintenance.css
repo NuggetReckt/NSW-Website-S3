@@ -1,3 +1,16 @@
+html {
+    scroll-behavior: smooth !important;
+    font-family: police_custom, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+*::selection {
+    background-color: #2C70BA;
+    color: white;
+}
+
 body {
     background: url("/assets/images/background.png") fixed no-repeat;
     background-size: cover;
@@ -43,7 +56,7 @@ h2 {
 
 h3 {
     font-size: 20px;
-    margin: 30px 0 20px;
+    margin: 40px 0 25px;
 }
 
 .discord {
@@ -52,6 +65,7 @@ h3 {
     font-family: police_custom, sans-serif;
     text-decoration: none;
     padding: 14px 30px;
+    margin: 0;
     border-radius: 15px;
     font-size: 20px;
     border: #5865F2 5px solid;
