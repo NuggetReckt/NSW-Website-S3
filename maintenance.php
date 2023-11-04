@@ -23,7 +23,7 @@
     <meta property="og:url" content="https://play.noskillworld.fr">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="play.noskillworld.fr">
-    <meta property="og:title" content="Site - NoSkillWorld">
+    <meta property="og:title" content="Maintenance - NoSkillWorld">
     <meta property="og:description"
           content="Site internet du serveur Minecraft NoSkillWorld. Rejoins le serveur avec tes amis ou en solo pour vivre de formidables aventures !">
     <meta property="og:image" content="https://play.noskillworld.fr/assets/images/embed-icon.png">
@@ -36,7 +36,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="play.noskillworld.fr">
     <meta property="twitter:url" content="https://play.noskillworld.fr">
-    <meta name="twitter:title" content="Site - NoSkillWorld">
+    <meta name="twitter:title" content="Maintenance - NoSkillWorld">
     <meta name="twitter:description"
           content="Site internet du serveur Minecraft NoSkillWorld. Rejoins le serveur avec tes amis ou en solo pour vivre de formidables aventures !">
     <meta name="twitter:image" content="https://play.noskillworld.fr/assets/images/background.png">
