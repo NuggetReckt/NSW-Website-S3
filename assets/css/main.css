@@ -188,7 +188,7 @@ hr {
 
 *::-webkit-scrollbar-thumb {
     background: #2C70BA;
-    border-radius: 7px;
+    border-radius: 8px;
 }
 
 *::-moz-selection {
@@ -216,7 +216,7 @@ Actus, events style
 
 .actus-content::-webkit-scrollbar-track {
     background-color: #ebebeb;
-    border-radius: 7px;
+    border-radius: 8px;
 !important;
 }
 
@@ -234,7 +234,7 @@ Actus, events style
 }
 
 .actu-noresult {
-    border-radius: 7px;
+    border-radius: 8px;
     line-height: 0.3;
 }
 
@@ -279,7 +279,7 @@ Actus, events style
 
 .event-item, .event-item-noresult {
     text-align: center;
-    border-radius: 7px;
+    border-radius: 8px;
     color: black;
 }
 
@@ -333,7 +333,7 @@ Actus, events style
 
 .event-link {
     padding: 10px 20px;
-    border-radius: 7px;
+    border-radius: 8px;
     background-color: #5865F2;
     color: white;
     transition: 750ms;
@@ -382,7 +382,7 @@ Pages specific style
 .wrapper {
     margin: 10px 0;
     padding: 15px;
-    border-radius: 7px;
+    border-radius: 8px;
     border-width: 0.05em;
     border-style: solid;
     border-color: lightgray;
@@ -476,7 +476,7 @@ figcaption {
 }
 
 #youtube-iframe, #twitter-iframe, #discord-iframe {
-    border-radius: 7px;
+    border-radius: 8px;
     width: 100%;
     max-width: 800px;
     border: none;
@@ -575,7 +575,7 @@ figcaption {
 .top-wiki-nav > a {
     transition: 500ms;
     padding: 8px;
-    border-radius: 7px;
+    border-radius: 8px;
     border: 3px #2C70BA solid;
     color: #2C70BA;
 }
@@ -595,7 +595,7 @@ figcaption {
     align-self: flex-start;
     min-width: 270px;
     padding: 7px;
-    border-radius: 7px;
+    border-radius: 8px;
     box-shadow: 0 0 10px 2px rgb(0 0 0 / 20%);
     top: 15px;
     position: sticky;
@@ -613,7 +613,7 @@ figcaption {
 .wiki-content {
     background: white;
     padding: 15px;
-    border-radius: 7px;
+    border-radius: 8px;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
@@ -684,7 +684,7 @@ figcaption {
 
 .wiki-img-exemple-solo {
     max-height: 28vw;
-    border-radius: 7px;
+    border-radius: 8px;
 }
 
 .wiki-img-exemple-solo:hover, .wiki-img-exemple:hover {
@@ -693,7 +693,7 @@ figcaption {
 
 .wiki-img-exemple {
     max-height: 18vw;
-    border-radius: 7px;
+    border-radius: 8px;
 }
 
 .wiki-img-highlight-info {
@@ -776,7 +776,6 @@ figcaption {
     justify-content: center;
     -webkit-box-align: center;
     -webkit-box-pack: justify;
-    padding: 40px 10px;
     color: white;
     background-color: #2C70BA;
     font-family: police_custom_bold, sans-serif;
@@ -785,12 +784,18 @@ figcaption {
     transition: 500ms;
 }
 
-.main-top-col-wiki > a > img {
+.wiki-nav-item-content {
+    padding: 40px 0;
+    height: 100%;
+    width: 100%;
+}
+
+.wiki-nav-item-content > img {
     height: 172px;
     width: 172px;
 }
 
-.main-top-col-wiki > a > span {
+.wiki-nav-item-content > span {
     font-size: 24px;
     display: block;
     color: black;
@@ -923,7 +928,7 @@ figcaption {
 }
 
 .actu-item-panel > div > a, .event-item-panel > div > a {
-    border-radius: 7px;
+    border-radius: 8px;
     font-family: police_custom, sans-serif;
     font-size: 16px;
     padding: 5px 10px;
@@ -970,7 +975,7 @@ Pop-up style
     font-size: 16px;
     width: 500px;
     padding: 14px;
-    border-radius: 7px;
+    border-radius: 8px;
     -moz-animation-name: popUpAnimation;
     -moz-animation-timing-function: ease-in-out;
     -moz-animation-fill-mode: forwards;
@@ -996,8 +1001,9 @@ Pop-up style
         opacity: 0;
     }
     25%, 50%, 75% {
-        opacity: 1;
+        display: block;
         top: 13%;
+        opacity: 1;
     }
     100% {
         display: none;

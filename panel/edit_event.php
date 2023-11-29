@@ -15,9 +15,13 @@ $err = filter_input(INPUT_GET, 'error', FILTER_VALIDATE_INT);
 $request = new PanelRequest();
 $msg = new Messages();
 
-if ($_SESSION['admin'] == null) {
+if (isset($_SESSION['admin'])) {
+    if ($_SESSION['admin'] == null) {
+        header("Location: login.php?error=3");
+    }
+} else {
+    $_SESSION['admin'] = null;
     header("Location: login.php?error=3");
-    exit();
 }
 
 if (isset($event_name) || isset($event_date)) {

@@ -15,56 +15,74 @@ $pager->setHeader();
         <div id="row">
             <div class="main-top-col-wiki" id="wiki-jobs">
                 <a href="jobs.php" class="bold">
-                    <img src="../assets/images/axe.png" alt="jobs-icon">
-                    <span>Jobs</span>
+                    <div class="wiki-nav-item-content">
+                        <img src="../assets/images/axe.png" alt="jobs-icon">
+                        <span>Jobs</span>
+                    </div>
                 </a>
             </div>
             <div class="main-top-col-wiki" id="wiki-lands">
                 <a href="lands.php" class="bold">
-                    <img src="../assets/images/tent.png" alt="lands-icon">
-                    <span>Lands</span>
+                    <div class="wiki-nav-item-content">
+                        <img src="../assets/images/tent.png" alt="lands-icon">
+                        <span>Lands</span>
+                    </div>
                 </a>
             </div>
             <div class="main-top-col-wiki" id="wiki-wp">
                 <a href="warpplayer.php" class="bold">
-                    <img src="../assets/images/black-hole.png" alt="wp-icon">
-                    <span>WarpPlayer</span>
+                    <div class="wiki-nav-item-content">
+                        <img src="../assets/images/black-hole.png" alt="wp-icon">
+                        <span>WarpPlayer</span>
+                    </div>
                 </a>
             </div>
             <div class="main-top-col-wiki" id="wiki-hdv">
                 <a href="hdv.php" class="bold">
-                    <img src="../assets/images/price.png" alt="hdv-icon">
-                    <span>Hôtel Des Ventes</span>
+                    <div class="wiki-nav-item-content">
+                        <img src="../assets/images/price.png" alt="hdv-icon">
+                        <span>Hôtel Des Ventes</span>
+                    </div>
                 </a>
             </div>
             <div class="main-top-col-wiki" id="wiki-homes">
                 <a href="homes.php" class="bold">
-                    <img src="../assets/images/house.png" alt="homes-icon">
-                    <span>Homes</span>
+                    <div class="wiki-nav-item-content">
+                        <img src="../assets/images/house.png" alt="homes-icon">
+                        <span>Homes</span>
+                    </div>
                 </a>
             </div>
             <div class="main-top-col-wiki" id="wiki-hc">
                 <a href="hardcore.php" class="bold">
-                    <img src="../assets/images/heartbeat.png" alt="hc-icon">
-                    <span>HardCore</span>
+                    <div class="wiki-nav-item-content">
+                        <img src="../assets/images/heartbeat.png" alt="hc-icon">
+                        <span>HardCore</span>
+                    </div>
                 </a>
             </div>
             <div class="main-top-col-wiki" id="wiki-lore">
                 <a href="lore.php" class="bold">
-                    <img src="../assets/images/literature.png" alt="lore-icon">
-                    <span>Lore</span>
+                    <div class="wiki-nav-item-content">
+                        <img src="../assets/images/literature.png" alt="lore-icon">
+                        <span>Lore</span>
+                    </div>
                 </a>
             </div>
             <div class="main-top-col-wiki" id="wiki-mumble">
                 <a href="mumble.php" class="bold">
-                    <img src="../assets/images/headphones.png" alt="mumble-icon">
-                    <span>Mumble</span>
+                    <div class="wiki-nav-item-content">
+                        <img src="../assets/images/headphones.png" alt="mumble-icon">
+                        <span>Mumble</span>
+                    </div>
                 </a>
             </div>
             <div class="main-top-col-wiki" id="wiki-qr">
                 <a href="questions-reponses.php" class="bold">
-                    <img src="../assets/images/search.png" alt="qr-icon">
-                    <span>Questions/Réponses</span>
+                    <div class="wiki-nav-item-content">
+                        <img src="../assets/images/search.png" alt="qr-icon">
+                        <span>Questions/Réponses</span>
+                    </div>
                 </a>
             </div>
         </div>

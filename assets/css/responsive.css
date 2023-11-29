@@ -5,7 +5,7 @@
 }
 
 @media (max-width: 1165px) {
-    .main-top-col-wiki > a > img {
+    .wiki-nav-item-content > img {
         height: 170px;
         width: 170px;
     }
@@ -30,7 +30,7 @@
         width: 26%;
     }
 
-    .main-top-col-wiki > a > img {
+    .wiki-nav-item-content > img {
         height: 150px;
         width: 150px;
     }
@@ -182,12 +182,12 @@
         margin-bottom: 20px;
     }
 
-    .main-top-col-wiki > a > img {
+    .wiki-nav-item-content > img {
         height: 130px;
         width: 130px;
     }
 
-    .main-top-col-wiki > a > span {
+    .wiki-nav-item-content > span {
         font-size: 20px;
     }
 
@@ -215,12 +215,12 @@
         padding: 23px 10px;
     }
 
-    .main-top-col-wiki > a > img {
+    .wiki-nav-item-content > img {
         height: 100px;
         width: 100px;
     }
 
-    .main-top-col-wiki > a > span {
+    .wiki-nav-item-content > span {
         font-size: 18px;
     }
 

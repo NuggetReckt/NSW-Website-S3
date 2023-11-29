@@ -15,6 +15,7 @@ if (isset($_SESSION['admin'])) {
     }
 } else {
     $_SESSION['admin'] = null;
+    header("Location: login.php?error=3");
 }
 
 $err = filter_input(INPUT_GET, 'error', FILTER_VALIDATE_INT);
