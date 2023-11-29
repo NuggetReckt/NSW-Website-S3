@@ -9,8 +9,12 @@ $pager->setHeader();
 $request = new PanelRequest();
 $msg = new Messages();
 
-if ($_SESSION['admin'] == null) {
-    header("Location: login.php?error=3");
+if (isset($_SESSION['admin'])) {
+    if ($_SESSION['admin'] == null) {
+        header("Location: login.php?error=3");
+    }
+} else {
+    $_SESSION['admin'] = null;
 }
 
 $err = filter_input(INPUT_GET, 'error', FILTER_VALIDATE_INT);
@@ -59,27 +63,27 @@ if (isset($_GET['delete-actu'])) {
     }
 }
 ?>
-    <div class="top-content top-content-menu" id="top-content-menu">
-        <div class="top-title-menu">
-            <h1 id="menu-title">Panel</h1>
-        </div>
+<div class="top-content top-content-menu" id="top-content-menu">
+    <div class="top-title-menu">
+        <h1 id="menu-title">Panel</h1>
     </div>
-    <div class="manage-actus-content">
-        <div class="manage-actus-title">
-            <h1>Actus</h1>
-        </div>
-        <div class="manage-actus">
-            <?php $request->get_actus() ?>
-        </div>
+</div>
+<div class="manage-actus-content">
+    <div class="manage-actus-title">
+        <h1>Actus</h1>
     </div>
-    <div class="manage-event-content">
-        <div class="manage-event-title">
-            <h1>Events</h1>
-        </div>
-        <div class="manage-events">
-            <?php $request->get_events() ?>
-        </div>
+    <div class="manage-actus">
+        <?php $request->get_actus() ?>
     </div>
+</div>
+<div class="manage-event-content">
+    <div class="manage-event-title">
+        <h1>Events</h1>
+    </div>
+    <div class="manage-events">
+        <?php $request->get_events() ?>
+    </div>
+</div>
 <?php
 $pager->setFooter();
 ?>
