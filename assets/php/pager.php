@@ -7,14 +7,13 @@ class Pager
 
     public function __construct($title)
     {
-        ini_set("default_charset", "UTF-8");
-
         $this->title = $title;
 
+        ini_set("default_charset", "UTF-8");
         $extension = pathinfo(basename($_SERVER["PHP_SELF"]), PATHINFO_EXTENSION);
 
         if ($this->isUnderMaintenance && $extension == "php") {
-            header("Location: maintenance.php");
+            header("Location: https://play.noskillworld.fr/maintenance.php");
         }
     }
 

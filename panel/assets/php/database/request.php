@@ -2,25 +2,13 @@
 
 use JetBrains\PhpStorm\NoReturn;
 
-/**
- * @property string $username
- * @property string $password
- * @property string $password_confirm
- * @property string $name
- * @property string $link
- * @property string $desc
- * @property string $date
- * @property string $actu_name
- * @property string $actu_desc
- * @property string $actu_date
- * @property string $actu_img_url
- */
+require_once "./assets/php/database/connector.php";
+
 #[AllowDynamicProperties] class PanelRequest
 {
 
     function __construct()
     {
-        require_once "../assets/php/database/connector.php";
         date_default_timezone_set('Europe/Paris');
     }
 
@@ -63,8 +51,7 @@ use JetBrains\PhpStorm\NoReturn;
         exit();
     }
 
-
-    // Fonction en lien avec la gestion des actualités
+    // Fonctions pour créer, modifier, afficher, supprimer les actus
 
     function create_actu(string $actu_name, string $actu_desc): void
     {
@@ -107,9 +94,6 @@ use JetBrains\PhpStorm\NoReturn;
         }
     }
 
-
-    // Fonctions pour modifier les actus et pour récupérer les données des actus
-
     function modify_actu(int $id, string $actu_name, string $actu_desc): void
     {
         $sql = "UPDATE actus SET name = '$actu_name', description = '$actu_desc' WHERE id = '$id';";
@@ -120,14 +104,12 @@ use JetBrains\PhpStorm\NoReturn;
         header("Location: index.php?actu_modified");
     }
 
-    function modify_event(int $id, string $name, string $date): void
+    function delete_actu(int $actu_id): void
     {
-        $sql = "UPDATE events SET name = '$name', date = '$date' WHERE id = '$id';";
+        $sql = "DELETE FROM actus WHERE id = ?;";
         $conn = new Connector();
 
-        $conn->dbRun($sql, [])->fetchAll(PDO::FETCH_ASSOC);
-
-        header("Location: index.php?event_modified");
+        $conn->dbRun($sql, [$actu_id])->fetchAll(PDO::FETCH_ASSOC);
     }
 
     function get_actus_by_id(int $id): array
@@ -138,20 +120,15 @@ use JetBrains\PhpStorm\NoReturn;
         return $conn->dbRun($sql, [$id])->fetch(PDO::FETCH_ASSOC);
     }
 
-    function get_event_by_id(int $id): array
+    // Fonctions pour créer, modifier, afficher et supprimer les events
+
+    function create_event(string $event_name, string $datetime, string $desc): void
     {
-        $sql = "SELECT id, name, datetime FROM events WHERE id = ?;";
+        $req = "INSERT INTO events (name, datetime, description) VALUES (?, ?, ?);";
         $conn = new Connector();
 
-        return $conn->dbRun($sql, [$id])->fetch(PDO::FETCH_ASSOC);
-    }
-
-    function delete_actu(int $actu_id): void
-    {
-        $sql = "DELETE FROM actus WHERE id = ?;";
-        $conn = new Connector();
-
-        $conn->dbRun($sql, [$actu_id])->fetchAll(PDO::FETCH_ASSOC);
+        $conn->dbRun($req, [$event_name, $datetime, $desc]);
+        header("Location: create_event.php?event_created");
     }
 
     function delete_event(int $event_id): void
@@ -162,25 +139,14 @@ use JetBrains\PhpStorm\NoReturn;
         $conn->dbRun($sql, [$event_id])->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    function isAdmin(string $username): bool
+    function modify_event(int $id, string $name, string $date): void
     {
-        $sql = "SELECT permission FROM admins WHERE username = ?;";
+        $sql = "UPDATE events SET name = '$name', date = '$date' WHERE id = '$id';";
         $conn = new Connector();
 
-        $result = $conn->dbRun($sql, [$username])->fetch(PDO::FETCH_ASSOC);
+        $conn->dbRun($sql, [])->fetchAll(PDO::FETCH_ASSOC);
 
-        return $result['permission'] == "admin";
-    }
-
-    // Fonction de gestion des evenements
-
-    function create_event(string $event_name, string $datetime, string $desc): void
-    {
-        $req = "INSERT INTO events (name, datetime, description) VALUES (?, ?, ?);";
-        $conn = new Connector();
-
-        $conn->dbRun($req, [$event_name, $datetime, $desc]);
-        header("Location: create_event.php?event_created");
+        header("Location: index.php?event_modified");
     }
 
     function get_events(): void
@@ -208,6 +174,24 @@ use JetBrains\PhpStorm\NoReturn;
             echo "                    <h2 class='event-noresult-panel'>Aucun Résultat...</h2>\n";
             echo "                </div>";
         }
+    }
+
+    function get_event_by_id(int $id): array
+    {
+        $sql = "SELECT id, name, datetime FROM events WHERE id = ?;";
+        $conn = new Connector();
+
+        return $conn->dbRun($sql, [$id])->fetch(PDO::FETCH_ASSOC);
+    }
+
+    function isAdmin(string $username): bool
+    {
+        $sql = "SELECT permission FROM admins WHERE username = ?;";
+        $conn = new Connector();
+
+        $result = $conn->dbRun($sql, [$username])->fetch(PDO::FETCH_ASSOC);
+
+        return $result['permission'] == "admin";
     }
 
     function create_admin($username, $password, $permission): void

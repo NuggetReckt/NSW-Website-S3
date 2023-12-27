@@ -2,13 +2,13 @@
 
 class PanelPager
 {
-    public string $title;
+    private string $title;
 
     public function __construct($title)
     {
-        ini_set("default_charset", "UTF-8");
-
         $this->title = $title;
+
+        ini_set("default_charset", "UTF-8");
     }
 
     private function setTitle(): void
@@ -19,8 +19,8 @@ class PanelPager
     public function setHeader(): void
     {
         require_once "assets/header1.php";
-        echo "\n        ";
-        $this > $this->setTitle();
+        echo "\n";
+        $this->setTitle();
         echo "\n";
         require_once "assets/header2.php";
     }

@@ -49,7 +49,7 @@ class Messages
                 $msg = "Actu supprimée avec succès.";
                 break;
             case "event_deleted":
-                $msg = "Event supprimée avec succès.";
+                $msg = "Event supprimé avec succès.";
                 break;
             case "admin_created":
                 $msg = "Admin créé avec succès.";
