@@ -31,6 +31,9 @@ class Server
 
     public function getServerStatus(): string
     {
+        if ($this->slots_count == 1) {
+            return "Serveur en maintenance !";
+        }
         return match ($this->is_online) {
             1 => "Serveur en ligne :)",
             0 => "Serveur hors ligne :/",
