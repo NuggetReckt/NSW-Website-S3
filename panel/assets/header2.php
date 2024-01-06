@@ -1,5 +1,5 @@
 <?php
-require_once "../../assets/php/messages.php";
+require_once "../assets/php/messages.php";
 require_once "assets/php/database/request.php";
 
 $request = new PanelRequest();

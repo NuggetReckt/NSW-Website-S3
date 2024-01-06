@@ -2,7 +2,7 @@
 
 use JetBrains\PhpStorm\NoReturn;
 
-require_once "./assets/php/database/connector.php";
+require_once "../assets/php/database/connector.php";
 
 #[AllowDynamicProperties] class PanelRequest
 {
