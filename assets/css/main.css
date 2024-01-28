@@ -889,26 +889,64 @@ figcaption {
     margin-bottom: 0;
 }
 
-.manage-actus-content, .manage-event-content {
+.menu-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.menu-left {
+    width: 55vw;
+}
+
+.manage-actus-content, .manage-event-content, .manage-reports-content {
     color: white;
 }
 
-.manage-actus-title > h1, .manage-event-title > h1 {
+.manage-actus-title > h1, .manage-event-title > h1, .manage-reports-title > h1 {
     text-decoration: underline;
     font-size: 30px;
 }
 
-.actu-noresult-panel, .event-noresult-panel {
+.actu-noresult-panel, .event-noresult-panel, .report-noresult-panel {
     color: black;
     margin: 0 !important;
 }
 
-.actu-title-panel, .event-title-panel {
+.report-item-panel {
+    background-color: white;
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: black;
+}
+
+.report-item-title {
+    display: flex;
+    align-items: center;
+}
+
+.report-item-title > img {
+    width: 40px;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+
+.report-item-title > h2 {
+    margin: 0;
+}
+
+.report-item-actions {
+    margin: 10px 0 2px 0;
 }
 
 .actu-item-panel, .event-item-panel {
     background-color: white;
+    color: black;
     border-radius: 12px;
     padding: 15px;
     margin-bottom: 20px;
@@ -927,7 +965,7 @@ figcaption {
     align-self: center;
 }
 
-.actu-item-panel > div > a, .event-item-panel > div > a {
+.actu-item-panel > div > a, .event-item-panel > div > a, .report-item-actions > a {
     border-radius: 8px;
     font-family: police_custom, sans-serif;
     font-size: 16px;
@@ -948,7 +986,6 @@ figcaption {
     background-color: #2C70BA;
     color: #1a1a1a;
 }
-
 
 .panel-unsafe-button {
     border: 3px #a60000 solid;

@@ -18,9 +18,9 @@ class Connector
         $this->port = 3306;
     }
 
-    function db(): PDO
+    function db(string $db): PDO
     {
-        $dsn = "mysql:host=" . $this->server . ";port=" . $this->port . ";dbname=" . $this->database . ";charset=utf8";
+        $dsn = "mysql:host=" . $this->server . ";port=" . $this->port . ";dbname=" . $db . ";charset=utf8";
 
         try {
             $db = new PDO($dsn, $this->username, $this->password);
@@ -38,7 +38,14 @@ class Connector
 
     function dbRun(string $sql, array $param): PDOStatement
     {
-        $statement = $this->db()->prepare($sql);
+        $statement = $this->db($this->database)->prepare($sql);
+        $statement->execute($param);
+        return $statement;
+    }
+
+    function dbRunExt(string $sql, string $dbname, array $param): PDOStatement
+    {
+        $statement = $this->db($dbname)->prepare($sql);
         $statement->execute($param);
         return $statement;
     }

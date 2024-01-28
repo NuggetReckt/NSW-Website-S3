@@ -184,6 +184,51 @@ require_once "../assets/php/database/connector.php";
         return $conn->dbRun($sql, [$id])->fetch(PDO::FETCH_ASSOC);
     }
 
+    function get_reports(): void
+    {
+        $sql = "SELECT * FROM core_reports ORDER BY id DESC;";
+        $conn = new Connector();
+        $result = $conn->dbRunExt($sql, "Core", [])->fetchAll(PDO::FETCH_ASSOC);
+
+        foreach ($result as $i => $value) {
+            $id = $value['id'];
+            $creatorName = $value['creatorName'];
+            $reportedName = $value['reportedName'];
+            $reportedUUID = $value['creatorUuid'];
+            $type = $value['typeName'];
+            $reason = $value['reason'];
+            $isResolved = $value['isResolved'];
+            $date = $value['date'];
+
+            echo "                <div class='report-item-panel'>\n";
+            echo "                    <div class='report-item-title'>\n";
+            echo "                        <img src='https://mc-heads.net/avatar/$reportedUUID.png' alt='head-$reportedUUID'>\n";
+            echo "                        <h2>$reportedName</h2>\n";
+            echo "                    </div>";
+            echo "                    <div class='report-item-content'>\n"; //Temporaire
+            echo "                        <span>Report par : $creatorName<span><br>\n";
+            echo "                        <span>Type : $type<span><br>\n";
+            echo "                        <span>Raison : $reason<span><br>\n";
+            echo "                        <span>Le : $date<span><br>\n";
+            echo "                    </div>";
+            echo "                    <div class='report-item-actions'>\n";
+            if (!$isResolved) {
+                echo "                        <a href='index.php?mark-report-as-resolved&actu-id=$id' id='event-edit' class='panel-safe-button'>Resolve</a>\n";
+            } else {
+                echo "                        <a href='index.php?mark-report-as-unresolved&actu-id=$id' id='event-edit' class='panel-safe-button'>Unresolve</a>\n";
+            }
+            echo "                        <a href='index.php?delete-report&actu-id=$id' id='report-delete' class='panel-unsafe-button'>Delete</a>\n";
+            echo "                    </div>\n";
+            echo "                </div>\n";
+        }
+
+        if ($result == null) {
+            echo "                <div class='report-item-panel'>\n";
+            echo "                    <h2 class='report-noresult-panel'>Aucun Résultat...</h2>\n";
+            echo "                </div>";
+        }
+    }
+
     function isAdmin(string $username): bool
     {
         $sql = "SELECT permission FROM admins WHERE username = ?;";

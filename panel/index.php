@@ -69,20 +69,34 @@ if (isset($_GET['delete-actu'])) {
         <h1 id="menu-title">Panel</h1>
     </div>
 </div>
-<div class="manage-actus-content">
-    <div class="manage-actus-title">
-        <h1>Actus</h1>
+<div class="menu-content">
+    <div class="menu-left">
+        <div class="manage-actus-content">
+            <div class="manage-actus-title">
+                <h1>Actus</h1>
+            </div>
+            <div class="manage-actus">
+                <?php $request->get_actus() ?>
+            </div>
+        </div>
+        <div class="manage-event-content">
+            <div class="manage-event-title">
+                <h1>Events</h1>
+            </div>
+            <div class="manage-events">
+                <?php $request->get_events() ?>
+            </div>
+        </div>
     </div>
-    <div class="manage-actus">
-        <?php $request->get_actus() ?>
-    </div>
-</div>
-<div class="manage-event-content">
-    <div class="manage-event-title">
-        <h1>Events</h1>
-    </div>
-    <div class="manage-events">
-        <?php $request->get_events() ?>
+    <div class="menu-right">
+        <div class="manage-reports-content">
+            <div class="manage-reports-title">
+                <h1>Reports</h1>
+            </div>
+            <div class="manage-reports">
+                <?php $request->get_reports() ?>
+            </div>
+        </div>
     </div>
 </div>
 <?php
