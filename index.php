@@ -40,11 +40,10 @@ $pager->setHeader();
                                 <h2>À Propos</h2>
                                 <p>Bienvenue sur NoSkillWorld Saison 3 !</p>
                                 <p>
-                                    Habitasse sodales porta phasellus nam praesent morbi facilisis aliquet ut commodo habitant
-                                    hendrerit accumsan dapibus est libero ornare felis maximus ad rutrum penatibus aliquam
-                                    nostra potenti lacus sollicitudin letius justo cubilia sociosqu taciti ligula ultricies feugiat
-                                    primis cras in scelerisque ullamcorper fringilla curae tempus quam id parturient volutpat p
-                                    orttitor quis
+                                    Rejoignez une communauté florissante et lancez-vous dans une aventure unique !<br>
+                                    Que ce soit avec ou sans vos amis, explorez le monde, créez votre Guilde,
+                                    construisez votre ville, montez en rang d'honneur pour flex devant vos potes et
+                                    découvrez l'univers que propose NoSkillWorld !
                                 </p>
                                 <p>
                                     En bref, NoSkillWorld c'est de la bonne ambiance, de l'aventure, de l'exploration et beaucoup de rigolade.
