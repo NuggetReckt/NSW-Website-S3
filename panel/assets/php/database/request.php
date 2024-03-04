@@ -184,7 +184,7 @@ require_once "../assets/php/database/connector.php";
         return $conn->dbRun($sql, [$id])->fetch(PDO::FETCH_ASSOC);
     }
 
-    function get_reports(): void
+    function get_reports(bool $getResolved): void
     {
         $sql = "SELECT * FROM core_reports ORDER BY id DESC;";
         $conn = new Connector();
@@ -194,22 +194,29 @@ require_once "../assets/php/database/connector.php";
             $id = $value['id'];
             $creatorName = $value['creatorName'];
             $reportedName = $value['reportedName'];
-            $reportedUUID = $value['creatorUuid'];
+            $reportedUUID = $value['reportedUuid'];
             $type = $value['typeName'];
             $reason = $value['reason'];
             $isResolved = $value['isResolved'];
             $date = $value['date'];
 
+            if ($getResolved && $isResolved == "1") {
+                continue;
+            }
+
+            $dateformat = date("d/m/Y \à H\hi", strtotime($date));
+
             echo "                <div class='report-item-panel'>\n";
             echo "                    <div class='report-item-title'>\n";
             echo "                        <img src='https://mc-heads.net/avatar/$reportedUUID.png' alt='head-$reportedUUID'>\n";
-            echo "                        <h2>$reportedName</h2>\n";
+            echo "                        <h2>$reportedName - $type</h2>\n";
             echo "                    </div>";
-            echo "                    <div class='report-item-content'>\n"; //Temporaire
-            echo "                        <span>Report par : $creatorName<span><br>\n";
-            echo "                        <span>Type : $type<span><br>\n";
-            echo "                        <span>Raison : $reason<span><br>\n";
-            echo "                        <span>Le : $date<span><br>\n";
+            echo "                    <div class='report-item-subtitle'>\n";
+            echo "                        <span>Report de $creatorName<span><br>\n";
+            echo "                        <span>Le $dateformat<span><br>\n";
+            echo "                    </div>";
+            echo "                    <div class='report-item-content'>\n";
+            echo "                        <span>\"$reason\"<span><br>\n";
             echo "                    </div>";
             echo "                    <div class='report-item-actions'>\n";
             if (!$isResolved) {

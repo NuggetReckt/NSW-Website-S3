@@ -94,7 +94,7 @@ if (isset($_GET['delete-actu'])) {
                 <h1>Reports</h1>
             </div>
             <div class="manage-reports">
-                <?php $request->get_reports() ?>
+                <?php $request->get_reports(false) ?>
             </div>
         </div>
     </div>

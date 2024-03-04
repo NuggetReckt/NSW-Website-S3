@@ -207,6 +207,16 @@
         top: 10%;
         width: 300px;
     }
+
+    .menu-content {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .menu-left {
+        width: 80vw;
+    }
 }
 
 @media (max-width: 540px) {
