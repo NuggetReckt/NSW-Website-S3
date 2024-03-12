@@ -124,10 +124,10 @@ require_once "../assets/php/database/connector.php";
 
     function create_event(string $event_name, string $datetime, string $desc): void
     {
-        $req = "INSERT INTO events (name, datetime, description) VALUES (?, ?, ?);";
+        $req = "INSERT INTO events (name, description, datetime) VALUES (?, ?, ?);";
         $conn = new Connector();
 
-        $conn->dbRun($req, [$event_name, $datetime, $desc]);
+        $conn->dbRun($req, [$event_name, $desc, $datetime]);
         header("Location: create_event.php?event_created");
     }
 
@@ -151,7 +151,7 @@ require_once "../assets/php/database/connector.php";
 
     function get_events(): void
     {
-        $sql = "SELECT id, name, datetime FROM events ORDER BY id DESC;";
+        $sql = "SELECT id, name, datetime FROM events ORDER BY datetime DESC;";
         $conn = new Connector();
         $result = $conn->dbRun($sql, [])->fetchAll(PDO::FETCH_ASSOC);
 

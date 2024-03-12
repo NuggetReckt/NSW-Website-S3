@@ -49,7 +49,7 @@ class Request
     function get_events(): void
     {
         $future = async(function () {
-            $sql = "SELECT * FROM events ORDER BY id DESC;";
+            $sql = "SELECT * FROM events WHERE datetime > NOW() ORDER BY datetime DESC;";
             $conn = new Connector();
             $result = $conn->dbRun($sql, [])->fetchAll(PDO::FETCH_ASSOC);
 
@@ -59,10 +59,12 @@ class Request
                 $datetime = $value['datetime'];
                 $desc = $value['description'];
 
+                $dateformat = date("d/m/Y \à H\hi", strtotime($datetime));
+
                 echo "<div class='event-item' id='event-$id'>\n";
                 echo "    <div class='event-title-content'>\n";
                 echo "        <h1 class='event-title'>$name</h1>\n";
-                echo "        <h2 class='event-subtitle'>Le $datetime</h2>\n";
+                echo "        <h2 class='event-subtitle'>Le $dateformat</h2>\n";
                 echo "        <hr class='event-separator'>\n";
                 echo "    </div>\n";
                 echo "    <div class='event-content'>\n";
