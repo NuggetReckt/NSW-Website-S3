@@ -9,7 +9,7 @@ $err = filter_input(INPUT_GET, 'error', FILTER_VALIDATE_INT);
 
         <div class="top-content top-content-others" id="top-content-error">
             <div class="top-title">
-                <h1 id="error-title">Error: <?php echo get_error() ?></h1>
+                <h1 id="error-title">Error: <?php echo get_error($err) ?></h1>
             </div>
             <div class="error-subtitle">
                 <a href="index.php" id="back-link">Revenir à l'accueil</a><span id="error-separator">ou</span><a href="https://discord.gg/cE4eHEZWrD" target="_blank" id="discord-link">Soumettre le bug</a>
@@ -19,7 +19,7 @@ $err = filter_input(INPUT_GET, 'error', FILTER_VALIDATE_INT);
 <?php
 $pager->setFooter();
 
-function get_error(): string
+function get_error($err): string
 {
     if (isset($err)) {
         switch ($err) {
