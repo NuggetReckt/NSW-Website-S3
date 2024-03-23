@@ -21,24 +21,23 @@ $pager->setFooter();
 
 function get_error(): string
 {
-    if (!isset($err)) {
-        return "The error isn't set.";
-    }
-    switch ($err) {
-        case 403:
-            return "$err No Permission.";
-        case 404:
-            return "$err Not Found.";
-        case 500:
-            return "$err Internal Server Error.";
-        case 502:
-            return "$err Bad Gateway.";
-        case 503:
-            return "$err Service Unavailable.";
-        case 504:
-            return "$err Gateway Timeout.";
-        default:
-            break;
+    if (isset($err)) {
+        switch ($err) {
+            case 403:
+                return "$err No Permission.";
+            case 404:
+                return "$err Not Found.";
+            case 500:
+                return "$err Internal Server Error.";
+            case 502:
+                return "$err Bad Gateway.";
+            case 503:
+                return "$err Service Unavailable.";
+            case 504:
+                return "$err Gateway Timeout.";
+            default:
+                break;
+        }
     }
     return "Unknown error.";
 }
