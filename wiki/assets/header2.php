@@ -32,22 +32,22 @@ function getCurrentDir(): string
     <nav>
         <ul class="navbar-list" data-visible="false">
             <li class="navbar-item">
-                <a href="<?= "../index.php" ?>" class="navbar-item-a not-active">Accueil</a>
+                <a href="/accueil" class="navbar-item-a not-active">Accueil</a>
             </li>
             <li class="navbar-item">
-                <a href="<?= "index.php" ?>" class="navbar-item-a <?php echoIfWiki() ?>">Wiki</a>
+                <a href="menu" class="navbar-item-a <?php echoIfWiki() ?>">Wiki</a>
             </li>
             <li class="navbar-item">
-                <a href="<?= "../votes.php" ?>" class="navbar-item-a not-active">Votes</a>
+                <a href="/votes" class="navbar-item-a not-active">Votes</a>
             </li>
             <li class="navbar-item">
-                <a href="<?= "../events.php" ?>" class="navbar-item-a not-active">Events</a>
+                <a href="/events.php" class="navbar-item-a not-active">Events</a>
             </li>
             <li class="navbar-item">
-                <a href="<?= "rules.php" ?>" class="navbar-item-a <?php echoIfRules() ?>">Regles</a>
+                <a href="regles" class="navbar-item-a <?php echoIfRules() ?>">Regles</a>
             </li>
             <li class="navbar-item">
-                <a href="<?= "../staff.php" ?>" class="navbar-item-a not-active">Equipe</a>
+                <a href="/equipe" class="navbar-item-a not-active">Equipe</a>
             </li>
             <hr id="responsive-separator">
             <li class="navbar-item" id="nav-right">

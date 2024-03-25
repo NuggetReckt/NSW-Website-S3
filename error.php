@@ -12,7 +12,7 @@ $err = filter_input(INPUT_GET, 'error', FILTER_VALIDATE_INT);
                 <h1 id="error-title">Error: <?php echo get_error($err) ?></h1>
             </div>
             <div class="error-subtitle">
-                <a href="index.php" id="back-link">Revenir à l'accueil</a><span id="error-separator">ou</span><a href="https://discord.gg/cE4eHEZWrD" target="_blank" id="discord-link">Soumettre le bug</a>
+                <a href="accueil" id="back-link">Revenir à l'accueil</a><span id="error-separator">ou</span><a href="https://discord.gg/cE4eHEZWrD" target="_blank" id="discord-link">Soumettre le bug</a>
             </div>
         </div>
 

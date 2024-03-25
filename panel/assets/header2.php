@@ -15,7 +15,7 @@ session_start();
         <nav id="navbar">
             <ul class="navbar-list" data-visible="false">
                 <li class="navbar-item">
-                    <a href="<?= "index.php" ?>" class="navbar-item-a
+                    <a href="menu" class="navbar-item-a
                     <?php
                     if ($page == "index.php") {
                         echo "active";
@@ -25,7 +25,7 @@ session_start();
                     ?>">Menu</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="<?= "create_actu.php" ?>" class="navbar-item-a
+                    <a href="create-actu" class="navbar-item-a
                     <?php
                     if ($page == "create_actu.php") {
                         echo "active";
@@ -35,7 +35,7 @@ session_start();
                     ?>">Nouvelle actu</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="<?= "create_event.php" ?>" class="navbar-item-a
+                    <a href="create-event" class="navbar-item-a
                     <?php
                     if ($page == "create_event.php") {
                         echo "active";
@@ -45,27 +45,23 @@ session_start();
                     ?>">Nouvel event</a>
                 </li>
                 <?php
-                if (isset($_SESSION['admin'])) {
-                    if ($request->isAdmin($_SESSION['admin'])) {
-                        echo "<li class='navbar-item'>\n";
-                        if ($page == "create_admin.php") {
-                            echo "<a href='create_admin.php' class='navbar-item-a active'>Nouvel admin</a>\n";
-                        } else {
-                            echo "<a href='create_admin.php' class='navbar-item-a not-active'>Nouvel admin</a>\n";
-                        }
-                        echo "</li>";
+                if (isset($_SESSION['admin']) && $request->isAdmin($_SESSION['admin'])) {
+                    echo "<li class='navbar-item'>\n";
+                    if ($page == "create_admin.php") {
+                        echo "<a href='create-admin' class='navbar-item-a active'>Nouvel admin</a>\n";
+                    } else {
+                        echo "<a href='create-admin' class='navbar-item-a not-active'>Nouvel admin</a>\n";
                     }
+                    echo "</li>";
                 }
                 ?>
                 <hr id="responsive-separator">
                 <?php
                 echo "                <li class='navbar-item' id='nav-right'>\n";
-                if (isset($_SESSION['admin'])) {
-                    if ($_SESSION['admin'] != null) {
-                        echo "                    <a href='login.php?disconnected' class='navbar-item-a not-active'>Se deconnecter</a>\n";
-                    }
+                if (isset($_SESSION['admin']) && $_SESSION['admin'] != null) {
+                    echo "                    <a href='login?disconnected' class='navbar-item-a not-active'>Se deconnecter</a>\n";
                 } else {
-                    echo "                    <a href='login.php' class='navbar-item-a ";
+                    echo "                    <a href='login' class='navbar-item-a ";
                     if ($page == "login.php") {
                         echo "active";
                     } else {

@@ -26,22 +26,22 @@ require_once "../assets/php/database/connector.php";
 
         if ($result == null) {
             sleep(1);
-            header("Location: login.php?error=1");
+            header("Location: login?error=1");
             session_abort();
         } else if ($password == null || $username == null) {
             //Les champs ne peuvent pas être vides
-            header("Location: login.php?error=2");
+            header("Location: login?error=2");
             session_abort();
         } else {
             if (password_verify($password, $result['password'])) {
                 //Le mot de passe est correct
                 $_SESSION['admin'] = $username;
                 sleep(1);
-                header("Location: index.php?logged");
+                header("Location: menu?logged");
             } else {
                 //le mot de passe est incorrect
                 sleep(1);
-                header("Location: login.php?error=1");
+                header("Location: login?error=1");
                 session_abort();
             }
         }
@@ -64,7 +64,7 @@ require_once "../assets/php/database/connector.php";
 
         $conn->dbRun($req, [$actu_name, $actu_desc, $actu_date, $actu_publisher]);
 
-        header("Location: create_actu.php?actu_created");
+        header("Location: create-actu?actu_created");
     }
 
     function get_actus(): void
@@ -80,9 +80,9 @@ require_once "../assets/php/database/connector.php";
             echo "                <div class='actu-item-panel'>\n";
             echo "                    <h2 class='actu-title-panel'>$name</h2>\n";
             echo "                    <div>";
-            echo "                        <a href='../index.php#actu-$id' target='_blank' id='actu-goto' class='panel-safe-button'>Go</a>\n";
-            echo "                        <a href='edit_actu.php?id=$id' id='actu-edit' class='panel-safe-button'>Edit</a>\n";
-            echo "                        <a href='index.php?delete-actu&actu-id=$id' id='actu-delete' class='panel-unsafe-button'>Delete</a>\n";
+            echo "                        <a href='/accueil#actu-$id' target='_blank' id='actu-goto' class='panel-safe-button'>Go</a>\n";
+            echo "                        <a href='edit-actu?id=$id' id='actu-edit' class='panel-safe-button'>Edit</a>\n";
+            echo "                        <a href='menu?delete-actu&actu-id=$id' id='actu-delete' class='panel-unsafe-button'>Delete</a>\n";
             echo "                     </div>";
             echo "                </div>";
         }
@@ -101,7 +101,7 @@ require_once "../assets/php/database/connector.php";
 
         $conn->dbRun($sql, [])->fetchAll(PDO::FETCH_ASSOC);
 
-        header("Location: index.php?actu_modified");
+        header("Location: menu?actu_modified");
     }
 
     function delete_actu(int $actu_id): void
@@ -128,7 +128,7 @@ require_once "../assets/php/database/connector.php";
         $conn = new Connector();
 
         $conn->dbRun($req, [$event_name, $desc, $datetime]);
-        header("Location: create_event.php?event_created");
+        header("Location: create-event?event_created");
     }
 
     function delete_event(int $event_id): void
@@ -146,7 +146,7 @@ require_once "../assets/php/database/connector.php";
 
         $conn->dbRun($sql, [])->fetchAll(PDO::FETCH_ASSOC);
 
-        header("Location: index.php?event_modified");
+        header("Location: menu?event_modified");
     }
 
     function get_events(): void
@@ -162,9 +162,9 @@ require_once "../assets/php/database/connector.php";
             echo "                <div class='event-item-panel'>\n";
             echo "                    <h2 class='event-title-panel'>$name</h2>\n";
             echo "                    <div>";
-            echo "                        <a href='../events.php#event-$id' target='_blank' id='event-goto' class='panel-safe-button'>Go</a>\n";
-            echo "                        <a href='edit_event.php?id=$id' id='event-edit' class='panel-safe-button'>Edit</a>\n";
-            echo "                        <a href='index.php?delete-event&actu-id=$id' id='event-delete' class='panel-unsafe-button'>Delete</a>\n";
+            echo "                        <a href='/events#event-$id' target='_blank' id='event-goto' class='panel-safe-button'>Go</a>\n";
+            echo "                        <a href='edit-event?id=$id' id='event-edit' class='panel-safe-button'>Edit</a>\n";
+            echo "                        <a href='menu?delete-event&actu-id=$id' id='event-delete' class='panel-unsafe-button'>Delete</a>\n";
             echo "                     </div>";
             echo "                </div>";
         }
@@ -220,11 +220,11 @@ require_once "../assets/php/database/connector.php";
             echo "                    </div>";
             echo "                    <div class='report-item-actions'>\n";
             if (!$isResolved) {
-                echo "                        <a href='index.php?mark-report-as-resolved&actu-id=$id' id='event-edit' class='panel-safe-button'>Resolve</a>\n";
+                echo "                        <a href='menu?mark-report-as-resolved&actu-id=$id' id='event-edit' class='panel-safe-button'>Resolve</a>\n";
             } else {
-                echo "                        <a href='index.php?mark-report-as-unresolved&actu-id=$id' id='event-edit' class='panel-safe-button'>Unresolve</a>\n";
+                echo "                        <a href='menu?mark-report-as-unresolved&actu-id=$id' id='event-edit' class='panel-safe-button'>Unresolve</a>\n";
             }
-            echo "                        <a href='index.php?delete-report&actu-id=$id' id='report-delete' class='panel-unsafe-button'>Delete</a>\n";
+            echo "                        <a href='menu?delete-report&actu-id=$id' id='report-delete' class='panel-unsafe-button'>Delete</a>\n";
             echo "                    </div>\n";
             echo "                </div>\n";
         }
@@ -252,6 +252,6 @@ require_once "../assets/php/database/connector.php";
         $conn = new Connector();
 
         $conn->dbRun($sql, [$username, $password, $permission]);
-        header("Location: create_admin.php?admin_created");
+        header("Location: create-admin?admin_created");
     }
 }

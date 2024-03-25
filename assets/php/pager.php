@@ -13,7 +13,7 @@ class Pager
         $extension = pathinfo(basename($_SERVER["PHP_SELF"]), PATHINFO_EXTENSION);
 
         if ($this->isUnderMaintenance && $extension == "php") {
-            header("Location: https://play.noskillworld.fr/maintenance.php");
+            header("Location: https://play.noskillworld.fr/maintenance");
         }
     }
 

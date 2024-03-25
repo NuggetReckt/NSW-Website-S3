@@ -11,11 +11,11 @@ $msg = new Messages();
 
 if (isset($_SESSION['admin'])) {
     if ($_SESSION['admin'] == null) {
-        header("Location: login.php?error=3");
+        header("Location: login?error=3");
     }
 } else {
     $_SESSION['admin'] = null;
-    header("Location: login.php?error=3");
+    header("Location: login?error=3");
 }
 
 $err = filter_input(INPUT_GET, 'error', FILTER_VALIDATE_INT);
@@ -44,23 +44,23 @@ if (isset($_GET['delete-actu'])) {
     if ($actu_id >= 0) {
         if ($request->isAdmin($_SESSION['admin'])) {
             $request->delete_actu($actu_id);
-            header("Location: index.php?actu_deleted");
+            header("Location: menu?actu_deleted");
         } else {
-            header("Location: index.php?error=5");
+            header("Location: menu?error=5");
         }
     } else {
-        header("Location: index.php?error=4");
+        header("Location: menu?error=4");
     }
 } else if (isset($_GET['delete-event'])) {
     if ($actu_id >= 0) {
         if ($request->isAdmin($_SESSION['admin'])) {
             $request->delete_event($actu_id);
-            header("Location: index.php?event_deleted");
+            header("Location: menu?event_deleted");
         } else {
-            header("Location: index.php?error=5");
+            header("Location: menu?error=5");
         }
     } else {
-        header("Location: index.php?error=4");
+        header("Location: menu?error=4");
     }
 }
 ?>

@@ -16,11 +16,11 @@ $msg = new Messages();
 
 if (isset($_SESSION['admin'])) {
     if ($_SESSION['admin'] == null) {
-        header("Location: login.php?error=3");
+        header("Location: login?error=3");
     }
 } else {
     $_SESSION['admin'] = null;
-    header("Location: login.php?error=3");
+    header("Location: login?error=3");
 }
 
 if (isset($actu_name) && isset($actu_desc)) {

@@ -63,7 +63,7 @@ $pager->setHeader();
                     <h3 class="qr-answer">Dans le menu principal de Minecraft, sélectionne "Multijoueur", puis clique
                         sur "Nouveau Serveur". Ensuite, rentre le nom que tu veux, et dans la section "Adresse du
                         serveur", rentre l'ip suivante : <span class="bold">play.noskillworld.fr</span>. Enfin,
-                        appuies sur "terminé". Connecte-toi au serveur en faisant un double-click dessus dans la liste
+                        appuie sur "terminé". Connecte-toi au serveur en faisant un double-click dessus dans la liste
                         des serveurs. C'est bon ! Passe un bon moment sur NoSkillWorld !
                     </h3>
                 </div>
@@ -86,7 +86,7 @@ $pager->setHeader();
                         serveur ?</h3>
                     <h3 class="qr-answer">Non, aucun. NoSkillWorld n'est pas un serveur moddé. Cependant, tu peux
                         rejoindre le serveur avec des mods installés sur ton client, tout en respectant les
-                        <a href="cgu-cgv.php" class="underline"> règles du serveur</a>.</h3>
+                        <a href="regles" class="underline"> règles du serveur</a>.</h3>
                 </div>
             </div>
             <div class="wiki-article-title">
@@ -97,20 +97,20 @@ $pager->setHeader();
                 <div class="qr-content">
                     <h3 class="qr-question">Existe-t-il un système d’économie sur le serveur ?</h3>
                     <h3 class="qr-answer">Oui ! Et il inclut la possibilité de créer des warps
-                        (<a href="warpplayer.php" class="underline">voir le wiki des WarpPlayers</a>),
+                        (<a href="warpplayer" class="underline">voir le wiki des WarpPlayers</a>),
                         d'acheter des claims (<a href="lands.php" class="underline">voir le wiki des Lands</a>),
                         acheter des items dans l'Hotel des Ventes
-                        (<a href="hdv.php" class="underline">voir le wiki de l'HDV</a>) et bien d'autres !</h3>
+                        (<a href="hdv" class="underline">voir le wiki de l'HDV</a>) et bien d'autres !</h3>
                 </div>
                 <div class="qr-content">
                     <h3 class="qr-question">Y a-t-il un système de protection des constructions des joueurs ?</h3>
-                    <h3 class="qr-answer">Oui ! Voir le <a href="lands.php" class="underline">wiki des
+                    <h3 class="qr-answer">Oui ! Voir le <a href="lands" class="underline">wiki des
                             Lands</a> pour plus d'informations.</h3>
                 </div>
                 <div class="qr-content">
                     <h3 class="qr-question">Quels sont les différents modes de jeu proposés sur le serveur ?</h3>
                     <h3 class="qr-answer">Sur NoSkillWorld, tu peux retrouver comme mode de jeu principal le Semi-RP, le
-                        HardCore (<a href="hardcore.php" class="underline">voir le wiki</a>), ainsi que le Créatif.</h3>
+                        HardCore (<a href="hardcore" class="underline">voir le wiki</a>), ainsi que le Créatif.</h3>
                 </div>
                 <div class="qr-content">
                     <h3 class="qr-question">Le serveur dispose-t-il d'une carte interactive afin de visualiser les
@@ -127,23 +127,23 @@ $pager->setHeader();
                 <div class="qr-content">
                     <h3 class="qr-question">Le serveur est-il uniquement francophone ?</h3>
                     <h3 class="qr-answer">Oui, le langage principal utilisé sur le serveur et sur toutes ses plateformes
-                        de communication (discord, réseaux,...) est le français. </h3>
+                        de communication (discord, réseaux, ...) est le français. </h3>
                 </div>
                 <div class="qr-content">
                     <h3 class="qr-question">Y a-t-il des restrictions ou des limitations particulières concernant les
                         constructions des joueurs, sur les entités et objets sur le serveur ?</h3>
                     <h3 class="qr-answer">Oui, et elles sont référencées
-                        <a href="cgu-cgv.php" class="underline">ici</a>.</h3>
+                        <a href="regles" class="underline">ici</a>.</h3>
                 </div>
                 <div class="qr-content">
                     <h3 class="qr-question">Existe-t-il des règles spécifiques au serveur ?</h3>
                     <h3 class="qr-answer">Oui, et elles sont disponibles
-                        <a href="cgu-cgv.php" class="underline">ici</a>.</h3>
+                        <a href="regles" class="underline">ici</a>.</h3>
                 </div>
                 <div class="qr-content">
                     <h3 class="qr-question">Le grief, vol de ressources est-il autorisé ?</h3>
-                    <h3 class="qr-answer">Non il ne l'est pas, et peut même être sanctionné. Voir les
-                        <a href="cgu-cgv.php" class="underline">règles</a> pour plus d'informations.
+                    <h3 class="qr-answer">Non, il ne l'est pas et peut même être sanctionné. Voir les
+                        <a href="regles" class="underline">règles</a> pour plus d'informations.
                     </h3>
                 </div>
                 <div class="qr-content">
@@ -151,7 +151,7 @@ $pager->setHeader();
                         inapproprié sur le serveur ?</h3>
                     <h3 class="qr-answer">Sur le serveur, toute action (directe ou indirecte) pouvant nuire aux autres
                         joueurs est sanctionnée. Que ce soit de la tricherie ou des insultes dans le chat, ces actions
-                        sont sanctionnées. Voir les <a href="cgu-cgv.php" class="underline">règles</a> pour plus
+                        sont sanctionnées. Voir les <a href="regles" class="underline">règles</a> pour plus
                         d'informations.
                     </h3>
                 </div>
@@ -163,7 +163,7 @@ $pager->setHeader();
             <div class="wiki-article-wrapper">
                 <div class="qr-content">
                     <h3 class="qr-question">Quels sont les types d'événements organisés sur le serveur ?</h3>
-                    <h3 class="qr-answer">Event build, jump, pvp, cache-cache,... Les possibilités d'évents possibles
+                    <h3 class="qr-answer">Event build, jump, pvp, cache-cache, ... Les possibilités d'évents possibles
                         sont infinies ! Chaque évent que nous proposons à la communauté a été préparé avec soin pour
                         l'occasion pour proposer des évents toujours plus funs !</h3>
                 </div>
@@ -207,8 +207,8 @@ $pager->setHeader();
                     <h3 class="qr-question">Comment puis-je être mis au courant des dernières nouveautés sur le
                         serveur ?</h3>
                     <h3 class="qr-answer">Principalement sur
-                        <a href="https://discord.noskillworld.fr" target="_blank" class="underline">Discord</a> mais
-                        également via la section "<a href="../index.php#actus" class="underline">Actualités</a>"
+                        <a href="https://discord.noskillworld.fr" target="_blank" class="underline">Discord</a>, mais
+                        également via la section "<a href="/accueil#actus" class="underline">Actualités</a>"
                         sur la page d'accueil ou encore nos différents réseaux sociaux
                         (<a href="https://instagram.com/noskillworld" target="_blank" class="underline">Instagram</a>,
                         <a href="https://twitter.com/noskillworld" target="_blank" class="underline">Twitter</a> ou

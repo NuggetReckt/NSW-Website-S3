@@ -834,8 +834,8 @@ figcaption {
     margin: 0 0 70vh 0;
 }
 
-#top-content-error {
-    margin: 0 0 64vh 0;
+#top-content-error, #top-content-constr {
+    margin: 0 0 62vh 0;
 }
 
 .error-subtitle {
