@@ -63,7 +63,7 @@ $pager->setHeader();
                         - MumbleLink Activé<br>
                         <br>
                         Si utilisation du client Fabric :<br>
-                        - Fabric en version 1.20.1<br>
+                        - Fabric en version 1.20.4<br>
                         - Le mod MumbleLink pour Fabric
                     </p>
                 </div>
@@ -124,7 +124,7 @@ $pager->setHeader();
                         Ouvre le fichier <span class="wiki-command-exemple">fabric-installer-x.x.x.jar</span>
                         précédemment
                         téléchargé et une fois la fenêtre ouverte, sélectionne la
-                        version 1.20.1, laisse la rubrique "Version du loader" telle quelle, veille à ce que "Créer un
+                        version 1.20.4, laisse la rubrique "Version du loader" telle quelle, veille à ce que "Créer un
                         profil" soit coché et clique sur "Installer". Fabric va s'installer et une fois fini, il devrait
                         apparaître dans le launcher de Minecraft.<br>
                         S'il n'apparait pas, pas de panique ! Dans le launcher
@@ -136,7 +136,7 @@ $pager->setHeader();
                     <img src="../assets/images/step5.png" class="wiki-img-step"
                          alt="step">
                     <p class="wiki-p-step">
-                        Télécharge le mod MumbleLink en cliquant sur le lien suivant (Toujours pour la version 1.20.1
+                        Télécharge le mod MumbleLink en cliquant sur le lien suivant (Toujours pour la version 1.20.4
                         de Minecraft) :
                         <a href="https://www.curseforge.com/api/v1/mods/321669/files/4031799/download" target="_blank"
                            class="underline">Télécharger le MumbleLink</a> <br>

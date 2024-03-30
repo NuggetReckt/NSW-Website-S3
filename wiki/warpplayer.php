@@ -97,11 +97,11 @@ $pager->setHeader();
                 </div>
                 <div class="wiki-article-content-centered">
                     <div class="wiki-subsection" id="img1" onclick="enhanceImg('img1')">
-                        <img src="../assets/images/background.png" class="wiki-img-exemple" alt="gui1-wp-img">
+                        <img src="../assets/images/wp-main-menu.png" class="wiki-img-exemple" alt="gui1-wp-img">
                         <p class="wiki-p-img-legend">Menu principal</p>
                     </div>
                     <div class="wiki-subsection" id="img2" onclick="enhanceImg('img2')">
-                        <img src="../assets/images/background.png" class="wiki-img-exemple" alt="gui2-wp-img">
+                        <img src="../assets/images/wp-mywarps-menu.png" class="wiki-img-exemple" alt="gui2-wp-img">
                         <p class="wiki-p-img-legend">Menu "Mes Warps"</p>
                     </div>
                 </div>
@@ -110,12 +110,12 @@ $pager->setHeader();
                          alt="info">
                     <p class="wiki-p-highlight">
                         Commandes supplémentaires :<br>
-                        - Ajouter une description: <span
+                        - Ajouter une description : <span
                                 class="wiki-command-exemple">/wp desc set [nom_warp] [desc]</span> <br>
-                        - Mettre une icône personnalisée: <span class="wiki-command-exemple">/wp </span> <br>
+                        - Mettre une icône personnalisée : <span class="wiki-command-exemple">/wp </span> <br>
                         - Ban/Unban un joueur de votre warp: <span class="wiki-command-exemple">/wp ban remove|set [nom_warp] [joueur]</span>
                         <br>
-                        - Transférer le warp à un autre joueur: <span class="wiki-command-exemple">/wp setowner set [nom_warp] [joueur]</span>
+                        - Transférer le warp à un autre joueur : <span class="wiki-command-exemple">/wp setowner set [nom_warp] [joueur]</span>
                         <br>
                         - Supprimer son warp: <span class="wiki-command-exemple">/wp remove [nom_warp]</span> <br>
                     </p>
@@ -127,7 +127,7 @@ $pager->setHeader();
             </div>
             <div class="wiki-article-wrapper">
                 <div class="wiki-article-content">
-                    <p class="wiki-p">Téléporte toi au warp d'un autre joueur à l'aide de la commande <span
+                    <p class="wiki-p">Téléporte-toi au warp d'un autre joueur à l'aide de la commande <span
                                 class="wiki-command-exemple">/wp [nom_warp]</span>.</p>
                 </div>
                 <div class="wiki-article-content">

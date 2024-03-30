@@ -56,7 +56,7 @@ $pager->setHeader();
                 </div>
                 <div class="qr-content">
                     <h3 class="qr-question">Quelle est la version de Minecraft requise pour rejoindre le serveur ?</h3>
-                    <h3 class="qr-answer">Pour rejoindre le serveur, la version requise actuelle est la 1.20.1.</h3>
+                    <h3 class="qr-answer">Pour rejoindre le serveur, la version requise actuelle est la 1.20.4.</h3>
                 </div>
                 <div class="qr-content">
                     <h3 class="qr-question">Comment me connecter au serveur ?</h3>
