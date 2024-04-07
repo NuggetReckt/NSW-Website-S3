@@ -1,19 +1,23 @@
 <?php
-require_once "../assets/php/pager.php";
+require_once "../assets/php/config.php";
 
 class WikiPager
 {
-    public string $title;
+    private string $title;
 
-    function __construct($title)
+    public function __construct($title, $isUnderConstruction)
     {
         ini_set("default_charset", "UTF-8");
 
         $this->title = $title;
-        $pager = new Pager("");
+        $config = new Config();
 
-        if ($pager->isUnderMaintenance) {
-            header("Location: ../maintenance.php");
+        $extension = pathinfo(basename($_SERVER["PHP_SELF"]), PATHINFO_EXTENSION);
+
+        if ($config->isUnderMaintenance && $extension == "php") {
+            header("Location: $config->maintenanceURL");
+        } elseif ($isUnderConstruction) {
+            header("Location: under-construction");
         }
     }
 
@@ -22,7 +26,7 @@ class WikiPager
         echo "<title> Wiki (", $this->title, ") - NoSkillWorld</title>";
     }
 
-    function setHeader(): void
+    public function setHeader(): void
     {
         require_once "assets/header1.php";
         echo "\n";
@@ -31,7 +35,7 @@ class WikiPager
         require_once "assets/header2.php";
     }
 
-    function setFooter(): void
+    public function setFooter(): void
     {
         require_once "../assets/footer.php";
     }

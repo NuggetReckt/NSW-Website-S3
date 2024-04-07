@@ -1,7 +1,7 @@
 <?php
-
 require_once "assets/php/pager.php";
-$pager = new WikiPager("Menu");
+
+$pager = new WikiPager("Menu", false);
 
 $pager->setHeader();
 ?>

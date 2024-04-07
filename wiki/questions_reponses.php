@@ -1,7 +1,7 @@
 <?php
 require_once "assets/php/pager.php";
 
-$pager = new WikiPager("Questions/Réponses");
+$pager = new WikiPager("Questions/Réponses", false);
 
 $pager->setHeader();
 ?>

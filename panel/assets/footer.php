@@ -37,7 +37,7 @@
                 </ul>
                 <hr class="footer-item">
                 <div class="sub-footer footer-item">
-                    <span><a href="../../wiki/cgu-cgv.php">CGU/CGV</a> - <a href="../../wiki/rules.php">Règles</a> - <a
+                    <span><a href="../../wiki/cgu-cgv">CGU/CGV</a> - <a href="../../wiki/regles">Règles</a> - <a
                                 href="https://statut.noskillworld.fr" target="_blank">Statut</a></span>
                     <span>Copyright © NoSkillWorld 2020 - 2024</span>
                 </div>

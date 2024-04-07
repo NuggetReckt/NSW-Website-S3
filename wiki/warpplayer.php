@@ -1,7 +1,7 @@
 <?php
 require_once "assets/php/pager.php";
 
-$pager = new WikiPager("WarpPlayer");
+$pager = new WikiPager("WarpPlayer", false);
 
 $pager->setHeader();
 ?>

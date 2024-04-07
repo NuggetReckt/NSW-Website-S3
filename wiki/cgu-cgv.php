@@ -1,10 +1,7 @@
 <?php
 require_once "assets/php/pager.php";
 
-//En attendant la création de la page :
-header("Location: under-construction");
-
-$pager = new WikiPager("CGU-CGV");
+$pager = new WikiPager("CGU-CGV", true);
 
 $pager->setHeader();
 ?>

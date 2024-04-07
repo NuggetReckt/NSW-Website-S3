@@ -1,7 +1,7 @@
 <?php
 require_once "assets/php/pager.php";
 
-$pager = new WikiPager("En construction");
+$pager = new WikiPager("En construction", false);
 
 $pager->setHeader();
 ?>

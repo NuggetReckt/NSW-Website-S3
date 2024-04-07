@@ -1,19 +1,21 @@
 <?php
+require_once "config.php";
 
 class Pager
 {
     private string $title;
-    public bool $isUnderMaintenance = false;
 
     public function __construct($title)
     {
-        $this->title = $title;
-
         ini_set("default_charset", "UTF-8");
+
+        $this->title = $title;
+        $config = new Config();
+
         $extension = pathinfo(basename($_SERVER["PHP_SELF"]), PATHINFO_EXTENSION);
 
-        if ($this->isUnderMaintenance && $extension == "php") {
-            header("Location: https://play.noskillworld.fr/maintenance");
+        if ($config->isUnderMaintenance && $extension == "php") {
+            header("Location: $config->maintenanceURL");
         }
     }
 

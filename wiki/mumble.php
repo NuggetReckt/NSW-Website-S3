@@ -1,7 +1,7 @@
 <?php
 require_once "assets/php/pager.php";
 
-$pager = new WikiPager("Mumble");
+$pager = new WikiPager("Mumble", false);
 
 $pager->setHeader();
 ?>
@@ -113,7 +113,7 @@ $pager->setHeader();
                          alt="step">
                     <p class="wiki-p-step">
                         Télécharge l'installeur universel pour Fabric en cliquant sur le lien suivant :<br>
-                        <a href="https://maven.fabricmc.net/net/fabricmc/fabric-installer/0.11.2/fabric-installer-0.11.2.jar"
+                        <a href="https://maven.fabricmc.net/net/fabricmc/fabric-installer/1.0.0/fabric-installer-1.0.0.jar"
                            target="_blank" class="underline">Télécharger Fabric</a>
                     </p>
                 </div>

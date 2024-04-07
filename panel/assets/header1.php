@@ -1,3 +1,9 @@
+<?php
+include_once "../assets/php/config.php";
+
+$config = new Config();
+?>
+
 <!DOCTYPE html>
 <html lang="FR-fr">
     <head>
@@ -10,9 +16,7 @@
         <link rel="manifest" href="<?= "../assets/images/site.webmanifest" ?>">
         <link rel="mask-icon" href="<?= "../assets/images/safari-pinned-tab.svg" ?>" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
-
-        <meta name="description"
-              content="Site internet du serveur Minecraft NoSkillWorld. Rejoins le serveur avec tes amis ou en solo pour vivre de formidables aventures !">
+        <meta name="description" content="<?= $config->description ?>">
 
         <!-- Facebook, Discord and LinkedIn Meta Tags -->
         <meta name="theme-color" content="#2C70BA">

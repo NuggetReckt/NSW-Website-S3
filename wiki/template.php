@@ -1,7 +1,7 @@
 <?php
 require_once "assets/php/pager.php";
 
-$pager = new WikiPager("Template");
+$pager = new WikiPager("Template", true);
 
 $pager->setHeader();
 ?>
@@ -91,6 +91,12 @@ $pager->setHeader();
                 <hr>
             </div>
             <div class="wiki-article-wrapper">
+                <div class="wiki-article-content-steps">
+                    <img src="../assets/images/step1.png" class="wiki-img-step"
+                         alt="step">
+                    <p class="wiki-p-step">
+                    </p>
+                </div>
                 <div class="wiki-article-content">
                     <p class="wiki-p"></p>
                 </div>
