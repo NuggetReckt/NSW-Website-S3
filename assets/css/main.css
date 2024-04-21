@@ -655,6 +655,13 @@ figcaption {
     margin-bottom: 13px;
 }
 
+.wiki-article-content-rules {
+    display: flex;
+    align-items: flex-start;
+    height: min-content;
+    margin-bottom: 10px;
+}
+
 .wiki-article-content-centered {
     display: flex;
     flex-direction: row;
@@ -712,6 +719,11 @@ figcaption {
     filter: invert(39%) sepia(38%) saturate(1225%) hue-rotate(174deg) brightness(91%) contrast(89%);
     height: 30px;
     margin-top: 5px;
+}
+
+.wiki-img-rule {
+    filter: invert(39%) sepia(38%) saturate(1225%) hue-rotate(174deg) brightness(91%) contrast(89%);
+    height: 25px;
 }
 
 .wiki-command-exemple {
