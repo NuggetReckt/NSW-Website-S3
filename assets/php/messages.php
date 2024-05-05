@@ -1,5 +1,17 @@
 <?php
 
+enum MessagesType: string
+{
+    case ACTU_CREATED = "Actu créée avec succès.";
+    case ACTU_DELETED = "Actu supprimée avec succès.";
+    case ACTU_MODIFIED = "Actu modifiée avec succès.";
+    case EVENT_CREATED = "Event créé avec succès.";
+    case EVENT_DELETED = "Event supprimé avec succès.";
+    case EVENT_MODIFIED = "Event modifié avec succès.";
+    case ADMIN_CREATED = "Compte admin créé avec succès.";
+    case DISCONNECTED = "Vous avez été déconnecté avec succès.";
+}
+
 class Messages
 {
     function printError(int $id): void
@@ -28,38 +40,10 @@ class Messages
         echo "            </div>\n";
     }
 
-    function printSuccess(string $name): void
+    function printSuccess(MessagesType $type): void
     {
-        $msg = "";
-
-        switch ($name) {
-            case "actu_created":
-                $msg = "Actu créée avec succès.";
-                break;
-            case "actu_modified":
-                $msg = "Actu modifiée avec succès.";
-                break;
-            case "event_modified":
-                $msg = "Event modifié avec succès.";
-                break;
-            case "event_created":
-                $msg = "Event créé avec succès.";
-                break;
-            case "actu_deleted":
-                $msg = "Actu supprimée avec succès.";
-                break;
-            case "event_deleted":
-                $msg = "Event supprimé avec succès.";
-                break;
-            case "admin_created":
-                $msg = "Admin créé avec succès.";
-                break;
-            case "disconnected":
-                $msg = "Vous avez été déconnecté avec succès.";
-                break;
-        }
         echo "            <div class='pop-up-message' id='pop-up-success'>\n";
-        echo "                <span>$msg</span>\n";
+        echo "                <span>$type->value</span>\n";
         echo "            </div>\n";
     }
 

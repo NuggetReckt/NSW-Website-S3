@@ -24,7 +24,7 @@ if (isset($_SESSION['admin'])) {
     header("Location: login?error=3");
 }
 
-if (isset($actu_name) || isset($actu_desc)) {
+if (isset($actu_name) && isset($actu_desc)) {
     $request->modify_actu($actu_id, $actu_name, $actu_desc);
 }
 
@@ -33,16 +33,12 @@ $actuData = $request->get_actus_by_id($actu_id);
 $actu_name = filter_input(INPUT_POST, 'actu-name', FILTER_SANITIZE_SPECIAL_CHARS) ?? $actuData['name'];
 $actu_desc = filter_input(INPUT_POST, 'actu-desc', FILTER_SANITIZE_SPECIAL_CHARS) ?? $actuData['description'];
 
-if (isset($_GET['actu_modified'])) {
-    $msg->printSuccess("actu_modified");
-}
-
 if (isset($err)) {
     $msg->printError($err);
 }
 ?>
     <div class="form" id="actu-form">
-        <form action="edit_actu.php" method="POST">
+        <form action="edit-actu?id=<?= $actu_id ?>" method="POST">
             <fieldset>
                 <div class="form-content">
                     <h1>Modifier une actu</h1>

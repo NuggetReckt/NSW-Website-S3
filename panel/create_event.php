@@ -31,7 +31,7 @@ if (isset($event_name) && isset($event_date) && isset($event_hour) && isset($eve
 }
 
 if (isset($_GET['event_created'])) {
-    $msg->printSuccess("event_created");
+    $msg->printSuccess(MessagesType::EVENT_CREATED);
 }
 
 if (isset($err)) {

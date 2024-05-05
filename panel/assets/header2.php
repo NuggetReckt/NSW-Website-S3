@@ -78,7 +78,7 @@ session_start();
         <main>
 <?php
 if (isset($_GET['disconnected'])) {
-    $msg->printSuccess("disconnected");
+    $msg->printSuccess(MessagesType::DISCONNECTED);
     session_unset();
 }
 ?>

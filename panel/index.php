@@ -31,13 +31,13 @@ if (isset($err)) {
 }
 
 if (isset($_GET['actu_modified'])) {
-    $msg->printSuccess("actu_modified");
+    $msg->printSuccess(MessagesType::ACTU_MODIFIED);
 } else if (isset($_GET['actu_deleted'])) {
-    $msg->printSuccess("actu_deleted");
+    $msg->printSuccess(MessagesType::ACTU_DELETED);
 } else if (isset($_GET['event_deleted'])) {
-    $msg->printSuccess("event_deleted");
+    $msg->printSuccess(MessagesType::EVENT_DELETED);
 } else if (isset($_GET['event_modified'])) {
-    $msg->printSuccess("event_modified");
+    $msg->printSuccess(MessagesType::EVENT_MODIFIED);
 }
 
 if (isset($_GET['delete-actu'])) {

@@ -28,7 +28,7 @@ if (isset($actu_name) && isset($actu_desc)) {
 }
 
 if (isset($_GET['actu_created'])) {
-    $msg->printSuccess("actu_created");
+    $msg->printSuccess(MessagesType::ACTU_CREATED);
 }
 
 if (isset($err)) {

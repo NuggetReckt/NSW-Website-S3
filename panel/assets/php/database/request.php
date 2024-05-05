@@ -141,7 +141,7 @@ require_once "../assets/php/database/connector.php";
 
     function modify_event(int $id, string $name, string $date): void
     {
-        $sql = "UPDATE events SET name = '$name', date = '$date' WHERE id = '$id';";
+        $sql = "UPDATE events SET name = '$name', datetime = '$date' WHERE id = '$id';";
         $conn = new Connector();
 
         $conn->dbRun($sql, [])->fetchAll(PDO::FETCH_ASSOC);

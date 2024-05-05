@@ -30,7 +30,7 @@ if (isset($username) && isset($password) && isset($permission)) {
 }
 
 if (isset($_GET['admin_created'])) {
-    $msg->printSuccess("admin_created");
+    $msg->printSuccess(MessagesType::ADMIN_CREATED);
 }
 
 if (isset($err)) {
