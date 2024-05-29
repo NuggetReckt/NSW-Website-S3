@@ -41,7 +41,7 @@ function getCurrentDir(): string
                 <a href="/votes" class="navbar-item-a not-active">Votes</a>
             </li>
             <li class="navbar-item">
-                <a href="/events.php" class="navbar-item-a not-active">Events</a>
+                <a href="/events" class="navbar-item-a not-active">Events</a>
             </li>
             <li class="navbar-item">
                 <a href="regles" class="navbar-item-a <?php echoIfRules() ?>">Regles</a>
