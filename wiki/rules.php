@@ -131,8 +131,8 @@ $pager->setHeader();
                          alt="step">
                     <img src="../assets/images/step2.png" class="wiki-img-rule" style="margin-left: -6px"
                          alt="step">
-                    <p class="wiki-p-step">Les TOS (Terms Of Service) de Discord se doivent d'être respectés sur le
-                        serveur Discord, y compris le minimum d'âge de 13 ans.</p>
+                    <p class="wiki-p-step">Sur le serveur Discord, les TOS (Terms Of Service) de Discord se doivent
+                        d'être respectés, y compris le minimum d'âge de 13 ans.</p>
                 </div>
                 <div class="wiki-article-content">
                 </div>
@@ -188,10 +188,10 @@ $pager->setHeader();
                     <p class="wiki-p-step">Les farms à mobs sont autorisées sur le serveur, sous certaines conditions
                         :<br>
                         <br>
-                        🔹Toute farm doit être construite dans une Lands claim et protégée. <a href="lands">Voir le wiki
-                            des Lands</a>.<br>
+                        🔹Toute farm doit être construite dans un claim protégé. <a href="lands" class="underline">Voir
+                            le wiki des Lands</a>.<br>
                         <br>
-                        🔹Une farm afk ("Away From Keyboard", akka un dispositif de farming pouvant fonctionner sans
+                        🔹Une farm afk ("Away From Keyboard", aka un dispositif de farming pouvant fonctionner sans
                         l'intervention directe et continue d'un joueur) ne devrait en aucun cas vous permettre de gagner
                         de l'xp dans votre job, ou dans n'importe quel autre système de progression non vanilla qui
                         pourrait être ajoutée dans le futur.</p>
@@ -207,7 +207,7 @@ $pager->setHeader();
                     <img src="../assets/images/step6.png" class="wiki-img-rule"
                          alt="step">
                     <p class="wiki-p-step">Ne construisez pas de structures inappropriées ou provocantes, que ce soit
-                        dans un espace privé ou publique.</p>
+                        dans un espace privé ou public.</p>
                 </div>
                 <div class="wiki-article-content-rules">
                     <img src="../assets/images/step7.png" class="wiki-img-rule"
@@ -231,6 +231,9 @@ $pager->setHeader();
                         minerais de diamant et de netherite ne se génèrent pas en serveur Semi-RP.</p>
                 </div>
             </div>
+            <br>
+            <br>
+            <p>Dernière actualisation le <span class="wiki-command-exemple">10/06/2024</span>.</p>
         </div>
     </div>
 

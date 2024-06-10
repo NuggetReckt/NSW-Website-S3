@@ -49,11 +49,11 @@ $pager->setHeader();
                     <p class="wiki-p-highlight">
                         Quelques précisions : <br>
                         - Un warp est accessible par n'importe qui. Il est donc conseillé de claim la zone avant de
-                        créer ton warp. (Plus d'infos <a class="underline" href="lands.php">ici</a>.) <br>
+                        créer ton warp. (Plus d'infos <a class="underline" href="lands">ici</a>.) <br>
                         - Un warp n'est pas un home ! Si un warp n'est utile que pour vous (par exemple un point de
                         téléportation à sa base), il sera supprimé par un membre de l'équipe.<br>
                         - La commande <span class="wiki-command-exemple">/wp</span> est un alias de la commande
-                        principale<span class="wiki-command-exemple">/warpplayer</span>.
+                        principale <span class="wiki-command-exemple">/warpplayer</span>.
                     </p>
                 </div>
             </div>
@@ -79,8 +79,7 @@ $pager->setHeader();
                     <img src="../assets/images/information-point.png" class="wiki-img-highlight wiki-img-highlight-info"
                          alt="info">
                     <p class="wiki-p-highlight">Tu es limité à 2 warps. Cependant, tu peux en gagner davantage grâce
-                        aux
-                        récompenses des Jobs. (Plus d'infos <a class="underline" href="jobs.php">ici</a>.)</p>
+                        aux récompenses des Jobs. (Plus d'infos <a class="underline" href="jobs">ici</a>.)</p>
                 </div>
             </div>
             <div class="wiki-article-title">
