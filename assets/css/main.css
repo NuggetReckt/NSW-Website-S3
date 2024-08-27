@@ -668,6 +668,7 @@ figcaption {
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 13px;
 }
 
 .wiki-subsection {
@@ -676,9 +677,20 @@ figcaption {
     align-items: center;
 }
 
+.wiki-subsection-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .wiki-p-img-legend {
     text-indent: unset;
-    margin: 2px 0 0;
+    margin-top: 2px;
+}
+
+.wiki-p-img-legend-row {
+    text-indent: unset;
+    margin-left: 10px;
 }
 
 .wiki-article-content-no-separation {
