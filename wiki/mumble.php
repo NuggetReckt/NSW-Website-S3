@@ -166,9 +166,9 @@ $pager->setHeader();
                         La configuration de Mumble se passe dans l'onglet "Configurer" puis dans "Réglages..." depuis la
                         fenêtre de base.<br>
                         Dans la même fenêtre de configuration, dans l'onglet "Plugin", activer le plugin "Link" comme
-                        montré sur le screen ci-dessous : <br>
+                        montré sur le screen ci-dessous :<br>
                         <img src="../assets/images/mumble1.png" class="wiki-img-exemple-solo" alt="mumble1-img"
-                             id="img1" onclick="enhanceImg('img1')"><br>
+                             id="mumble_config1" onclick="enhanceImg('mumble_config1')"><br>
                         Veilles également à ce que l'option "Lier au jeu et transmettre la position" soit activée, comme
                         montré sur ce même screenshot.
                     </p>
@@ -180,7 +180,7 @@ $pager->setHeader();
                         Dans l'onglet "Sortie audio", mettre la distance maximale à 70m et la distance minimale à 1m.
                         Veilles à ce que la position audio soit activée.<br>
                         <img src="../assets/images/mumble2.png" class="wiki-img-exemple-solo" alt="mumble2-img"
-                             id="img2" onclick="enhanceImg('img2')">
+                             id="mumble_config2" onclick="enhanceImg('mumble_config2')">
                     </p>
                 </div>
                 <div class="wiki-article-content-steps">

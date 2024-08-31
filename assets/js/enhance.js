@@ -7,6 +7,9 @@ function enhanceImg(id) {
         image.style.position = "static";
         image.style.transform = "unset";
         image.style.zIndex = "unset";
+        image.style.backdropFilter = "unset";
+        image.style.padding = "0";
+        document.documentElement.style.overflow = 'unset';
 
         isEnhanced = false;
     } else {
@@ -15,6 +18,9 @@ function enhanceImg(id) {
         image.style.top = "50%";
         image.style.left = "50%";
         image.style.transform = "translate(-50%, -50%) scale(1.8)";
+        image.style.backdropFilter = "blur(5px)";
+        image.style.padding = "100%";
+        document.documentElement.style.overflow = 'hidden';
 
         isEnhanced = true;
     }

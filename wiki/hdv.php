@@ -47,7 +47,7 @@ $pager->setHeader();
                     </p>
                 </div>
                 <div class="wiki-article-content-centered">
-                    <div class="wiki-subsection-row" id="img1" onclick="enhanceImg('img1')">
+                    <div class="wiki-subsection-row" id="gui1-hdv-img" onclick="enhanceImg('gui1-hdv-img')">
                         <img src="../assets/images/hdv-main-menu.png" class="wiki-img-exemple" alt="gui1-hdv-img">
                         <p class="wiki-p-img-legend-row">
                             Ce menu est le menu principal de l'Hôtel Des Ventes. C'est à partir de ce menu que vous
