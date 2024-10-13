@@ -95,11 +95,11 @@ $pager->setHeader();
                     </p>
                 </div>
                 <div class="wiki-article-content-centered">
-                    <div class="wiki-subsection" id="wp_menu" onclick="enhanceImg('wp_menu')">
+                    <div class="wiki-subsection" id="wp_menu" onclick="enhanceImg('wp_menu', 'column')">
                         <img src="../assets/images/wp-main-menu.png" class="wiki-img-exemple" alt="gui1-wp-img">
                         <p class="wiki-p-img-legend">Menu principal</p>
                     </div>
-                    <div class="wiki-subsection" id="wp_mywarps" onclick="enhanceImg('wp_mywarps')">
+                    <div class="wiki-subsection" id="wp_mywarps" onclick="enhanceImg('wp_mywarps', 'column')">
                         <img src="../assets/images/wp-mywarps-menu.png" class="wiki-img-exemple" alt="gui2-wp-img">
                         <p class="wiki-p-img-legend">Menu "Mes Warps"</p>
                     </div>
